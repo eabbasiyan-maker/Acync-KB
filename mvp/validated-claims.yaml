@@ -49,15 +49,29 @@ claims:
   - id: async-ack-retry-gap-01
     topic: ack-retry-semantics
     aliases:
+      - ack retry
+      - ack resend
       - ack semantics
+      - ack semantic
+      - ack stage
+      - ack lifecycle
+      - acknowledgement semantics
+      - acknowledgement stage
       - retry policy
       - resend policy
-      - ack
+      - معنای ack
+      - مفهوم ack
+      - مرحله ack
+      - زمان ack
+      - صدور ack
+      - زمان صدور ack
+      - مرحله صدور ack
+      - تایید دریافت
+      - تأیید دریافت
+      - مرحله تایید دریافت
+      - مرحله تأیید دریافت
       - retry
       - resend
-      - معنای ack
-      - سیاست retry
-      - سیاست resend
     status: known_gap
     statement: معنای دقیق ACK و Policy/Owner دقیق Retry/Resend هنوز مشخص نشده است.
     evidence:
