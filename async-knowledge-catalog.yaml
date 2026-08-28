@@ -1,0 +1,74 @@
+project:
+  id: async
+  name: Async
+
+sources:
+  code:
+    repository: "http://gp.devpod.ir/pod/social-platform/Async.git"
+    branch: master
+  knowledge:
+    root: generated-knowledge
+
+documents:
+  - id: async-overview
+    path: generated-knowledge/overview.md
+    type: overview
+    domain: messaging
+    trust: candidate
+    evidence: "generated-knowledge/overview.md front matter source_refs and inline source/Human Evidence; generated-knowledge/GOVERNANCE-REPORT.md per-document decision"
+
+  - id: async-system-architecture
+    path: generated-knowledge/architecture/system-architecture.md
+    type: architecture
+    domain: messaging
+    trust: candidate
+    evidence: "generated-knowledge/architecture/system-architecture.md front matter source_refs and nearby source/Human Evidence; generated-knowledge/GOVERNANCE-REPORT.md per-document decision"
+
+  - id: async-startup-flow
+    path: generated-knowledge/flows/startup-flow.md
+    type: flow
+    domain: runtime
+    trust: candidate
+    evidence: "generated-knowledge/flows/startup-flow.md front matter source_refs and claim-level evidence for Settings and Server symbols; generated-knowledge/GOVERNANCE-REPORT.md per-document decision"
+
+  - id: async-message-delivery-flow
+    path: generated-knowledge/flows/message-delivery-flow.md
+    type: flow
+    domain: messaging
+    trust: candidate
+    evidence: "generated-knowledge/flows/message-delivery-flow.md front matter source_refs and claim-level delivery/persistence evidence; generated-knowledge/GOVERNANCE-REPORT.md per-document decision"
+
+  - id: async-interface-inventory
+    path: generated-knowledge/contracts/interface-inventory.md
+    type: contract
+    domain: interfaces
+    trust: candidate
+    evidence: "generated-knowledge/contracts/interface-inventory.md front matter source_refs and route/protocol/payload evidence; generated-knowledge/GOVERNANCE-REPORT.md per-document decision"
+
+  - id: async-runtime-and-integrations
+    path: generated-knowledge/operations/runtime-and-integrations.md
+    type: operations
+    domain: runtime
+    trust: candidate
+    evidence: "generated-knowledge/operations/runtime-and-integrations.md front matter source_refs and nearby build/configuration/integration/runtime evidence; generated-knowledge/GOVERNANCE-REPORT.md per-document decision"
+
+  - id: async-security-implementation
+    path: generated-knowledge/security/security-implementation.md
+    type: security
+    domain: security
+    trust: candidate
+    evidence: "generated-knowledge/security/security-implementation.md front matter source_refs and nearby implementation/Human Evidence; generated-knowledge/GOVERNANCE-REPORT.md per-document decision"
+
+  - id: async-knowledge-gaps
+    path: generated-knowledge/gaps/knowledge-gaps.md
+    type: gap
+    domain: knowledge-governance
+    trust: candidate
+    evidence: "generated-knowledge/gaps/knowledge-gaps.md gap register, provenance sections, and front matter; generated-knowledge/GOVERNANCE-REPORT.md per-document decision"
+
+  - id: async-human-knowledge-backlog
+    path: generated-knowledge/gaps/human-knowledge-backlog.md
+    type: gap
+    domain: knowledge-governance
+    trust: candidate
+    evidence: "generated-knowledge/gaps/human-knowledge-backlog.md final Stage 3 disposition, Human Evidence provenance, and front matter; generated-knowledge/GOVERNANCE-REPORT.md per-document decision"
