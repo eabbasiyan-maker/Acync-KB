@@ -1,0 +1,107 @@
+version: '1.1'
+project: async
+claims:
+  - id: async-responsibility-01
+    topic: responsibility-boundary
+    aliases:
+      - responsibility
+      - scope
+      - business logic
+      - boundary
+      - مسئولیت
+      - محدوده مسئولیت
+      - بیزینس لاجیک
+    status: trusted
+    statement: Async صرفاً مسئول برقراری ارتباط و حمل پیام است و مسئول Business Logic سرویس‌دهنده یا سرویس‌گیرنده نیست.
+    evidence:
+      type: human-validation
+      source: arash-p0-response
+
+  - id: async-duplicate-01
+    topic: duplicate-delivery
+    aliases:
+      - duplicate
+      - resend
+      - ack
+      - پیام تکراری
+      - ارسال تکراری
+    status: trusted
+    statement: Duplicate در سناریوی ACK/Resend ممکن است رخ دهد.
+    evidence:
+      type: human-validation
+      source: arash-p0-response
+
+  - id: async-consumers-providers-01
+    topic: consumers-providers
+    aliases:
+      - provider
+      - consumer
+      - service provider
+      - service consumer
+      - سرویس دهنده
+      - سرویس گیرنده
+    status: trusted
+    statement: تمامی سرویس‌دهنده‌ها و سرویس‌گیرنده‌های پاد می‌توانند مصرف‌کننده یا ارائه‌دهنده سرویس از طریق Async باشند.
+    evidence:
+      type: human-validation
+      source: arash-p0-response
+
+  - id: async-ack-retry-gap-01
+    topic: ack-retry-semantics
+    aliases:
+      - ack semantics
+      - retry policy
+      - resend policy
+      - ack
+      - retry
+      - resend
+      - معنای ack
+      - سیاست retry
+      - سیاست resend
+    status: known_gap
+    statement: معنای دقیق ACK و Policy/Owner دقیق Retry/Resend هنوز مشخص نشده است.
+    evidence:
+      type: human-validation
+      source: arash-p0-response
+
+  - id: async-official-contracts-gap-01
+    topic: official-contracts
+    aliases:
+      - official contract
+      - stable contract
+      - contract
+      - قرارداد رسمی
+      - قرارداد پایدار
+    status: known_gap
+    statement: Contractهای اصلی و رسمی Async هنوز مشخص نشده‌اند.
+    evidence:
+      type: human-validation
+      source: arash-p0-response
+
+  - id: async-breaking-change-gap-01
+    topic: breaking-change-definition
+    aliases:
+      - breaking change
+      - compatibility
+      - backward compatibility
+      - تغییر شکستن قرارداد
+      - ناسازگاری
+    status: known_gap
+    statement: تعریف رسمی Breaking Change برای Contractهای Async هنوز مشخص نشده است.
+    evidence:
+      type: human-validation
+      source: arash-p0-response
+
+  - id: async-contract-decision-gap-01
+    topic: contract-decisions
+    aliases:
+      - adr
+      - decision
+      - contract decision
+      - تصمیم معماری
+      - تصمیم قرارداد
+    status: known_gap
+    statement: برای Golden Dataset فعلی، Knowledge معتبر کافی درباره ADR/Decisionهای مرتبط با تغییر Contract در دسترس نیست.
+    evidence:
+      type: knowledge-coverage
+      source: async-knowledge-catalog-v1.1
