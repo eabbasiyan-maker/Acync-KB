@@ -1,0 +1,26 @@
+version: '1.0'
+project: async
+questions:
+  - claim_id: async-responsibility-01
+    question: "آیا مرز رسمی مسئولیت Async فقط برقراری ارتباط و حمل پیام است و Business Logic سرویس‌دهنده یا سرویس‌گیرنده خارج از مسئولیت آن است؟ استثناهای این مرز چیست؟"
+    current_claim: "Async صرفاً مسئول برقراری ارتباط و حمل پیام است و مسئول Business Logic سرویس‌دهنده یا سرویس‌گیرنده نیست."
+    missing_evidence: "Readable human validation or an approved service charter defining the exact responsibility boundary and exceptions"
+    why_needed: "Source code can show implemented behavior but cannot establish the official organizational responsibility boundary."
+    blocking: true
+    why_not_researchable: "This is an organizational ownership and scope decision."
+
+  - claim_id: async-duplicate-01
+    question: "آیا در رفتار عملیاتی مورد تأیید Async، در سناریوی نرسیدن ACK و اجرای Resend امکان تحویل تکراری پیام وجود دارد؟ این تأیید برای کدام مسیرها و Environmentها معتبر است؟"
+    current_claim: "Duplicate در سناریوی ACK/Resend ممکن است رخ دهد."
+    missing_evidence: "Readable human validation defining runtime scope, transports, and environments"
+    why_needed: "The source snapshot supports a possible resend path but does not prove the complete operational behavior in current environments."
+    blocking: true
+    why_not_researchable: "Current runtime behavior and supported guarantees require operational confirmation."
+
+  - claim_id: async-consumers-providers-01
+    question: "دقیقاً کدام دسته از Service Providerها و Service Consumerهای POD مجاز یا پشتیبانی‌شده‌اند که از طریق Async سرویس ارائه یا مصرف کنند، و چه محدودیت‌های ثبت‌نام، دسترسی، Protocol یا Environment دارند؟"
+    current_claim: "تمامی سرویس‌دهنده‌ها و سرویس‌گیرنده‌های پاد می‌توانند مصرف‌کننده یا ارائه‌دهنده سرویس از طریق Async باشند."
+    missing_evidence: "Readable human validation or an approved eligibility/access policy establishing the scope of 'all'"
+    why_needed: "The source shows provider and consumer mechanisms but cannot prove ecosystem-wide eligibility or authorization."
+    blocking: true
+    why_not_researchable: "Eligibility and supported scope are organizational/product policy decisions."
