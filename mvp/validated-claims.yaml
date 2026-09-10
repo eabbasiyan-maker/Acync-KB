@@ -11,7 +11,7 @@ claims:
       - مسئولیت
       - محدوده مسئولیت
       - بیزینس لاجیک
-    status: trusted
+    status: candidate
     statement: Async صرفاً مسئول برقراری ارتباط و حمل پیام است و مسئول Business Logic سرویس‌دهنده یا سرویس‌گیرنده نیست.
     evidence:
       type: human-validation
@@ -25,7 +25,7 @@ claims:
       - ack
       - پیام تکراری
       - ارسال تکراری
-    status: trusted
+    status: candidate
     statement: Duplicate در سناریوی ACK/Resend ممکن است رخ دهد.
     evidence:
       type: human-validation
@@ -40,7 +40,7 @@ claims:
       - service consumer
       - سرویس دهنده
       - سرویس گیرنده
-    status: trusted
+    status: candidate
     statement: تمامی سرویس‌دهنده‌ها و سرویس‌گیرنده‌های پاد می‌توانند مصرف‌کننده یا ارائه‌دهنده سرویس از طریق Async باشند.
     evidence:
       type: human-validation
