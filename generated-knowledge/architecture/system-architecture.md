@@ -7,7 +7,13 @@ verification: source-confirmed
 truth_type: operational
 owner: REQUIRES_HUMAN_VALIDATION
 sensitivity: REQUIRES_HUMAN_VALIDATION
+source_refs:
+  - Async/Async/src/com/nozha/async/server/Server.java
+  - Async/Async/src/com/nozha/async/server/httpserver/EmbeddedHttpServer.java
+  - Async/Async/src/com/nozha/async/server/biz/MessageManager.java
+  - Async/Async/src/com/nozha/async/server/persistance/ConnectionFactory.java
 last_validated_commit: 2a4986c264720f6d7dff6c176d1a896e73176583
+next_review_due: REQUIRES_HUMAN_VALIDATION
 ---
 
 # System Architecture Observed in Source
