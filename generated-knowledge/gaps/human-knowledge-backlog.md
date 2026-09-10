@@ -7,22 +7,24 @@ verification: source-confirmed
 truth_type: governance
 owner: REQUIRES_HUMAN_VALIDATION
 sensitivity: REQUIRES_HUMAN_VALIDATION
+source_refs: []
 last_validated_commit: 2a4986c264720f6d7dff6c176d1a896e73176583
+next_review_due: REQUIRES_HUMAN_VALIDATION
 ---
 
 # Human Knowledge Backlog
 
 This document is the human-validation backlog supporting the Async knowledge base. It is not an authoritative fact source by itself.
 
-## P0 topics already answered and promoted to validated claims
+## P0 topics previously answered; revalidation evidence unavailable
 
-Human input used for the current MVP validates:
+The current claim dataset attributes the following statements to human input, but the referenced `arash-p0-response` artifact is not available in this repository. They remain recorded as candidate claims pending revalidation:
 
 - Async responsibility boundary: connection and message transport, not provider/consumer Business Logic.
 - Duplicate may occur in ACK/Resend scenarios.
 - POD service providers/consumers may use Async as the communication path.
 
-These are represented as `trusted` claims in `mvp/validated-claims.yaml`.
+These are represented as `candidate` claims in `mvp/validated-claims.yaml` until the original evidence is restored or a new human review is recorded.
 
 ## P0 topics still unresolved
 
