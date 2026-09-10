@@ -7,7 +7,9 @@ verification: source-confirmed
 truth_type: governance
 owner: REQUIRES_HUMAN_VALIDATION
 sensitivity: REQUIRES_HUMAN_VALIDATION
+source_refs: []
 last_validated_commit: 2a4986c264720f6d7dff6c176d1a896e73176583
+next_review_due: REQUIRES_HUMAN_VALIDATION
 ---
 
 # Knowledge Gaps
