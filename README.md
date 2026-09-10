@@ -11,6 +11,7 @@ Knowledge repository for the Async Knowledge Agent MVP.
 ## Trust model
 
 - `trusted` claims are human-validated project facts.
+- `candidate` claims preserve previously recorded statements whose promotion evidence is unavailable or incomplete; they must not be emitted as trusted knowledge.
 - `known_gap` claims are explicitly registered unresolved topics and must not be filled with general model knowledge.
 - documents under `generated-knowledge/` are supporting candidate context unless separately promoted.
 
@@ -21,3 +22,7 @@ The n8n workflow should read this repository from branch `main`, load the catalo
 ## Retrieval rule
 
 Do not classify every missing answer as `known_gap`. Only claims explicitly marked `status: known_gap` in `mvp/validated-claims.yaml` are official MVP known gaps.
+
+## Governance status
+
+The current provenance hardening status, unresolved evidence references, and revalidation requirements are recorded under `governance/`. These governance artifacts report trust state; they do not promote candidate knowledge.
