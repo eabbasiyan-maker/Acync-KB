@@ -21,3 +21,8 @@ The n8n workflow should read this repository from branch `main`, load the catalo
 ## Retrieval rule
 
 Do not classify every missing answer as `known_gap`. Only claims explicitly marked `status: known_gap` in `mvp/validated-claims.yaml` are official MVP known gaps.
+
+## Related source baseline
+
+- `source-baselines/asyncmanager/` contains a curated Rate Limit source excerpt for the separate AsyncManager project. It is kept distinct from the Async application source.
+- `generated-knowledge/operations/rate-limit-manager.md` records candidate knowledge, source/guide differences and unresolved validation questions.
