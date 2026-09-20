@@ -72,3 +72,10 @@ documents:
     domain: knowledge-governance
     trust: candidate
     evidence: "generated-knowledge/gaps/human-knowledge-backlog.md final Stage 3 disposition, Human Evidence provenance, and front matter; generated-knowledge/GOVERNANCE-REPORT.md per-document decision"
+
+  - id: asyncmanager-rate-limit-manager
+    path: generated-knowledge/operations/rate-limit-manager.md
+    type: operations
+    domain: rate-limit-control
+    trust: candidate
+    evidence: "source-baselines/asyncmanager/project-baseline.yaml and the document source_refs; source excerpt is partial and the DOCX guide is represented by evidence/rate-limit-guide-observations.md"

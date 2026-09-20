@@ -1,0 +1,22 @@
+project:
+  id: asyncmanager
+  name: Async Manager
+source_snapshot:
+  repository_identity: AsyncManager
+  branch: production
+  commit: 82a2887c5a67a640145b4428e50a292b7a425b93
+  commit_date: 2026-07-27T15:54:56+03:30
+  scope: curated excerpt of 18 Java files relevant to Rate Limit API and fan-out
+  source_root: src/main/java
+  omitted:
+    - all non-selected Java source files
+    - .git metadata
+    - IDE files
+    - build output and dependencies
+    - runtime configuration and credentials
+    - keystore and certificate files
+    - uploaded Rate Limit guide original (a structured observation note is included)
+knowledge:
+  path: generated-knowledge/operations/rate-limit-manager.md
+  trust_level: untrusted-content
+  promotion: not performed
