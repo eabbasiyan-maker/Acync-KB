@@ -24,6 +24,13 @@ documents:
     trust: candidate
     evidence: "generated-knowledge/architecture/system-architecture.md front matter source_refs and nearby source/Human Evidence; generated-knowledge/GOVERNANCE-REPORT.md per-document decision"
 
+  - id: async-http-mediation-boundary
+    path: generated-knowledge/architecture/http-mediation-and-integration-boundary.md
+    type: architecture
+    domain: integration
+    trust: candidate
+    evidence: "source_refs link to current Async-Source main snapshot; document separates verified HTTP envelope mediation from unestablished generic payload transformation and multi-step orchestration"
+
   - id: async-startup-flow
     path: generated-knowledge/flows/startup-flow.md
     type: flow
