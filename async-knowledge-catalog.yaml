@@ -163,3 +163,10 @@ documents:
     domain: observability-historical
     trust: candidate
     evidence: "17 local static/historical checks PASS; historical Aug 2026 sample only, not current production."
+
+  - id: async-observability-project-control-center
+    path: generated-knowledge/observability/project-control-center.md
+    type: operations
+    domain: observability-pm
+    trust: candidate
+    evidence: "Evidence-linked PM status as of 2026-10-09, including merged PRs, GitHub work items, 17/17 offline tests and unresolved operational/agent validation gates; no background execution is implied."
