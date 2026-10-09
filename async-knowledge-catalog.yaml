@@ -121,3 +121,45 @@ documents:
     domain: observability-gap
     trust: candidate
     evidence: "Static source review of observability gaps and code-risk investigation candidates; no confirmed production incidents or raw historical log payloads."
+
+  - id: async-observability-critical-source-traces
+    path: generated-knowledge/observability/source-reviewed-critical-signatures.md
+    type: operations
+    domain: observability-source
+    trust: candidate
+    evidence: "Source-confirmed priority event trigger semantics, with UNKNOWN for full call chain and deployment; candidate."
+
+  - id: async-observability-correlation-contract
+    path: generated-knowledge/observability/correlation-and-data-contract.md
+    type: operations
+    domain: observability-correlation
+    trust: candidate
+    evidence: "Proposed cross-log join aliases and telemetry fields, not verified Kibana mappings."
+
+  - id: async-observability-runtime-validation-handoffs
+    path: generated-knowledge/observability/runtime-validation-handoffs.md
+    type: procedure
+    domain: observability-operations
+    trust: candidate
+    evidence: "Required runtime evidence and team acceptance gates; not authorization to alter production."
+
+  - id: async-observability-agent-qc-cases
+    path: generated-knowledge/observability/agent-qc-cases.md
+    type: procedure
+    domain: observability-qc
+    trust: candidate
+    evidence: "15 proposed Agent evaluation scenarios; actual Agent runtime NOT tested."
+
+  - id: async-observability-pm-delivery-board
+    path: generated-knowledge/observability/delivery-board.md
+    type: operations
+    domain: observability-delivery
+    trust: candidate
+    evidence: "PM workstream status, completed artifact work vs runtime/agent approval blockers."
+
+  - id: async-observability-historical-qa-results
+    path: generated-knowledge/observability/historical-qa-results.md
+    type: observation
+    domain: observability-historical
+    trust: candidate
+    evidence: "17 local static/historical checks PASS; historical Aug 2026 sample only, not current production."
