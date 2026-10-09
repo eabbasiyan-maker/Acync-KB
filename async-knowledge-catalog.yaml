@@ -93,3 +93,10 @@ documents:
     domain: observability
     trust: candidate
     evidence: "Source-derived logging and monitoring baseline linked to Async-Source commit 781e6c4; user approved candidate indexing on 2026-10-09; production deployment, runtime logger behavior, Kibana/Zabbix metrics and alert thresholds remain unvalidated."
+
+  - id: async-textual-log-signatures
+    path: generated-knowledge/operations/async-textual-log-signatures.md
+    type: operations
+    domain: observability
+    trust: candidate
+    evidence: "Static Java logging-call inventory; source SHA sampling against Async-Source@781e6c4; incident signatures and investigation candidates only; no runtime or production validation."
