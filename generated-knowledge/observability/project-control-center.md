@@ -92,3 +92,15 @@ last_validated_commit: 781e6c4c61706a798883818982f72fb8fa53a661
 - مستندات Candidate با Approval مرحله‌ای Promote شوند، بدون Bulk Approval.
 
 **این معیارها هنوز همگی محقق نشده‌اند.** بسته Source/Historical و تست آفلاین تمام شده؛ مراحل نیازمند محیط اجرا و Human Approval در Issueها قابل پیگیری هستند.
+
+## Stage 5/27 — Issue/PR inventory and review gate (2026-10-09)
+
+**Status: COMPLETE for inventory and review-state audit; engineering approvals and merges remain OPEN.**
+
+- Existing issue inventory: Async-Source #1–#6 and #10 (7 issues); Acync-KB #5–#8 (4 issues). No duplicate issue created. This is an inventory of known relevant issues, not a declaration that every issue is resolved.
+- Source PR #7 (DB persistence), #8 (Jetty metrics), #9 (sensitive management request logging), #11 (ServiceCall duration): all **OPEN, NOT MERGED, NOT DRAFT** at review time.
+- GitHub review submissions: **0** for each of the four PRs. Review threads: **0** each. Returned PR discussion comments: **0** each. No recorded TL/QA/SRE/Security approval; no claim about off-GitHub approvals.
+- #7 is a partial candidate fix only: cumulative getTaskCount gating corrected, but bounded queue/backpressure, worker exception reporting, retry/ACK and shutdown behavior remain unresolved; retain P0 issue #1.
+- #8 requires SRE/TL validation of downstream log parser, Kibana and metric names. #9 requires Security/QA privacy validation beyond removed raw body lines. #11 requires TL/QA validation of synthetic status, exception branches and elapsed-time semantics.
+- Dependency sequence: P0 #1 + PR #7 technical decision; KB #5 deployed revision and Kibana mapping; Security #10/#4 and PR #9; Source #5 correlation; KB #6 metric baselines; KB #7 Agent QC. Do not merge/deploy or close issues without owner approval and runtime evidence.
+- **Stage completion means the inventory and PR-review-state audit is finished, NOT that fixes were approved, merged, tested in Production or deployed.**
