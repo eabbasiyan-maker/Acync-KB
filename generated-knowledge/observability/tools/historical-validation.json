@@ -1,0 +1,68 @@
+{
+  "data_classification": "HISTORICAL_SAMPLE_ONLY_NOT_CURRENT_PRODUCTION",
+  "sources": [
+    {
+      "kind": "structured",
+      "sha256": "1dea172af21e2743026b5a797f2834b16c460724412fb7a89fdfcc1d22091c74",
+      "count": 15592,
+      "start_utc": "2026-08-18T08:09:29.911297+00:00",
+      "end_utc": "2026-08-18T08:30:04.962157+00:00"
+    },
+    {
+      "kind": "textual",
+      "sha256": "c1615ffba8c244a237459e1cb86733ef4e7de011a10e40daab16700d354af9e5",
+      "count": 17072,
+      "start_utc": "2026-08-18T08:23:34.309215+00:00",
+      "end_utc": "2026-08-18T08:29:26.327024+00:00"
+    }
+  ],
+  "structured_types": {
+    "AfterSendLog": 6686,
+    "BeforeSendLog": 6685,
+    "ServiceTimeLog": 2221
+  },
+  "text_levels": {
+    "INFO": 16579,
+    "WARN": 312,
+    "ERROR": 181
+  },
+  "http_status": {
+    "200": 1947,
+    "408": 150,
+    "500": 56,
+    "301": 14,
+    "401": 46,
+    "404": 6,
+    "201": 1,
+    "400": 1
+  },
+  "before_after_pairs": {
+    "paired": 6685,
+    "unpaired_before": 0,
+    "unpaired_after": 1
+  },
+  "timeout_correlation": {
+    "textual_timeout_events": 28,
+    "with_tracker_id": 28,
+    "matched_to_408": 28,
+    "timeout_values_ms": {
+      "120000": 28
+    },
+    "http_408_total": 150
+  },
+  "latency": {
+    "http408_119s_to_121s": 146,
+    "http500_29s_to_31s": 49
+  },
+  "duration_quality": {
+    "negative_after_send_time": 726,
+    "negative_service_client_time": 569
+  },
+  "textual_signatures": {
+    "addClient_ora00001": 100,
+    "invalid_queue_name": 118,
+    "swagger_message_contains": 48,
+    "db_threadpool_threshold": 0
+  },
+  "safety": "No IDs, IPs, message bodies, or raw log lines included in this output; no production inference."
+}
