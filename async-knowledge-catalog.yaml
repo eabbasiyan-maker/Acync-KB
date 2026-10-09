@@ -107,3 +107,17 @@ documents:
     domain: observability-investigation
     trust: candidate
     evidence: "Human-reviewable diagnostic reference grounded in Async-Source@781e6c4 and bounded historical observations; not a trusted instruction or permission for automatic production changes."
+
+  - id: async-observability-log-point-registry-v1
+    path: generated-knowledge/observability/registry-v1/registry-index.md
+    type: operations
+    domain: observability-registry
+    trust: candidate
+    evidence: "956 source Java Logger call-site cards; all 953 previous points reconciled; named-logger additions; 33-column CSV, source permalinks and UNKNOWN on unproven trigger paths; not runtime-validated."
+
+  - id: async-observability-gap-report-v1
+    path: generated-knowledge/observability/observability-gap-report-v1.md
+    type: gap
+    domain: observability-gap
+    trust: candidate
+    evidence: "Static source review of observability gaps and code-risk investigation candidates; no confirmed production incidents or raw historical log payloads."
