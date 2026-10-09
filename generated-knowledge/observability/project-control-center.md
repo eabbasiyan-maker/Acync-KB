@@ -34,6 +34,14 @@ last_validated_commit: 781e6c4c61706a798883818982f72fb8fa53a661
 | QC واقعی Agent | **BLOCKED** | سناریوها طراحی شده ولی Agent اجرا نشده |
 | Trusted Promotion | **BLOCKED — Human Owner Approval** | تمام اسناد همچنان Candidate هستند |
 
+
+## پیشرفت 2026-10-09 — کاندیدهای اصلاح سورس (نیازمند TL/QA/SRE)
+
+- **[PR #7 — MessageCRUD Queue Gate](https://github.com/eabbasiyan-maker/Async-Source/pull/7):** رفع محدود مشکل `getTaskCount` تجمعی؛ تست JDK ایزوله روی کلاس واقعی: Original PASS برای بازتولید خطا، Fixed PASS برای رفع همان سناریو. مشکل Silent Drop زیر اشباع، Retry و خطای Worker **هنوز حل نشده**. **P0 Issue #1 باز است**؛ [ADR پیشنهادی](adr-async-db-persistence-overload.md) تصمیم‌های باقی‌مانده را ثبت می‌کند.
+- **[PR #8 — Jetty Metric Labels](https://github.com/eabbasiyan-maker/Async-Source/pull/8):** جداسازی `queueSize` و `threadPoolSize` واقعی؛ تست JDK Stub کلاس واقعی موفق. Release Gate: سازگاری Log Parser/Kibana/Alert و تأیید Jetty 12.0.13.
+- **[PR #9 — Management Log Redaction](https://github.com/eabbasiyan-maker/Async-Source/pull/9):** حذف دو ثبت مستقیم درخواست خام از `ServiceCallServlet`؛ تست ایستا 2→0 PASS. همچنان Security/QA باید سایر Exception/Preview/Channelها را تأیید کنند.
+- **وضعیت عملیاتی:** هیچ PR سورسی Merge/Deploy نشده و هیچ تست Integration/Production PASS ادعا نشده است. همه Issueها بازند و تکمیل پروژه همچنان به شواهد Runtime، تصمیم Backpressure و QC واقعی Agent وابسته است.
+
 ## Backlog اجرایی در GitHub
 
 ### مهندسی — ریپوی Async-Source
