@@ -40,7 +40,9 @@ last_validated_commit: 781e6c4c61706a798883818982f72fb8fa53a661
 - **[PR #7 — MessageCRUD Queue Gate](https://github.com/eabbasiyan-maker/Async-Source/pull/7):** رفع محدود مشکل `getTaskCount` تجمعی؛ تست JDK ایزوله روی کلاس واقعی: Original PASS برای بازتولید خطا، Fixed PASS برای رفع همان سناریو. مشکل Silent Drop زیر اشباع، Retry و خطای Worker **هنوز حل نشده**. **P0 Issue #1 باز است**؛ [ADR پیشنهادی](adr-async-db-persistence-overload.md) تصمیم‌های باقی‌مانده را ثبت می‌کند.
 - **[PR #8 — Jetty Metric Labels](https://github.com/eabbasiyan-maker/Async-Source/pull/8):** جداسازی `queueSize` و `threadPoolSize` واقعی؛ تست JDK Stub کلاس واقعی موفق. Release Gate: سازگاری Log Parser/Kibana/Alert و تأیید Jetty 12.0.13.
 - **[PR #9 — Management Log Redaction](https://github.com/eabbasiyan-maker/Async-Source/pull/9):** حذف دو ثبت مستقیم درخواست خام از `ServiceCallServlet`؛ تست ایستا 2→0 PASS. همچنان Security/QA باید سایر Exception/Preview/Channelها را تأیید کنند.
-- **وضعیت عملیاتی:** هیچ PR سورسی Merge/Deploy نشده و هیچ تست Integration/Production PASS ادعا نشده است. همه Issueها بازند و تکمیل پروژه همچنان به شواهد Runtime، تصمیم Backpressure و QC واقعی Agent وابسته است.
+- **[PR #11 — ServiceCall Duration](https://github.com/eabbasiyan-maker/Async-Source/pull/11):** رفع محدود Duration صفر در شاخه IOException با شروع زمان قبل از فراخوانی؛ تست ایستای Original/Fixed موفق. مرز بین Destination Response و Client Write Exception و Status Synthetic هنوز نیازمند تصمیم TL است.
+- **[Security Investigation #10 — TLS validation](https://github.com/eabbasiyan-maker/Async-Source/issues/10):** TrustManager با Validation خالی و NoopHostnameVerifier در ServiceCallProxy مشاهده شد. این یک ریسک قابل بررسی از سورس است؛ وضعیت Deploy واقعی UNKNOWN و فعال‌کردن اعتبارسنجی صحیح بدون آماده‌سازی Truststore ممکن است اتصال موجود را مختل کند.
+- **وضعیت عملیاتی:** هیچ‌یک از PRهای سورسی #7، #8، #9 یا #11 Merge/Deploy نشده و هیچ تست Integration/Production PASS ادعا نشده است. همه Issueها بازند و تکمیل پروژه همچنان به شواهد Runtime، تصمیم Backpressure و QC واقعی Agent وابسته است.
 
 ## Backlog اجرایی در GitHub
 
