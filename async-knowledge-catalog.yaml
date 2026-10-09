@@ -87,16 +87,23 @@ documents:
     trust: candidate
     evidence: "source-baselines/asyncmanager/project-baseline.yaml and the document source_refs; source excerpt is partial and the DOCX guide is represented by evidence/rate-limit-guide-observations.md"
 
-  - id: async-observability-baseline
-    path: generated-knowledge/operations/async-observability-baseline.md
+- id: async-observability-source-semantics
+    path: generated-knowledge/observability/source-logging-semantics.md
     type: operations
-    domain: observability
+    domain: observability-source
     trust: candidate
-    evidence: "Source-derived logging and monitoring baseline linked to Async-Source commit 781e6c4; user approved candidate indexing on 2026-10-09; production deployment, runtime logger behavior, Kibana/Zabbix metrics and alert thresholds remain unvalidated."
+    evidence: "Async-Source@781e6c4 source-confirmed logging semantics; source interpretation only, no deployment or production assertion."
 
-  - id: async-textual-log-signatures
-    path: generated-knowledge/operations/async-textual-log-signatures.md
-    type: operations
-    domain: observability
+  - id: async-observability-historical-2026-08-18
+    path: generated-knowledge/observability/historical-runtime-evidence-2026-08-18.md
+    type: observation
+    domain: observability-historical
     trust: candidate
-    evidence: "Static Java logging-call inventory; source SHA sampling against Async-Source@781e6c4; incident signatures and investigation candidates only; no runtime or production validation."
+    evidence: "Sanitized aggregate historical evidence from two uploaded 2026-08-18 log samples identified by SHA-256 in document; not current system health; no raw log content."
+
+  - id: async-observability-investigation-playbooks
+    path: generated-knowledge/observability/incident-investigation-playbooks.md
+    type: procedure
+    domain: observability-investigation
+    trust: candidate
+    evidence: "Human-reviewable diagnostic reference grounded in Async-Source@781e6c4 and bounded historical observations; not a trusted instruction or permission for automatic production changes."
