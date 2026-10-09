@@ -87,7 +87,7 @@ documents:
     trust: candidate
     evidence: "source-baselines/asyncmanager/project-baseline.yaml and the document source_refs; source excerpt is partial and the DOCX guide is represented by evidence/rate-limit-guide-observations.md"
 
-- id: async-observability-source-semantics
+  - id: async-observability-source-semantics
     path: generated-knowledge/observability/source-logging-semantics.md
     type: operations
     domain: observability-source
