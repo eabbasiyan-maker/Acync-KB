@@ -104,3 +104,12 @@ last_validated_commit: 781e6c4c61706a798883818982f72fb8fa53a661
 - #8 requires SRE/TL validation of downstream log parser, Kibana and metric names. #9 requires Security/QA privacy validation beyond removed raw body lines. #11 requires TL/QA validation of synthetic status, exception branches and elapsed-time semantics.
 - Dependency sequence: P0 #1 + PR #7 technical decision; KB #5 deployed revision and Kibana mapping; Security #10/#4 and PR #9; Source #5 correlation; KB #6 metric baselines; KB #7 Agent QC. Do not merge/deploy or close issues without owner approval and runtime evidence.
 - **Stage completion means the inventory and PR-review-state audit is finished, NOT that fixes were approved, merged, tested in Production or deployed.**
+
+## Scope correction — Non-Persist only (user-confirmed 2026-10-09)
+
+**Product/operational scope supplied by PO:** Async currently uses **Non-Persist only**. This is a PO-provided scope statement, **not** independently verified deployed feature-flag/configuration evidence.
+
+- **Reprioritize** Async-Source Issue #1 and PR #7: the cumulative task-count defect remains a valid source-level finding in the Persist path, but it is **NOT an established P0 operational risk in the stated Non-Persist scope**. Track as **out-of-current-scope / conditional future Persist risk**, not as a confirmed production incident. Do not close the existing issue or merge PR #7 automatically.
+- **Active Observability focus:** message path stages and loss/failure visibility in Non-Persist, send vs ACK semantics, retries, timeout, broker/queue, HTTP/ServiceCall, correlation, Jetty and security logging. Reassess priority with TL/SRE using deployed routing and metrics.
+- **Validation gate:** confirm runtime settings, actual call-chain reachability, deployment SHA and cluster applicability before asserting the Persist code path is unreachable; if Persist is enabled anywhere, reassess severity.
+- **Supersedes prioritization statements elsewhere** in this living control center that call Issue #1 the immediate P0 operational priority. Historical findings and source evidence remain unchanged.
