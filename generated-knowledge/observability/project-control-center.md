@@ -44,6 +44,15 @@ last_validated_commit: 781e6c4c61706a798883818982f72fb8fa53a661
 - **[Security Investigation #10 — TLS validation](https://github.com/eabbasiyan-maker/Async-Source/issues/10):** TrustManager با Validation خالی و NoopHostnameVerifier در ServiceCallProxy مشاهده شد. این یک ریسک قابل بررسی از سورس است؛ وضعیت Deploy واقعی UNKNOWN و فعال‌کردن اعتبارسنجی صحیح بدون آماده‌سازی Truststore ممکن است اتصال موجود را مختل کند.
 - **وضعیت عملیاتی:** هیچ‌یک از PRهای سورسی #7، #8، #9 یا #11 Merge/Deploy نشده و هیچ تست Integration/Production PASS ادعا نشده است. همه Issueها بازند و تکمیل پروژه همچنان به شواهد Runtime، تصمیم Backpressure و QC واقعی Agent وابسته است.
 
+
+## پیشرفت تکمیلی — Log Diagnostics v2 و تصحیح شمارش Source
+
+- **[CLI تحلیل لاگ‌ها](tools/async-log-diagnose-README.md):** ابزار Python فقط‌خواندنی، دو نمونه JSONL Async را به شمارش‌های تجمیعی و Correlation زمان‌مند تبدیل می‌کند؛ هیچ IP، شناسه، متن Payload یا Raw Message در خروجی ذخیره نمی‌کند. هر نتیجه `SAMPLE_ONLY` است، نه RCA یا حکم Production.
+- **[۸ آزمون Privacy/Correlation](tools/test_async_log_diagnose.py):** 8/8 PASS (Synthetic fixtures) شامل تکرار TrackerId در Nodeهای مختلف و زمان‌های دور، عدم Reuse یک Status 408 برای دو Timeout، خطای JSON و نشت ندادن اطلاعات خام.
+- **[Historical Aggregate v2](tools/historical-aggregate-v2.json):** بازاجرای نمونه‌های ۱۸ اوت: ۱۵٬۵۹۲ JSON + ۱۷٬۰۷۲ Text، ۶٬۶۸۵ جفت Send Attempt، ۲۸ Join معتبر 408/Timeout، و ۴٬۰۳۲ رویداد EmbeddedBroker. این Snapshot قدیمی کامل‌کننده وضعیت جاری نیست.
+- **تصحیح Evidence:** فراخوانی‌های واقعی `MessageCRUD.createAsyncActiveMessage` برابر **۷ مورد** در Source Snapshot هستند (Server: 3، MessageManager: 2، AsyncProducer: 2). تعریف متد در شمارش هشت‌تایی قبلی اشتباهاً لحاظ شده بود. [ADR اصلاح‌شده](adr-async-db-persistence-overload.md).
+- **مرز QC:** آزمون‌های بالا روی **ابزار تحلیل محلی** اجرا شده‌اند، نه روی Agent واقعی، Kibana یا Production. Issueهای Runtime و Agent همچنان باز هستند.
+
 ## Backlog اجرایی در GitHub
 
 ### مهندسی — ریپوی Async-Source

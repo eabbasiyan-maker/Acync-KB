@@ -22,7 +22,7 @@ last_validated_commit: 781e6c4c61706a798883818982f72fb8fa53a661
 - `getTaskCount` مجموع تقریبی Taskهای برنامه‌ریزی‌شده از آغاز عمر Executor است، نه Queue Size. طبق [Java Javadoc](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/concurrent/ThreadPoolExecutor.html#getTaskCount()) این مقدار تجمعی است.
 - در تست ایزوله روی **کلاس واقعی** `MessageCRUD.java` و Stubهای DB، بعد از بیش از Threshold Task تکمیل‌شده با صف خالی، سه درخواست جدید اجرا نشدند. [PR #7](https://github.com/eabbasiyan-maker/Async-Source/pull/7) یک **اصلاح محدود کاندید** ارائه کرده و روی همان تست، Taskها مجدداً ارسال شدند.
 - **مهم:** `newFixedThreadPool` به‌طور پیش‌فرض صف نامحدود دارد؛ صرف بررسی `getQueue().size()` روش صحیح کنترل ظرفیت همزمان/دائمی نیست و زیر فشار واقعی همچنان ممکن است Task بدون نتیجه قابل پیگیری کنار گذاشته شود.
-- `createAsyncActiveMessage` در **هشت نقطه فراخوانی** داخل `MessageManager`، `Server` و `AsyncProducer` استفاده می‌شود؛ از جمله مسیر گیرنده Offline و مسیر جبران خطای JMS. اثر Runtime بر پیام‌ها هنوز بررسی نشده است.
+- `createAsyncActiveMessage` در **هفت نقطه فراخوانی** داخل `MessageManager`، `Server` و `AsyncProducer` استفاده می‌شود؛ (۳ مورد در `Server.java`، ۲ مورد در `MessageManager.java` و ۲ مورد در `AsyncProducer.java`)؛ از جمله مسیر گیرنده Offline و مسیر جبران خطای JMS. شمارش هشت‌تایی قبلی، تعریف خود متد را هم حساب کرده بود. اثر Runtime بر پیام‌ها هنوز بررسی نشده است.
 
 ## تصمیم موردنیاز مالک فنی
 
