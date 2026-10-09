@@ -170,3 +170,10 @@ documents:
     domain: observability-pm
     trust: candidate
     evidence: "Evidence-linked PM status as of 2026-10-09, including merged PRs, GitHub work items, 17/17 offline tests and unresolved operational/agent validation gates; no background execution is implied."
+
+  - id: async-observability-persistence-backpressure-adr
+    path: generated-knowledge/observability/adr-async-db-persistence-overload.md
+    type: decision-proposal
+    domain: observability-persistence
+    trust: candidate
+    evidence: "Source-confirmed cumulative getTaskCount bug reproduced with actual MessageCRUD and isolated stubs, narrow candidate PR #7, detailed unapproved choices for durable persistence, bounded queue, rejection, retries and QA matrix; not runtime-confirmed."
