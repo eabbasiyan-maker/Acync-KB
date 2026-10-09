@@ -177,3 +177,10 @@ documents:
     domain: observability-persistence
     trust: candidate
     evidence: "Source-confirmed cumulative getTaskCount bug reproduced with actual MessageCRUD and isolated stubs, narrow candidate PR #7, detailed unapproved choices for durable persistence, bounded queue, rejection, retries and QA matrix; not runtime-confirmed."
+
+  - id: async-observability-offline-diagnostic-v2
+    path: generated-knowledge/observability/tools/async-log-diagnose-README.md
+    type: procedure
+    domain: observability-diagnostics
+    trust: candidate
+    evidence: "Read-only privacy-preserving two-JSONL diagnostics CLI and 8 synthetic regression tests PASS; historical 2026-08-18 aggregate reproduced; no current production, Kibana, or Agent runtime validation."
