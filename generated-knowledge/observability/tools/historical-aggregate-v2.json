@@ -1,0 +1,83 @@
+{
+  "classification": "SAMPLE_ONLY_NOT_CURRENT_PRODUCTION_STATUS",
+  "reliability": "STATIC_LOG_SAMPLE_NO_CAUSAL_OR_DELIVERY_GUARANTEE",
+  "inputs": {
+    "structured": {
+      "records": 15592,
+      "sha256": "1dea172af21e2743026b5a797f2834b16c460724412fb7a89fdfcc1d22091c74",
+      "host_count": 1,
+      "start_utc": "2026-08-18T08:09:29.911297+00:00",
+      "end_utc": "2026-08-18T08:30:04.962157+00:00"
+    },
+    "textual": {
+      "records": 17072,
+      "sha256": "c1615ffba8c244a237459e1cb86733ef4e7de011a10e40daab16700d354af9e5",
+      "host_count": 1,
+      "start_utc": "2026-08-18T08:23:34.309215+00:00",
+      "end_utc": "2026-08-18T08:29:26.327024+00:00"
+    }
+  },
+  "shared_time_window_exists": true,
+  "types": {
+    "AfterSendLog": 6686,
+    "BeforeSendLog": 6685,
+    "ServiceTimeLog": 2221
+  },
+  "text_levels": {
+    "INFO": 16579,
+    "WARN": 312,
+    "ERROR": 181
+  },
+  "http_status": {
+    "200": 1947,
+    "408": 150,
+    "500": 56,
+    "301": 14,
+    "401": 46,
+    "404": 6,
+    "201": 1,
+    "400": 1
+  },
+  "send_pairing": {
+    "matching_keys_count": 6685,
+    "unmatched_before_count": 0,
+    "unmatched_after_count": 1,
+    "warning": "Same-key pairs are send-call attempts, not ACK; temporal ordering not established."
+  },
+  "timeout_join": {
+    "text_timeout_events": 28,
+    "eligible_with_key_and_time": 28,
+    "joined_408_by_host_tracker_time": 28,
+    "max_lag_seconds": 120.0,
+    "unmatched_or_unusable": 0
+  },
+  "signatures": {
+    "oracle_addClient_ora00001": 100,
+    "invalid_queue_name": 118,
+    "swagger_related_text": 48,
+    "db_cumulative_gate_log": 0,
+    "historical_embedded_broker_class_events": 4032
+  },
+  "data_quality": {
+    "negative_after_send_time": 726,
+    "negative_service_client_time": 569,
+    "service_with_message_preview": 2072,
+    "send_missing_correlation_key": 0,
+    "non_object_structured_message": 0,
+    "timeout_missing_tracker_or_time": 0
+  },
+  "latency_patterns": {
+    "http408_near_120s": 146,
+    "http500_near_30s": 49
+  },
+  "privacy": "Only aggregate counts and input hashes. No identifiers, addresses, payloads, raw log lines or preview content are emitted.",
+  "unknowns": [
+    "deployed_version",
+    "effective_logger_config",
+    "kibana_ingestion",
+    "zabbix_metrics",
+    "business_impact",
+    "end_to_end_ACK",
+    "root_cause"
+  ]
+}
