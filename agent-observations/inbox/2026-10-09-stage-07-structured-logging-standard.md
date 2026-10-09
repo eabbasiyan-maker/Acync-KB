@@ -12,7 +12,7 @@ last_validated_commit: 781e6c4c61706a798883818982f72fb8fa53a661
 
 # Stage 7/27 — Proposed Logging & Structured Log Standard for Async (Non-Persist)
 
-**Status: CANDIDATE / FOR TL + SRE + Security + QA APPROVAL.** This is a proposed contract, **not** a claim that current Async logs already comply. Deployed revision, Kibana field mapping, logger levels and actual ingestion are UNKNOWN. Current product scope is **Non-Persist only** (PO decision 2026-10-09; deployment configuration not independently verified).
+**Status: SUPERSEDED AS IMPLEMENTATION PLAN; READ-ONLY INTERPRETATION SCOPE ACTIVE.** This is a proposed contract, **not** a claim that current Async logs already comply. Deployed revision, Kibana field mapping, logger levels and actual ingestion are UNKNOWN. Current product scope is **Non-Persist only** (PO decision 2026-10-09; deployment configuration not independently verified).
 
 ## 1. Evidence from source (existing behavior)
 
