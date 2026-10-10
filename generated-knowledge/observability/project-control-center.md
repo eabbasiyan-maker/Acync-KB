@@ -151,3 +151,13 @@ last_validated_commit: 781e6c4c61706a798883818982f72fb8fa53a661
 - روش بررسی آلارم ارائه‌شده توسط کاربر بدون اتصال مستقیم به سامانه مانیتورینگ، در همان `incident-investigation-playbooks.md` تکمیل شد.
 - **مرز:** تمام این یافته‌ها Candidate و وابسته به Source SHA هستند؛ هیچ Runtime PASS، Incident RCA، Agent QC PASS یا Trusted Promotion اعلام نمی‌شود.
 - **مرحله بعد:** اجرای QC موجود روی Chat و Agent و اصلاح خطاهای مشاهده‌شده؛ تا آن زمان مرحله ۳ باز است.
+
+
+### مرحله ۳ از ۳ — گزارش کنترل 2026-10-10
+
+- کنترل ایستای سازگاری اسناد: **7/7 PASS**؛ جزئیات و محدودیت‌ها در `agent-qc-cases.md`.
+- **QC رفتاری ChatGPT: NOT RUN** (هیچ پاسخ Actual به‌عنوان Fixture مستقل ثبت نشده).
+- **QC رفتاری Analyst Agent: BLOCKED** (دسترسی اجرای واقعی n8n/Agent وجود ندارد).
+- **برابری Retrieval نسخه GitHub میان ChatGPT و Agent: UNKNOWN**؛ هر دو باید Commit مصرف‌شده را گزارش دهند.
+- **Review/Merge و تأیید مالک: PENDING**؛ نتیجه پروژه `PARTIAL / NOT RELEASE-READY` است، نه 3/3 PASS.
+- برای خاتمه: فقط ۱۵ کیس موجود را با دو مصرف‌کننده و همان Commit اجرا، نتایج Actual/Expected را ثبت، مغایرت‌ها را در مرجع مالک اصلاح و موارد FAIL را دوباره تست کنید. اتصال مستقیم Kibana/Zabbix نیاز نیست.
