@@ -1,0 +1,101 @@
+{
+  "snapshot_document_count": 25,
+  "workflow": "v0.18.1_export_simulated_not_live",
+  "baseline_cases_containing_all_expected": 1,
+  "proposed_cases_containing_all_expected": 4,
+  "negative_tests_passed": 2,
+  "cases": [
+    {
+      "case": 1,
+      "question": "BeforeSend و AfterSend آیا ACK نهایی را اثبات می‌کند؟",
+      "expected": [
+        "async-observability-source-semantics",
+        "async-message-delivery-flow"
+      ],
+      "baseline_selected": [
+        "async-human-knowledge-backlog",
+        "async-observability-persistence-backpressure-adr"
+      ],
+      "baseline_fallback": false,
+      "baseline_all_expected": false,
+      "proposed_selected": [
+        "async-message-delivery-flow",
+        "async-observability-source-semantics"
+      ],
+      "proposed_topics": [
+        "message-ack"
+      ],
+      "proposed_all_expected": true
+    },
+    {
+      "case": 2,
+      "question": "در لاگ‌های قدیمی، همه Status 408ها قطعاً Listener Timeout بوده‌اند؟",
+      "expected": [
+        "async-observability-historical-2026-08-18",
+        "async-observability-correlation-contract"
+      ],
+      "baseline_selected": [
+        "async-overview",
+        "async-system-architecture",
+        "async-http-mediation-boundary",
+        "async-startup-flow"
+      ],
+      "baseline_fallback": true,
+      "baseline_all_expected": false,
+      "proposed_selected": [
+        "async-observability-historical-2026-08-18",
+        "async-observability-correlation-contract"
+      ],
+      "proposed_topics": [
+        "http-timeout"
+      ],
+      "proposed_all_expected": true
+    },
+    {
+      "case": 3,
+      "question": "برای Invalid Queue Name چه مسیر بررسی و محدودیت نسخه سورس داریم؟",
+      "expected": [
+        "async-observability-investigation-playbooks",
+        "async-observability-historical-2026-08-18"
+      ],
+      "baseline_selected": [
+        "async-overview",
+        "async-system-architecture",
+        "async-http-mediation-boundary",
+        "async-startup-flow"
+      ],
+      "baseline_fallback": true,
+      "baseline_all_expected": false,
+      "proposed_selected": [
+        "async-observability-historical-2026-08-18",
+        "async-observability-investigation-playbooks"
+      ],
+      "proposed_topics": [
+        "broker-invalid"
+      ],
+      "proposed_all_expected": true
+    },
+    {
+      "case": 4,
+      "question": "۱۵ معیار QC Agent کجا ثبت شده‌اند؟",
+      "expected": [
+        "async-observability-agent-qc-cases"
+      ],
+      "baseline_selected": [
+        "async-observability-agent-qc-cases"
+      ],
+      "baseline_fallback": false,
+      "baseline_all_expected": true,
+      "proposed_selected": [
+        "async-observability-agent-qc-cases"
+      ],
+      "proposed_topics": [],
+      "proposed_all_expected": true
+    }
+  ],
+  "notes": [
+    "This is a Python port of the export's metadata-only selection, not execution of n8n JS.",
+    "Proposed topic-index strategy requires review, workflow version identification, integration regression and actual n8n smoke tests.",
+    "Fallback documents are not evidence by themselves."
+  ]
+}
