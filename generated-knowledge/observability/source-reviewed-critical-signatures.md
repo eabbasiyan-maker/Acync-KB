@@ -63,3 +63,26 @@ The historical textual sample contains **4,032 events** whose `source.class` is 
 ## Review status
 
 Source-local conditions listed above were manually inspected in the archive. Full caller chain, deployment feature flag, log shipping and release parity remain unresolved. The complete remaining registry keeps exact trigger/cause UNKNOWN until source-level or runtime validation. For every case: absent log in the old 6/20-minute samples ≠ absent code risk.
+
+## Source-confirmed alert signatures — targeted gap fill (2026-10-10)
+
+### Internal Message Sender ThreadPool is almost full
+
+- **Exact source:** `src/com/nozha/async/server/activemq/local/AsyncInternalMessageSender.java` at source SHA `781e6c4c61706a798883818982f72fb8fa53a661`; `sendMessage()` submits `Server.MessageSender` to `Executors.newFixedThreadPool(Settings.ASYNC_INTERNAL_THREAD_POOL_SIZE)`.
+- **Emission:** after submit, if `executorService.getActiveCount() >= Settings.ASYNC_INTERNAL_THREAD_POOL_SIZE * Settings.INTERNAL_MESSAGE_THREAD_MAX_USAGE / 100`, emits ERROR `Internal Message Sender ThreadPool is almost full. ActiveThreadCount={} ,MaximumPoolSize={}, usage={}%`.
+- **Interpretation:** active worker utilization threshold, **not** direct evidence of queued tasks, delivery failure, dropped messages or queue size. The fixed-thread-pool factory uses an unbounded task queue, so queued work may accumulate, but runtime queue depth is UNKNOWN without metrics.
+- **Incident example, unverified:** Zabbix `Last Value: 1084` (2026-10-09) has unknown item key, unit and aggregation; **do not** interpret 1084 as active thread count without raw emitted fields and effective runtime settings. Check item/trigger definition, raw `ActiveThreadCount/MaximumPoolSize/usage`, queue size, latency and error correlation.
+
+### service is blocked for providerName
+
+- **Exact source:** `src/com/nozha/async/server/ratelimit/RateLimitService.java`, `checkBlockAndWatchService(...)`, lines 130–145 at the same SHA.
+- **Emission:** when `endpointConfigMap` has the provider/path key and `endpointConfig.isBlock()` is true, WARN `service is blocked for providerName:{} , uri: {}` is emitted. It calls `endpointConfig.decrementAndCheckUnblock()`, possibly updates config, and throws `MediationException` with code **429**. This is **service/path-level block**.
+- **Separate behavior:** if `isProviderBlocked(...)` is true, the earlier branch throws code **451** for **provider-level block** without emitting this exact service-block warning in that branch. Do not conflate these paths.
+- **Incident example, unverified:** Zabbix `Last Value: 3` (2026-10-09) cannot be interpreted as number of providers/services or rejected requests without the Zabbix item definition and matching raw log. Source signature is confirmed, but whether the alert originates from this deployment and its actual impact are UNKNOWN.
+
+### Host swap free below 10%
+
+- **Scope:** host/OS-level Zabbix warning, **not** a source-confirmed Async application log signature in the reviewed inventory. A sample `9.15%` free implies `90.85%` used at that observation, but not necessarily active swapping or Async degradation.
+- **Evidence needed:** host-to-process/cluster mapping, swap-in/out (`vmstat`), memory/GC and time-correlated Async service metrics. Do not infer causal connection to ThreadPool or provider-block alerts just because they share a date or host.
+
+**Evidence boundary:** These source facts apply to the reviewed source SHA only. The three user-provided alerts are incident examples, not promoted trusted claims or verified Production RCA. Do not store raw identifiers, IPs or payloads in KB.
