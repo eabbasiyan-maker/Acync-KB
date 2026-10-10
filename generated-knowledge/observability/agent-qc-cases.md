@@ -46,3 +46,20 @@ sensitivity: internal
 - Aggregate-only historical validation report. Raw logs only in approved, controlled local environment; don't commit sample lines with identifiers or payloads.
 - Source trace and callsite registry in `generated-knowledge/observability/`.
 - Synthetic edge cases (constructed by QA with explicit ground truth), not confused with observed runtime.
+
+## Phase 3 QC execution record — 2026-10-10
+
+**Scope:** read-only GitHub KB static consistency check of the phase 1 + phase 2 review branch. This is **NOT** an execution of QC-01 through QC-15 against ChatGPT or the n8n Analyst Agent. No live Agent endpoint, workflow execution or Retrieval run was available in this session. Production evidence was not accessed.
+
+**Static checks — 7/7 PASS (document inspection only):**
+1. All 15 existing QC case IDs QC-01 through QC-15 remain present.
+2. Source-reviewed ThreadPool entry references active worker count rather than queue depth.
+3. Service-level block 429 is distinguished from provider-level block 451.
+4. Swap alert is classified as host/OS evidence, not an Async application log.
+5. Existing incident playbooks include a user-provided alert workflow (Playbook 8).
+6. Project control center states direct Kibana/Zabbix connection is not required for KB consumption.
+7. QC file explicitly states real Agent execution is not done.
+
+**Behavioral execution:** QC-01..QC-15 = **NOT RUN** against ChatGPT as an independently captured test run; QC-01..QC-15 = **BLOCKED** against n8n Analyst Agent (no executable Agent access). **Retrieval consistency between ChatGPT and Agent = UNKNOWN**. **Human owner approval = PENDING**. Static checks cannot be promoted into behavioral PASS.
+
+**Minimum completion action:** run the **existing** QC-01..QC-15 against the real Agent and a controlled ChatGPT run, recording for each: KB commit SHA, question, sanitized actual answer, expected criteria, PASS/FAIL, source citations, and reviewer. Verify that both actually retrieved the same KB version; compare discrepancies, fix only the owning KB document, then re-run failures. Do not create a parallel test suite or connect directly to Kibana/Zabbix.
