@@ -58,7 +58,7 @@ Each file below is the entire proposed candidate content; no data from `generate
 ### `SKILL.md`
 SHA-256: `71818aa43b7ef4b55e574e1b38920c3ad241e0303ee0889655ccea3d7ce8c38d`
 
-```markdown
+````markdown
 ---
 name: async-knowledge
 description: "Use for evidence-grounded questions, source-code tracing, incident RCA, service behavior, contracts, architecture and controlled knowledge-update proposals about the Async communication platform. Consult the canonical Acync-KB catalog and validated claims rather than guessing or relying on memory. Works independently of n8n."
@@ -109,12 +109,12 @@ Read `references/governance-and-readiness.md` before a high-impact answer or upd
 
 ## Cross-runtime behavior
 In ChatGPT, use connected GitHub/Project Files if available; in a coding assistant use its permitted repository reader; in n8n, the same contract can be implemented as nodes. **n8n is optional**. If network/repository access is absent, ask for an authorized KB checkout or linked file and report `BLOCKED` for ungrounded facts; do not answer from unverified memory.
-```
+````
 
 ### `references/knowledge-map.md`
 SHA-256: `4aba229c7fe980f36f0b1820825fcee375a7966da72204492d8b1201e605d596`
 
-```markdown
+````markdown
 # Navigation map — pointers, not copied knowledge
 
 Canonical repository: `https://github.com/eabbasiyan-maker/Acync-KB`. Always reload its `async-knowledge-catalog.yaml` for the complete CURRENT document set; IDs and paths below are hints based on the 2026-10-10 catalog, not a second authoritative index.
@@ -135,12 +135,12 @@ Canonical repository: `https://github.com/eabbasiyan-maker/Acync-KB`. Always rel
 | Production evidence dependencies | `async-observability-runtime-validation-handoffs`, `async-observability-project-control-center` |
 
 **Retrieval rule:** Use IDs first, then read content. Do not select a document solely because a query substring matches unrelated filenames (`ack` inside `backpressure` / `backlog`). For missing content, return no-evidence/unknown instead of silently selecting arbitrary fallback documents. All repository paths are subject to access rules and their source-version limitations.
-```
+````
 
 ### `references/governance-and-readiness.md`
 SHA-256: `b0b02f713ab2be64921e7dbf381905093453c160eda2ac85472a42e55b07a26d`
 
-```markdown
+````markdown
 # Governance and readiness — operational notes for the portable skill
 
 Based on user-provided *Enterprise Agent Knowledge Architecture v1.5* (FROZEN / approved for pilot). These are directions to a consuming host, not technical evidence that it enforces them.
@@ -168,12 +168,12 @@ context_manifest:
   readiness: escalate
   reasons: ["Receiver-side ACK evidence unavailable"]
 ```
-```
+````
 
 ### `references/evaluation.md`
 SHA-256: `e3529e7777cffc28a83821d0133eb4602a274854f9cfb34cc4488b3d4c3a533a`
 
-```markdown
+````markdown
 # Skill acceptance and evaluation plan
 
 **This file defines tests. It does not claim tests of any consuming LLM/ChatGPT/n8n have passed.**
@@ -196,12 +196,12 @@ SHA-256: `e3529e7777cffc28a83821d0133eb4602a274854f9cfb34cc4488b3d4c3a533a`
 
 ## Scoring
 For each tested assistant/runtime record: input, exact KB commit, selected doc IDs, actual answer, expected checks, evidence quality, privacy, and PASS/FAIL/BLOCKED. Do not claim a universal or production-ready Skill from formatting checks alone.
-```
+````
 
 ### `scripts/validate_skill.py`
 SHA-256: `8f56401ffa27e147a88f19c4e4d0c03874bb9633db867b13633ac6aec69c435a`
 
-```python
+````python
 #!/usr/bin/env python3
 """Zero-dependency static validation for a candidate Agent Skill folder.
 
@@ -256,12 +256,12 @@ def main():
 
 if __name__ == '__main__':
     raise SystemExit(main())
-```
+````
 
 ### `scripts/check_kb_checkout.py`
 SHA-256: `58d0b5b6dcef0a688a4ffa9e1d7d378364c070e89e734fe6b7131b04d04f113e`
 
-```python
+````python
 #!/usr/bin/env python3
 """Check a *local permitted checkout* of Acync-KB, no dependency beyond Python.
 
@@ -343,12 +343,12 @@ def main() -> int:
 
 if __name__ == '__main__':
     raise SystemExit(main())
-```
+````
 
 ### `scripts/test_validators.py`
 SHA-256: `001fb4ae333bf756b4f15065cdc6fb6c26f3a6c591419b0d0624748cf0e94b2a`
 
-```python
+````python
 #!/usr/bin/env python3
 """Synthetic-only regression tests for candidate Skill static validators."""
 from __future__ import annotations
@@ -409,4 +409,4 @@ class KbStructureTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
-```
+````
