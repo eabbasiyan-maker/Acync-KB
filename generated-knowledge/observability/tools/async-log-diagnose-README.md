@@ -1,3 +1,14 @@
+---
+doc_class: procedure
+trust_level: untrusted-content
+lifecycle: living
+confidence: medium
+verification: offline-diagnostic-test-only
+truth_type: operational
+owner: REQUIRES_HUMAN_VALIDATION
+sensitivity: internal
+---
+
 # Async Observability — Safe Sample Log Diagnostics v2
 
 **Status:** Candidate tool for source/historical evidence review, not production-validated, not a log shipper or incident triage authority. Reads only local files. Standard-library Python 3.9+.
