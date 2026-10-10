@@ -11,7 +11,7 @@ sensitivity: internal
 
 # Async Observability — Runtime validation checklist and team handoffs
 
-**State:** This list identifies the *minimum unresolved external inputs* to finish operational validation. The current run has no direct live Kibana/Zabbix or deployed server access. Historical log analysis is not a substitute. No production remediation has been executed.
+**State / scope (2026-10-10):** This checklist is an OPTIONAL handoff for validating claims about deployed runtime and production incidents, NOT a prerequisite for GitHub KB retrieval or evidence-based analysis in ChatGPT/Analyst Agent. Direct Kibana/Zabbix connectivity is not required: operators may provide sanitized, attributable evidence. Without it, runtime conclusions remain UNKNOWN. No production remediation has been executed. Current PO scope is Non-Persist; Persist findings remain conditional backlog.
 
 ## Work package R1 — Production logging inventory / SRE / Operations
 
