@@ -132,3 +132,16 @@ evidence_refs: []
 - **محدودیت دانش:** `mvp/validated-claims.yaml` و بررسی Human Owner
 
 این Playbookها Reference برای تحلیل‌اند، نه حکم قطعی درباره وجود مشکل و نه اجازه تغییر خودکار Production.
+
+
+## Playbook 8 — Zabbix alert interpretation without direct Kibana/Zabbix access
+
+**Input:** redacted alert text, timestamp/timezone, host or logical service, exact trigger name, Last Value **with item key, unit, aggregation**, and optionally sanitized raw application log. Direct monitoring-system access is **not** required; missing inputs remain UNKNOWN.
+
+1. **Match source signature:** consult `source-reviewed-critical-signatures.md`; separate exact source match from mere similarity. Verify source SHA vs deployed version if available.
+2. **Classify layer:** host OS (swap), Async active-thread utilization (Internal Message Sender ThreadPool), or provider/path service block (`service is blocked for providerName`). Do not infer one from another.
+3. **Disambiguate value:** never interpret Zabbix Last Value as thread count, provider count or incident count without the item key, unit, sampling and trigger expression.
+4. **Find discriminating evidence:** swap → swap-in/out, JVM memory/GC, host mapping; ThreadPool → emitted active/max/usage, queue depth, latency/timeouts; service block → provider/path, endpoint config state, 429 response and unblock behavior, and separate 451 provider-block route.
+5. **Output:** `FACT_FROM_SOURCE`, `OBSERVED_FROM_USER_ALERT`, `HYPOTHESIS`, `UNKNOWN`, next verification. Do not assert production root cause, cross-alert causality, or message loss without evidence.
+
+**Scope:** read-only investigation, Non-Persist first. Alert examples are not automatically added to `mvp/validated-claims.yaml`.
