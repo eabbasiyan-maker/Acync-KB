@@ -1,0 +1,126 @@
+documents:
+  - id: async-overview
+    path: generated-knowledge/overview.md
+    type: overview
+    domain: messaging
+    trust: candidate
+  - id: async-system-architecture
+    path: generated-knowledge/architecture/system-architecture.md
+    type: architecture
+    domain: messaging
+    trust: candidate
+  - id: async-http-mediation-boundary
+    path: generated-knowledge/architecture/http-mediation-and-integration-boundary.md
+    type: architecture
+    domain: integration
+    trust: candidate
+  - id: async-startup-flow
+    path: generated-knowledge/flows/startup-flow.md
+    type: flow
+    domain: runtime
+    trust: candidate
+  - id: async-message-delivery-flow
+    path: generated-knowledge/flows/message-delivery-flow.md
+    type: flow
+    domain: messaging
+    trust: candidate
+  - id: async-interface-inventory
+    path: generated-knowledge/contracts/interface-inventory.md
+    type: contract
+    domain: interfaces
+    trust: candidate
+  - id: async-runtime-and-integrations
+    path: generated-knowledge/operations/runtime-and-integrations.md
+    type: operations
+    domain: runtime
+    trust: candidate
+  - id: async-security-implementation
+    path: generated-knowledge/security/security-implementation.md
+    type: security
+    domain: security
+    trust: candidate
+  - id: async-knowledge-gaps
+    path: generated-knowledge/gaps/knowledge-gaps.md
+    type: gap
+    domain: knowledge-governance
+    trust: candidate
+  - id: async-human-knowledge-backlog
+    path: generated-knowledge/gaps/human-knowledge-backlog.md
+    type: gap
+    domain: knowledge-governance
+    trust: candidate
+  - id: asyncmanager-rate-limit-manager
+    path: generated-knowledge/operations/rate-limit-manager.md
+    type: operations
+    domain: rate-limit-control
+    trust: candidate
+  - id: async-observability-source-semantics
+    path: generated-knowledge/observability/source-logging-semantics.md
+    type: operations
+    domain: observability-source
+    trust: candidate
+  - id: async-observability-historical-2026-08-18
+    path: generated-knowledge/observability/historical-runtime-evidence-2026-08-18.md
+    type: observation
+    domain: observability-historical
+    trust: candidate
+  - id: async-observability-investigation-playbooks
+    path: generated-knowledge/observability/incident-investigation-playbooks.md
+    type: procedure
+    domain: observability-investigation
+    trust: candidate
+  - id: async-observability-log-point-registry-v1
+    path: generated-knowledge/observability/registry-v1/registry-index.md
+    type: operations
+    domain: observability-registry
+    trust: candidate
+  - id: async-observability-gap-report-v1
+    path: generated-knowledge/observability/observability-gap-report-v1.md
+    type: gap
+    domain: observability-gap
+    trust: candidate
+  - id: async-observability-critical-source-traces
+    path: generated-knowledge/observability/source-reviewed-critical-signatures.md
+    type: operations
+    domain: observability-source
+    trust: candidate
+  - id: async-observability-correlation-contract
+    path: generated-knowledge/observability/correlation-and-data-contract.md
+    type: operations
+    domain: observability-correlation
+    trust: candidate
+  - id: async-observability-runtime-validation-handoffs
+    path: generated-knowledge/observability/runtime-validation-handoffs.md
+    type: procedure
+    domain: observability-operations
+    trust: candidate
+  - id: async-observability-agent-qc-cases
+    path: generated-knowledge/observability/agent-qc-cases.md
+    type: procedure
+    domain: observability-qc
+    trust: candidate
+  - id: async-observability-pm-delivery-board
+    path: generated-knowledge/observability/delivery-board.md
+    type: operations
+    domain: observability-delivery
+    trust: candidate
+  - id: async-observability-historical-qa-results
+    path: generated-knowledge/observability/historical-qa-results.md
+    type: observation
+    domain: observability-historical
+    trust: candidate
+  - id: async-observability-project-control-center
+    path: generated-knowledge/observability/project-control-center.md
+    type: operations
+    domain: observability-pm
+    trust: candidate
+  - id: async-observability-persistence-backpressure-adr
+    path: generated-knowledge/observability/adr-async-db-persistence-overload.md
+    type: decision-proposal
+    domain: observability-persistence
+    trust: candidate
+  - id: async-observability-offline-diagnostic-v2
+    path: generated-knowledge/observability/tools/async-log-diagnose-README.md
+    type: procedure
+    domain: observability-diagnostics
+    trust: candidate
