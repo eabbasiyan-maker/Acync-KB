@@ -113,3 +113,21 @@ last_validated_commit: 781e6c4c61706a798883818982f72fb8fa53a661
 - **Active Observability focus:** message path stages and loss/failure visibility in Non-Persist, send vs ACK semantics, retries, timeout, broker/queue, HTTP/ServiceCall, correlation, Jetty and security logging. Reassess priority with TL/SRE using deployed routing and metrics.
 - **Validation gate:** confirm runtime settings, actual call-chain reachability, deployment SHA and cluster applicability before asserting the Persist code path is unreachable; if Persist is enabled anywhere, reassess severity.
 - **Supersedes prioritization statements elsewhere** in this living control center that call Issue #1 the immediate P0 operational priority. Historical findings and source evidence remain unchanged.
+
+## تصمیم محدوده پروژه — 2026-10-10 (مرحله ۱ از ۳)
+
+**هدف:** یک GitHub KB مشترک برای استفاده در ChatGPT و Analyst Agent از طریق Retrieval؛ بدون الزام به اتصال مستقیم ChatGPT/Agent به Kibana یا Zabbix. شواهد Runtime که تیم ارائه می‌کند همچنان برای ادعای وضعیت Production لازم است؛ نبود اتصال مستقیم به معنی تأیید وضعیت اجرا نیست.
+
+**مرجع هر نوع دانش (بدون کپی موازی):**
+- Claimهای تأییدشده انسانی و Known Gap: `mvp/validated-claims.yaml`؛ ارتقای خودکار ممنوع.
+- فهرست اسناد قابل بازیابی: `async-knowledge-catalog.yaml`؛ Catalog مرجع محتوایی نیست.
+- معنی لاگ از سورس: `source-logging-semantics.md` و برای Triggerهای حیاتی `source-reviewed-critical-signatures.md`؛ جزئیات دقیق باید به سورس ارجاع دهند.
+- نمونه‌های تاریخی: `historical-runtime-evidence-2026-08-18.md`؛ نه وضعیت امروز.
+- روش تحلیل: `incident-investigation-playbooks.md` و `correlation-and-data-contract.md`؛ این‌ها Fact اجرایی Production نیستند.
+- وضعیت پروژه: همین صفحه؛ گزارش‌های قبلی تاریخچه‌اند و نباید Exit Gate فعلی تلقی شوند.
+
+**اصلاح تقدم:** بخش‌های قدیمی همین صفحه که Kibana/Zabbix direct access را گلوگاه پروژه یا Persist را P0 فعلی معرفی می‌کنند، برای هدف کنونی superseded هستند. Runtime evidence و Agent QC هنوز برای ادعاهای مربوط به اجرا لازم‌اند، اما مستقیم‌بودن اتصال شرط نیست. دامنه فعلی Non-Persist است؛ Persist فقط ریسک مشروط آینده است.
+
+**خروجی ممیزی مرحله ۱:** اسناد با نقش‌های متمایز حفظ شوند؛ هم‌پوشانی توضیحی میان Source Semantics و Critical Signatures به‌معنای دو منبع مستقل Truth نیست. سه آلارم 2026-10-09 هنوز فقط شواهد ارائه‌شده در چت‌اند و به Claim تأییدشده ارتقا نیافته‌اند. هیچ فایل تکراری، Issue یا Registry جدیدی برای آنها ساخته نشود تا مرحله ۲ بررسی Gap را انجام دهد.
+
+**مراحل بعد:** ۲) تکمیل فقط Gapهای اثبات‌شده در مراجع فعلی؛ ۳) QC با همان سناریوهای موجود برای Chat و Agent، بدون ادعای PASS برای Agent اجرا‌نشده.
