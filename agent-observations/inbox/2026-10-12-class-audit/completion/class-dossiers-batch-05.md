@@ -1,7 +1,9 @@
-# Async Java class dossiers — candidate batch 5
+# Async class dossiers — review batch 05
 
 
 ---
+
+### dossier-src-com-nozha-async-server-handler-httphandler
 
 <!-- source dossier: src/com/nozha/async/server/handler/HttpHandler.md -->
 
@@ -169,8 +171,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-handler-messagelistener
 
 <!-- source dossier: src/com/nozha/async/server/handler/MessageListener.md -->
 
@@ -259,8 +262,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-handler-mqtthandler
 
 <!-- source dossier: src/com/nozha/async/server/handler/MqttHandler.md -->
 
@@ -409,8 +413,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-handler-outboundpayload
 
 <!-- source dossier: src/com/nozha/async/server/handler/OutboundPayload.md -->
 
@@ -507,8 +512,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-handler-outboundpayloadfactory
 
 <!-- source dossier: src/com/nozha/async/server/handler/OutboundPayloadFactory.md -->
 
@@ -585,8 +591,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-handler-payload
 
 <!-- source dossier: src/com/nozha/async/server/handler/Payload.md -->
 
@@ -668,8 +675,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-handler-queuehandler
 
 <!-- source dossier: src/com/nozha/async/server/handler/QueueHandler.md -->
 
@@ -778,8 +786,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-handler-rawbytespayload
 
 <!-- source dossier: src/com/nozha/async/server/handler/RawBytesPayload.md -->
 
@@ -861,8 +870,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-handler-resthandler
 
 <!-- source dossier: src/com/nozha/async/server/handler/RestHandler.md -->
 
@@ -1028,8 +1038,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-handler-servicecallproxy
 
 <!-- source dossier: src/com/nozha/async/server/handler/ServiceCallProxy.md -->
 
@@ -1123,8 +1134,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-handler-tcphandler
 
 <!-- source dossier: src/com/nozha/async/server/handler/TcpHandler.md -->
 
@@ -1239,8 +1251,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-handler-webrtchandler
 
 <!-- source dossier: src/com/nozha/async/server/handler/WebrtcHandler.md -->
 
