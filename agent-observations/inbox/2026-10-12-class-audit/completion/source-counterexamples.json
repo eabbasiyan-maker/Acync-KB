@@ -1,0 +1,62 @@
+{
+  "checks": [
+    {
+      "id": "SQL-ORACLE-CLEANUP-PREDICATE",
+      "result": "PASS",
+      "selected_fixture_ids": [
+        101,
+        102,
+        104
+      ],
+      "meaning": "Positive valid sender includes unexpired rows in both server fixtures; missing sender also matches.",
+      "limit": "SQLite SELECT Boolean semantics only; no Oracle driver, deletion, scheduler or production execution."
+    },
+    {
+      "id": "ORACLE-COLLAPSE-BINDS",
+      "result": "PASS",
+      "placeholder_count": 6,
+      "bound_indexes": [
+        1,
+        2,
+        3,
+        4,
+        4,
+        5
+      ],
+      "unbound": [
+        6
+      ],
+      "meaning": "Static statement has overwritten index 4 and unset index 6.",
+      "limit": "No actual JDBC execution; specific driver error and deployed schema unknown."
+    },
+    {
+      "id": "MYSQL-COLLAPSE-BINDS",
+      "result": "PASS",
+      "placeholder_count": 6,
+      "bound_indexes": [
+        1,
+        2,
+        3,
+        4,
+        4,
+        5
+      ],
+      "unbound": [
+        6
+      ],
+      "meaning": "Static statement has overwritten index 4 and unset index 6.",
+      "limit": "No actual JDBC execution; specific driver error and deployed schema unknown."
+    },
+    {
+      "id": "LOG4J-APPENDER-REFERENCES",
+      "result": "PASS",
+      "undefined_refs": [
+        "ADDRESSLOG"
+      ],
+      "meaning": "Source XML references ADDRESSLOG without declaring its appender.",
+      "limit": "Runtime file overrides, effective level and ingestion unknown."
+    }
+  ],
+  "application_runtime_tests": 0,
+  "production_calls": 0
+}

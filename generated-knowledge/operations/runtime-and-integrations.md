@@ -53,3 +53,9 @@ Representative sources include `Settings`, `Server.initialize`, persistence fact
 ## Explicit unknowns
 
 Production feature flags, authoritative environment topology, failover behavior, retention, retry policy, TTL policy and SLA are not fully established by the current validated dataset.
+
+## Operational source evidence and environment limit
+
+The dossiers now document lifecycle, timeout/recovery and failure suppression per integration. Internal JMS consumer reconnect recreates a consumer without reattaching its message listener; listeners acknowledge before parsing/submitting business work. These observations do not establish broker redelivery/delivery contracts without session/deployment tests. MySQL and Oracle implementations have materially different SQL/result/transaction behavior and should not be described as interchangeable runtime guarantees. Source log4j2.xml references ADDRESSLOG without declaring that appender; runtime overrides/ingestion remain unknown.
+
+Candidate evidence/navigation: [class dossiers and flow index](../../agent-observations/inbox/2026-10-12-class-audit/completion/README.md), [source provenance](../../agent-observations/inbox/2026-10-12-class-audit/completion/source-provenance.json), [log reconciliation](../../agent-observations/inbox/2026-10-12-class-audit/completion/log-registry-reconciliation.json). No human promotion is recorded by this supplement.

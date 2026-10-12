@@ -1,0 +1,234 @@
+---
+doc_class: observation
+trust_level: untrusted-content
+lifecycle: snapshot
+confidence: medium
+verification: source-indexed
+truth_type: operational
+owner: REQUIRES_HUMAN_VALIDATION
+sensitivity: internal
+last_validated_commit: 781e6c4c61706a798883818982f72fb8fa53a661
+---
+
+# Async KB vs Source — Coverage and Provenance Gaps (2026-10-12)
+
+## Evidence scope
+- GitHub source `Async-Source@781e6c4`: **268** Java source files in `src/com/nozha/` (ownership not independently certified).
+- Existing KB `generated-knowledge/**/*.md`: **25 Markdown documents** scanned for **literal class-name mentions**; this is a **weak, lexical indicator only**, not a measure of meaningful documentation or source correctness.
+- Class names with >=1 lexical mention: **63/268**. Names with no mention: **205/268**. Matches may be false positives for generic names and do not prove coverage.
+- No-mention by source subsystem: `server`: 204; `other`: 1.
+
+## No-mention classes — candidates for business/technical/error/log knowledge gap
+- [`MyHTMLLayout`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/MyHTMLLayout.java) — other
+- [`EmbeddedArtemisServer`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/activemq/EmbeddedArtemisServer.java) — server
+- [`MQTTIncomingInterceptor`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/activemq/MQTTIncomingInterceptor.java) — server
+- [`MQTTOutoingInterceptor`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/activemq/MQTTOutoingInterceptor.java) — server
+- [`SecurityManager`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/activemq/SecurityManager.java) — server
+- [`AsyncConsumer`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/activemq/local/AsyncConsumer.java) — server
+- [`AsyncQueueAdaptor`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/activemq/local/AsyncQueueAdaptor.java) — server
+- [`QueueMessageListener`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/activemq/local/QueueMessageListener.java) — server
+- [`RateLimitConsumer`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/activemq/ratelimit/RateLimitConsumer.java) — server
+- [`RateLimitMessageListener`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/activemq/ratelimit/RateLimitMessageListener.java) — server
+- [`RateLimitProducer`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/activemq/ratelimit/RateLimitProducer.java) — server
+- [`ClientInfo`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/activemq/vo/ClientInfo.java) — server
+- [`UserAuthentication`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/biz/UserAuthentication.java) — server
+- [`ActiveMQAMQPQueueClient`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/client/ActiveMQAMQPQueueClient.java) — server
+- [`ActiveMQOpenWireQueueClient`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/client/ActiveMQOpenWireQueueClient.java) — server
+- [`ActiveMQStompQueueClient`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/client/ActiveMQStompQueueClient.java) — server
+- [`ChatClient`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/client/ChatClient.java) — server
+- [`CoapClient`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/client/CoapClient.java) — server
+- [`MqttClient`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/client/MqttClient.java) — server
+- [`QueueClient`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/client/QueueClient.java) — server
+- [`RabbitMQAMQPQueueClient`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/client/RabbitMQAMQPQueueClient.java) — server
+- [`RestClient`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/client/RestClient.java) — server
+- [`TcpClient`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/client/TcpClient.java) — server
+- [`WebrtcClient`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/client/WebrtcClient.java) — server
+- [`CoapGenericResponse`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/coapserver/CoapGenericResponse.java) — server
+- [`CoapMessageDeliver`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/coapserver/CoapMessageDeliver.java) — server
+- [`CoapResourceBase`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/coapserver/CoapResourceBase.java) — server
+- [`CoapResourceClient`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/coapserver/CoapResourceClient.java) — server
+- [`CoapResourceProvision`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/coapserver/CoapResourceProvision.java) — server
+- [`CredentialsUtil`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/coapserver/CredentialsUtil.java) — server
+- [`EmbeddedCoapServer`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/coapserver/EmbeddedCoapServer.java) — server
+- [`ReActionClientCoap`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/coapserver/ReActionClientCoap.java) — server
+- [`AccessibilityException`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/exception/AccessibilityException.java) — server
+- [`BusinessException`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/exception/BusinessException.java) — server
+- [`ClientException`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/exception/ClientException.java) — server
+- [`HttpException`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/exception/HttpException.java) — server
+- [`TooManyMessagesSentException`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/exception/TooManyMessagesSentException.java) — server
+- [`TooManyOpenedClientException`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/exception/TooManyOpenedClientException.java) — server
+- [`WebSocketCloseReason`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/exception/WebSocketCloseReason.java) — server
+- [`ChatHandler`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/handler/ChatHandler.java) — server
+- [`ClientMessagePayload`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/handler/ClientMessagePayload.java) — server
+- [`ExceptionListener`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/handler/ExceptionListener.java) — server
+- [`HandlerInterface`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/handler/HandlerInterface.java) — server
+- [`MessageListener`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/handler/MessageListener.java) — server
+- [`OutboundPayload`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/handler/OutboundPayload.java) — server
+- [`OutboundPayloadFactory`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/handler/OutboundPayloadFactory.java) — server
+- [`RawBytesPayload`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/handler/RawBytesPayload.java) — server
+- [`AccessServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/AccessServlet.java) — server
+- [`AsyncCheckServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/AsyncCheckServlet.java) — server
+- [`AsyncErrorHandler`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/AsyncErrorHandler.java) — server
+- [`AsyncFilter`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/AsyncFilter.java) — server
+- [`AsyncServiceCallServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/AsyncServiceCallServlet.java) — server
+- [`AsyncServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/AsyncServlet.java) — server
+- [`AsyncWebSocketAdapter`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/AsyncWebSocketAdapter.java) — server
+- [`AutoResponseServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/AutoResponseServlet.java) — server
+- [`BusinessLimitServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/BusinessLimitServlet.java) — server
+- [`CacheServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/CacheServlet.java) — server
+- [`ClientServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/ClientServlet.java) — server
+- [`HealthCheckServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/HealthCheckServlet.java) — server
+- [`IPAddressLimitServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/IPAddressLimitServlet.java) — server
+- [`ManageServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/ManageServlet.java) — server
+- [`MessageSaverServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/MessageSaverServlet.java) — server
+- [`MqttServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/MqttServlet.java) — server
+- [`PaymentCoreServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/PaymentCoreServlet.java) — server
+- [`ProviderRateLimitServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/ProviderRateLimitServlet.java) — server
+- [`ProviderServicesServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/ProviderServicesServlet.java) — server
+- [`RegisterServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/RegisterServlet.java) — server
+- [`RegisterWebrtcServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/RegisterWebrtcServlet.java) — server
+- [`RootServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/RootServlet.java) — server
+- [`ServiceProviderServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/ServiceProviderServlet.java) — server
+- [`UnregisterServlet`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/UnregisterServlet.java) — server
+- [`RegisterResponseVO`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/vo/RegisterResponseVO.java) — server
+- [`ResultVO`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/httpserver/vo/ResultVO.java) — server
+- [`DefaultReceivingHttpMediator`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mediation/DefaultReceivingHttpMediator.java) — server
+- [`DefaultSendingHttpMediator`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mediation/DefaultSendingHttpMediator.java) — server
+- [`HttpMediator`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mediation/HttpMediator.java) — server
+- [`Mediator`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mediation/Mediator.java) — server
+- [`ServiceMethod`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mediation/generic/vo/ServiceMethod.java) — server
+- [`ServiceParameter`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mediation/generic/vo/ServiceParameter.java) — server
+- [`ServiceProvider`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mediation/generic/vo/ServiceProvider.java) — server
+- [`ServiceProviderConfig`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mediation/generic/vo/ServiceProviderConfig.java) — server
+- [`HamsamReceivingHttpMediator`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mediation/hamsam/HamsamReceivingHttpMediator.java) — server
+- [`HamsamSendingHttpMediator`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mediation/hamsam/HamsamSendingHttpMediator.java) — server
+- [`ResultSrv`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mediation/hamsam/ResultSrv.java) — server
+- [`ServiceRequest`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mediation/hamsam/ServiceRequest.java) — server
+- [`ServiceRequestParameter`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mediation/hamsam/ServiceRequestParameter.java) — server
+- [`NotificationReceivingHttpMediator`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mediation/notification/NotificationReceivingHttpMediator.java) — server
+- [`NotificationSendingHttpMediator`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mediation/notification/NotificationSendingHttpMediator.java) — server
+- [`HttpContent`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mediation/vo/HttpContent.java) — server
+- [`RequestHeader`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mediation/vo/RequestHeader.java) — server
+- [`AddIceCandidate`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/model/AddIceCandidate.java) — server
+- [`CandidateDto`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/model/CandidateDto.java) — server
+- [`CoapRegistration`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/model/CoapRegistration.java) — server
+- [`DeviceRegistration`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/model/DeviceRegistration.java) — server
+- [`IceCandidate`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/model/IceCandidate.java) — server
+- [`IceCandidatesResponse`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/model/IceCandidatesResponse.java) — server
+- [`MediatorMapping`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/model/MediatorMapping.java) — server
+- [`PeerRegistration`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/model/PeerRegistration.java) — server
+- [`QueueRegistration`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/model/QueueRegistration.java) — server
+- [`RestRegistration`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/model/RestRegistration.java) — server
+- [`SdpAnswerResponse`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/model/SdpAnswerResponse.java) — server
+- [`SdpOffer`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/model/SdpOffer.java) — server
+- [`TurnAddresses`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/model/TurnAddresses.java) — server
+- [`EmbeddedMQTTServer`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mosquette/EmbeddedMQTTServer.java) — server
+- [`MyIAuthenticator`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/mosquette/MyIAuthenticator.java) — server
+- [`AccessibilityCrud`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/AccessibilityCrud.java) — server
+- [`AccessibilityCrudInterface`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/AccessibilityCrudInterface.java) — server
+- [`ClientCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/ClientCRUD.java) — server
+- [`ClientCRUDInterface`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/ClientCRUDInterface.java) — server
+- [`CoapCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/CoapCRUD.java) — server
+- [`CoapCRUDInterface`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/CoapCRUDInterface.java) — server
+- [`DeviceCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/DeviceCRUD.java) — server
+- [`DeviceCRUDInterface`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/DeviceCRUDInterface.java) — server
+- [`MessageCRUDInterface`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/MessageCRUDInterface.java) — server
+- [`PeerCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/PeerCRUD.java) — server
+- [`PeerCRUDInterface`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/PeerCRUDInterface.java) — server
+- [`QueueCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/QueueCRUD.java) — server
+- [`QueueCRUDInterface`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/QueueCRUDInterface.java) — server
+- [`RateLimitCrud`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/RateLimitCrud.java) — server
+- [`RateLimitCrudInterface`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/RateLimitCrudInterface.java) — server
+- [`RestCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/RestCRUD.java) — server
+- [`RestCRUDInterface`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/RestCRUDInterface.java) — server
+- [`ServiceCallCRUDInterface`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/ServiceCallCRUDInterface.java) — server
+- [`ServiceCallCrud`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/ServiceCallCrud.java) — server
+- [`ServiceProviderCrud`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/ServiceProviderCrud.java) — server
+- [`ServiceProviderCrudInterface`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/ServiceProviderCrudInterface.java) — server
+- [`MySQLAccessibilityCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/MySQLAccessibilityCRUD.java) — server
+- [`MySQLClientCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/MySQLClientCRUD.java) — server
+- [`MySQLCoapCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/MySQLCoapCRUD.java) — server
+- [`MySQLDeviceCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/MySQLDeviceCRUD.java) — server
+- [`MySQLMessageCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/MySQLMessageCRUD.java) — server
+- [`MySQLPeerCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/MySQLPeerCRUD.java) — server
+- [`MySQLQueueCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/MySQLQueueCRUD.java) — server
+- [`MySQLRateLimitCrud`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/MySQLRateLimitCrud.java) — server
+- [`MySQLRestCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/MySQLRestCRUD.java) — server
+- [`MySQLServiceCallCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/MySQLServiceCallCRUD.java) — server
+- [`MySQLServiceProviderCrud`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/MySQLServiceProviderCrud.java) — server
+- [`OracleAccessibilityCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/OracleAccessibilityCRUD.java) — server
+- [`OracleCoapCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/OracleCoapCRUD.java) — server
+- [`OracleDeviceCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/OracleDeviceCRUD.java) — server
+- [`OracleMessageCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/OracleMessageCRUD.java) — server
+- [`OraclePeerCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/OraclePeerCRUD.java) — server
+- [`OracleQueueCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/OracleQueueCRUD.java) — server
+- [`OracleRateLimitCrud`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/OracleRateLimitCrud.java) — server
+- [`OracleRestCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/OracleRestCRUD.java) — server
+- [`OracleServiceCallCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/OracleServiceCallCRUD.java) — server
+- [`OracleServiceProviderCrud`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/impl/OracleServiceProviderCrud.java) — server
+- [`BaseRateLimiter`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/ratelimit/BaseRateLimiter.java) — server
+- [`BusinessProviderRateLimiter`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/ratelimit/BusinessProviderRateLimiter.java) — server
+- [`BusinessProviderServiceRateLimiter`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/ratelimit/BusinessProviderServiceRateLimiter.java) — server
+- [`BusinessRateLimiter`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/ratelimit/BusinessRateLimiter.java) — server
+- [`IpProviderRateLimiter`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/ratelimit/IpProviderRateLimiter.java) — server
+- [`IpProviderServiceRateLimiter`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/ratelimit/IpProviderServiceRateLimiter.java) — server
+- [`IpRateLimiter`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/ratelimit/IpRateLimiter.java) — server
+- [`RateLimitBusiness`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/ratelimit/RateLimitBusiness.java) — server
+- [`RateLimitIpAddress`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/ratelimit/RateLimitIpAddress.java) — server
+- [`RateLimiterFactory`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/ratelimit/RateLimiterFactory.java) — server
+- [`RateLimitKafkaManager`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/ratelimit/kafka/RateLimitKafkaManager.java) — server
+- [`RateLimitKafkaProducer`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/ratelimit/kafka/RateLimitKafkaProducer.java) — server
+- [`BlockingQueueMap`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/BlockingQueueMap.java) — server
+- [`ByteUtil`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/ByteUtil.java) — server
+- [`CacheCRUDInterface`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/CacheCRUDInterface.java) — server
+- [`CacheUtil`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/CacheUtil.java) — server
+- [`CaffeineCacheCRUDInterface`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/CaffeineCacheCRUDInterface.java) — server
+- [`ClientHelper`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/ClientHelper.java) — server
+- [`ClientPoolFactory`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/ClientPoolFactory.java) — server
+- [`GstUtil`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/GstUtil.java) — server
+- [`JsonUtil`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/JsonUtil.java) — server
+- [`KeyleadUtil`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/KeyleadUtil.java) — server
+- [`LRUCache`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/LRUCache.java) — server
+- [`MemoryCacheCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/MemoryCacheCRUD.java) — server
+- [`MessageType`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/MessageType.java) — server
+- [`MessageUtil`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/MessageUtil.java) — server
+- [`ResourceHelper`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/ResourceHelper.java) — server
+- [`StringUtil`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/StringUtil.java) — server
+- [`Timeoutable`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/Timeoutable.java) — server
+- [`TrackerUtil`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/TrackerUtil.java) — server
+- [`ConfigurationResourceRepository`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/configurationresolver/config/ConfigurationResourceRepository.java) — server
+- [`CacheHealthChecker`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/nosql/CacheHealthChecker.java) — server
+- [`FallBack`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/nosql/FallBack.java) — server
+- [`ResilientCacheInterface`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/nosql/ResilientCacheInterface.java) — server
+- [`AerospikeCRUD`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/nosql/aerospike/AerospikeCRUD.java) — server
+- [`AerospikeFactory`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/nosql/aerospike/AerospikeFactory.java) — server
+- [`RedisConnectionFactory`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/nosql/redis/RedisConnectionFactory.java) — server
+- [`RedisCrud`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/util/nosql/redis/RedisCrud.java) — server
+- [`AccessDTO`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/AccessDTO.java) — server
+- [`ClientMessage`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/ClientMessage.java) — server
+- [`KeyValue`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/KeyValue.java) — server
+- [`PeerInfoVO`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/PeerInfoVO.java) — server
+- [`RegistrationRequestVO`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/RegistrationRequestVO.java) — server
+- [`PeerDto`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/dto/PeerDto.java) — server
+- [`BaseLog`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/log/BaseLog.java) — server
+- [`AtomicLongDeserializer`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/rateLimit/AtomicLongDeserializer.java) — server
+- [`RateLimitConfig`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/rateLimit/RateLimitConfig.java) — server
+- [`RateLimitDto`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/rateLimit/RateLimitDto.java) — server
+- [`ResultResponse`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/rateLimit/ResultResponse.java) — server
+- [`BusinessCallsDto`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/rateLimit/business/BusinessCallsDto.java) — server
+- [`BusinessConfig`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/rateLimit/business/BusinessConfig.java) — server
+- [`BusinessProviderConfig`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/rateLimit/business/BusinessProviderConfig.java) — server
+- [`BusinessVo`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/rateLimit/business/BusinessVo.java) — server
+- [`GatherBusinessDto`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/rateLimit/business/GatherBusinessDto.java) — server
+- [`GatherIpDto`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/rateLimit/ip/GatherIpDto.java) — server
+- [`IPAddressConfig`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/rateLimit/ip/IPAddressConfig.java) — server
+- [`EndpointConfig`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/rateLimit/provider/EndpointConfig.java) — server
+- [`GatherDto`](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/vo/rateLimit/provider/GatherDto.java) — server
+
+## Knowledge catalog integrity
+- Found 25 catalog document path entries; paths missing in the KB tree: 0. None in document path entries.
+- **9 references** to `generated-knowledge/GOVERNANCE-REPORT.md` in the catalog, but that file is **ABSENT** from the current KB tree. These references need updating/replacing with actual review evidence; no trust inference should rely on a missing file.
+- The two lexical audit artifacts list per-document `last_validated_commit`, trust, lifecycle, and `next_review_due`. Many living documents miss `next_review_due`; do not silently use candidate docs as trusted.
+
+## Disposition
+All records are **candidate observations only**, not directly promoted to `generated-knowledge` or `mvp/validated-claims.yaml`. Human review for official business owner, source equivalence, policy, and runtime claims remains required.

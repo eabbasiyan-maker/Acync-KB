@@ -1,0 +1,2818 @@
+{
+  "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661",
+  "github_main_sha_checked": "781e6c4c61706a798883818982f72fb8fa53a661",
+  "archive_git_head": "2a4986c264720f6d7dff6c176d1a896e73176583",
+  "archive_sha256": "93e3eb0823f77621c232b3d4e90882b78bf8628a202e3b556c998c21d48edeed",
+  "file_count": 401,
+  "method": "GitHub connector fetched each pinned file; UTF-8 encoded content byte compared with archive file",
+  "deployed_commit": "UNKNOWN",
+  "files": [
+    {
+      "source_path": "src/ByteClassLoader.java",
+      "blob_sha": "1719922c0cb01c4442c8ac176eddca0d8ad9ea6d",
+      "sha256": "627fda486d71158e8111a95f365ac317939191cb5b43c27e3d50d3fee7a27966",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/ChatServer.java",
+      "blob_sha": "bc36e2ca932f0fc8234ffaf23e199c65ef45a001",
+      "sha256": "e012ed09faa0dbe16ad8c68c60e075f8609c6395912533de3f69a8c12a1c9378",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/Helper.java",
+      "blob_sha": "210bcec524116925550fd6fc7a31403bbfa8b382",
+      "sha256": "c07ede6a7dbb9391adae0b8ed89b5d3d295ceba89f933ff098b08464c9ea3cb5",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/SimpleMqttClient.java",
+      "blob_sha": "d1a6a38d371d691a1f470b81972325a0e6b95d30",
+      "sha256": "3d5f2ad616f7ac038d0229001471f2846386f0a3301d87477e174cf04799b844",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/MyHTMLLayout.java",
+      "blob_sha": "df2725f5a08810bc3e9845a3e4932aa393cdfeee",
+      "sha256": "2a39864493d4348c606a79e92e9590dac88d0fe2c08c80f948a4a965c4da4ab5",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/Settings.java",
+      "blob_sha": "130601108f19533e6e16457e61a1740c333a8ffc",
+      "sha256": "a9df4f78f165026c9199cd1887358a9d96221c8614c1766ba2b2aca4948cab83",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/Server.java",
+      "blob_sha": "022737db255eb33bf6c7bb2be5a6e97c89f42126",
+      "sha256": "8010c2760737b727c334f1f77918bc660be664d7c72c72ae96d74d4c2cc2ec77",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/activemq/EmbeddedArtemisServer.java",
+      "blob_sha": "ef6fea94aff01076b6335a63518dca54e2292190",
+      "sha256": "7a5f84eab5b4ca9239a1807c6d67f7a4371d5fbd6dd024cecbc8afdc1f65e98e",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/activemq/MQTTIncomingInterceptor.java",
+      "blob_sha": "c0430df86e42e2f4a2356d4e917c2e4061adf1a0",
+      "sha256": "0a1b804e3c9293b0b4ec793820041633bfb431c9ef9c901c6d42b5e451309b18",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/activemq/MQTTOutoingInterceptor.java",
+      "blob_sha": "aaae38c2f17e45d6ec044d3943715d91b00f256a",
+      "sha256": "c802d2ca37d81c6505485ce19fc66f75b125eb24d6fe475bb362c36aa6612e0e",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/activemq/SecurityManager.java",
+      "blob_sha": "627166b7ccfd918459c5c87c7ae47b1a0fae7bde",
+      "sha256": "b764750a35882cc77fdb27a317456fbe93015643c37a22b65aeb027ffee76223",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/activemq/local/AsyncConsumer.java",
+      "blob_sha": "4a321745e7ad49e946719fd889678ac5b6497563",
+      "sha256": "0573f2949cda03b0d9425872f0289ae00887424383d0a0ce37255a113fa5890b",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/activemq/local/AsyncInternalMessageSender.java",
+      "blob_sha": "130976050f4b319ca18bf6be2cc8005758750a2d",
+      "sha256": "3fb7691152ea36e0df3dd868b2e7c4e8213d2d2dff099eb8ce02b9155a9ebf8e",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/activemq/local/AsyncManager.java",
+      "blob_sha": "1e82ce92f71f323872284efda92da16ab0c9f66f",
+      "sha256": "0969aaadff128efe5ab7044b25d2791b48e31df46a34a7de0776c7535f78ed8b",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/activemq/local/AsyncProducer.java",
+      "blob_sha": "b15e4497bc0d766c476b0ad0e184e628e2d14460",
+      "sha256": "9af9f3381bcefe077a82fe4e46f59ad4f494b0bfb1bd2e8a179407b1a28426c3",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/activemq/local/AsyncQueueAdaptor.java",
+      "blob_sha": "0fd37137699acf05b54d30b5668de6a54b940cbb",
+      "sha256": "4f3a51d4d75bae3c486775f68c6556ac85026d2351e70fa29c3c1f9824dcbaa1",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/activemq/local/QueueMessageListener.java",
+      "blob_sha": "04780fc9076c2497cf4496147c42663712c8cbb4",
+      "sha256": "653bae30fdc5e6a54494b9985f92aa4ff4f9003be7ef5b76e37dcb7ab0b678f9",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/activemq/ratelimit/RateLimitConsumer.java",
+      "blob_sha": "0679c0c0544b912ba39ed1090301fef79ea01241",
+      "sha256": "ac55256d9be47c191d68ed2d43b5a2d998c1e0c8a3559abff9d052e19bf998ab",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/activemq/ratelimit/RateLimitMessageListener.java",
+      "blob_sha": "98b258c06fd45e00ec8cf4bef9c1fba22c7b8c89",
+      "sha256": "b9d76776674cdf8e23c495b28bd6da75666ffea81b7035d8a1976fd715518a12",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/activemq/ratelimit/RateLimitProducer.java",
+      "blob_sha": "582e622c12f1d8a4ae2e057d7cea38318c7cf3cc",
+      "sha256": "4581a2018a18e08460cb1c18bcd4880a2023da6a42c70dca9955f9320d86eeba",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/activemq/vo/ClientInfo.java",
+      "blob_sha": "a7b17ff9c3bf59e1af41022f3d651df7e11fe3cc",
+      "sha256": "0167bf37c97af4cb2b0ac85febdc3388af72cc83662fa5f34a4f04782856eb77",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/biz/AccessibilityService.java",
+      "blob_sha": "f2d95d7fe2a91d53a20bd027a0c3f47c417c5ffb",
+      "sha256": "514b33292f170bf1b6caa1310da7371016927902de36efa57e72564ff9bcc15f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/biz/LoadManager.java",
+      "blob_sha": "42056f3b2822aba7e0e3b4f38c3060c9da57ebbd",
+      "sha256": "a13e3ac48c8595a11565e7250869eb66b0799cf72c80c6cc7adf12e735d1517d",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/biz/MessageManager.java",
+      "blob_sha": "56c85c8434746fb49ac6f56c23c2a83eba28df4c",
+      "sha256": "a2d68b796404ad28e961ff9f7e6782daf955a2241eeb6ebfafef20d3e5d940f7",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/biz/RegistrationManager.java",
+      "blob_sha": "f9418d5d705dc2717f3ab928dd2bcf09552d41d5",
+      "sha256": "60b15670ef83b9f06d7bc79f8e42b5227e49685f77c9482831244d67f501f47b",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/biz/ServiceCallService.java",
+      "blob_sha": "ef31cc45ad9f9c74de621c139d9108ba6b4d6996",
+      "sha256": "58fe072a294757c2192abda8be92728c1fddba06e81f0af76ffc3f73e2127ec1",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/biz/UserAuthentication.java",
+      "blob_sha": "4b1930821311d2c101fd9215d6c9b0bc57c751d9",
+      "sha256": "c21edca8573bbaea8747b92fbf4df6722a91c1fb2e94330564697445603149e2",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/client/ActiveMQAMQPQueueClient.java",
+      "blob_sha": "5e29fee28dff6ccbd3e9ecf5f17990ce24428f11",
+      "sha256": "c9fcbba581f2bffb4a7321c48bc800771f23849f3e1828fe8d9e61faf1d75de0",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/client/ActiveMQOpenWireQueueClient.java",
+      "blob_sha": "f626831decf1167b4238ecf545eeca16aadc9726",
+      "sha256": "ee149d51a8170e5f6fb4ab3c758f7dd8ec0f00dd3c51ded9e79aa1dcadcec639",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/client/ActiveMQStompQueueClient.java",
+      "blob_sha": "ec2121393ce460115058a87c1c33355c347a75bc",
+      "sha256": "dd3cd0a379c8f9cecb1b67ee3e6c6209c1de8965819de5834ee0321b737b7cc5",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/client/ChatClient.java",
+      "blob_sha": "74a88b7034761ce3bbb496a3933086ce4f3a71ce",
+      "sha256": "360b8cbfefd1107802a48109bea1c46b5bfe74819a3a68a1c9c0ed644a0ada04",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/client/Client.java",
+      "blob_sha": "73ad4fb01b10f5e61d36d3318e39cb0072595c8a",
+      "sha256": "3ae38f60e575de20e71624410ddbc2968728c6a9a3dce4eaa6e0058295c44c5f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/client/CoapClient.java",
+      "blob_sha": "44cfbb753e683421f798d8b086eacce3c1d56bef",
+      "sha256": "46750be58bbb09f146856c13cdd34d63fca1f96aeff8adb55adedeac3c7ba445",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/client/HttpClient.java",
+      "blob_sha": "70b0d5bd8e0586a15505d58391ec9cd1d602bb8a",
+      "sha256": "a34334548c419eee2818f663dc38d69808042de19be13827c699006079a0ffa8",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/client/MqttClient.java",
+      "blob_sha": "dc668ca57c5d6157d9323e43cf2598fa6b76ab98",
+      "sha256": "c56e1cac62e42e2ee3fee44bf77713c01a9c1dacf929264fdb6e2777ae293978",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/client/QueueClient.java",
+      "blob_sha": "bba346562f7210731920ad7769a320da1c36b128",
+      "sha256": "19fddecb58634780977be4fd61b6c79f78ff63cf624f43ed7301ab496da72cf6",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/client/RabbitMQAMQPQueueClient.java",
+      "blob_sha": "3e1e933b9d0b3a2199bcbb734bebd32e8ee2a3a1",
+      "sha256": "7095c9ae4610d86e4a5a308f82010052306c11388cf72f2b9eb366332f6628bc",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/client/RestClient.java",
+      "blob_sha": "64c8b2129e57e35e8d82c2a192c5d75124676995",
+      "sha256": "51cc58b94b6cdca0258097d83b6fdb37f7a823c89441d5c279be5f110d8c0cb6",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/client/TcpClient.java",
+      "blob_sha": "13bb16631fb81b76129ea6cfbcaae55b788ead4c",
+      "sha256": "4d8ddaab6bfe6f745dc770de30b16ba06557767832598be5a540d162ea0d3fa5",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/client/WebrtcClient.java",
+      "blob_sha": "f424f2f67f96409abe92edfd3a67882823a17c72",
+      "sha256": "6cf04217071186e7ce88f136b0be047ecc91452d2cac809c62e8ac37196a4b39",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/client/WebsocketClient.java",
+      "blob_sha": "c88800a8b2198f1716ca8069cf2206b175149541",
+      "sha256": "4fa493279e6dc6cba9fd15550806f420c2084c0c6c5c9628f90ee4380c04503c",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/coapserver/CoapGenericResponse.java",
+      "blob_sha": "6d761fee6269b5f78237148ec2772ebbfed355f4",
+      "sha256": "8ef19e7899df4e62a1385f70f75637ff7480adaca50cab8e7e668a033f92102b",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/coapserver/CoapMessageDeliver.java",
+      "blob_sha": "e49790524d0b1954356709aaa723b014a692eecf",
+      "sha256": "578633d2f31e62f8d5cd608f9cc3c01c9700fd3d4683d58a99da137d7074951a",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/coapserver/CoapResourceBase.java",
+      "blob_sha": "7d1863a1728bc398528ec4a1d7304a1bd2679381",
+      "sha256": "1fa31f3dcf014397532ed793d05841803a6dd6ed17eba7847377a72d8b218dad",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/coapserver/CoapResourceClient.java",
+      "blob_sha": "7b4f68aa1fb935d4f8c67d37d431dd2a0b41f2ee",
+      "sha256": "d91d0acc554d48c96c0b1d508e94c80611d69416ce4acd1fa96b9690d0ac93db",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/coapserver/CoapResourceProvision.java",
+      "blob_sha": "e6f918e20435b39aca641cf4d29a86b3f7ca2d7b",
+      "sha256": "3c67aaf1da337fbc4ec0ca3b3df70962b4ad2272481896398171409249543fef",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/coapserver/CredentialsUtil.java",
+      "blob_sha": "1e01b44538067b02e39e75cf288adf00f80adb72",
+      "sha256": "8aa9409863f8d22b55a14b36444f46161f31b009f2c30b45da4612b7ce4f862c",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/coapserver/EmbeddedCoapServer.java",
+      "blob_sha": "b4047426319a470b43f8ab81569b3a7d90970581",
+      "sha256": "3484acc5291d5392a440fb948cc0b10aeb00d8c6d145dc333eb5f31592d0cbb3",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/coapserver/ReActionClientCoap.java",
+      "blob_sha": "2b9f06a3ae143d64f5787700825d14e2b7c0859d",
+      "sha256": "a431eb8aff5bb25b5286c20794166fa9b43d14f3bfe8806a52e0554b9d5d37d2",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/exception/AccessibilityException.java",
+      "blob_sha": "d2abc159d0df558f39fa942d9e545f55341003f7",
+      "sha256": "12209f70b068759c83b84ec2dd2f5d37d42d4b55afd6335cb84d238b126a5a16",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/exception/BusinessException.java",
+      "blob_sha": "d65cb1f6234a3180ef16bc8a7d319013041c5c1b",
+      "sha256": "9395a67e639ee2d4ad8b8c987ae2ff68de860ec817b9ffa826a01e35062d2991",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/exception/ClientException.java",
+      "blob_sha": "87fef4a8a736926abde3abcfc5fcd19901bfac75",
+      "sha256": "b1433df69c237fe44ad5820f318562e486b540f49166bed7a8d6fa6b9a507310",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/exception/HttpException.java",
+      "blob_sha": "a147334b183767f3fa9e397d5f13ef447e419b93",
+      "sha256": "26321922543a0791edfb8bb3e90e95cdf795ce15176845856140ac8af1fe9a03",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/exception/PersistanceException.java",
+      "blob_sha": "8ff61765ff1db205073b9cd704b11d1761e10d4f",
+      "sha256": "ccd3ca38f8a20d2e207bffbfbf662d67a6a964eae858015cc42336cbe1b88276",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/exception/ServerException.java",
+      "blob_sha": "ee6ea9889f1722804c4fbbe1d422ab00655cc69b",
+      "sha256": "6b044c1f7c33292eb9cb28b4ce3963f0594fd03a75241b25d90909b37c26cabc",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/exception/TooManyMessagesSentException.java",
+      "blob_sha": "fcd7409ff3ff4c046fd6421cab7412575aa95444",
+      "sha256": "36d12cdc2295ef6b3dbb951fab62da04ae490f878a004060fd79cf9bef49b7d3",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/exception/TooManyOpenedClientException.java",
+      "blob_sha": "f2714fd79fb117ceeb1b31c2ee4c26c9c4a45c89",
+      "sha256": "4a60cfbcf55c11fc0fef6968e0828af9a02475b6802abed04275bb2852446cae",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/exception/WebSocketCloseReason.java",
+      "blob_sha": "88e4789c548c68d762de02dce7f5a686c9407ead",
+      "sha256": "0f08ddbc89ea8508358e3fcb5196bb11f3f3074c009a28aea01a5e7f274f2e5f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/handler/ChatHandler.java",
+      "blob_sha": "5c222907f6029b349a121d99374820f69851a680",
+      "sha256": "ce4b17c474689e3808e96d8cf7e3592e40b035879fa4dcdcc2c5840affdbeb1f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/handler/ClientMessagePayload.java",
+      "blob_sha": "640e3a9e7bad64872d3e61c4ac68a637582139cd",
+      "sha256": "db765c66d5ff2e53b295fd14ed7ee065e19f569af644c3b89de7bbf696cbb314",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/handler/CoapHandler.java",
+      "blob_sha": "0221441440b25b63533e0693788a5224bfc13c95",
+      "sha256": "ae835d9e15d7159bba17e4230a35510fcad88411881a6a23e3d6c356f044be98",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/handler/ExceptionListener.java",
+      "blob_sha": "93cc2e18022c25701b34b1515c3e2c9e4d9090b0",
+      "sha256": "593c5ca035833eeac43dfb296563a1521ae0b3488b6e443701e353352c2ff2a8",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/handler/HandlerInterface.java",
+      "blob_sha": "19eaa99a83517651f638dce7fa07729f17c15fc4",
+      "sha256": "4534862fcca498db136a4dda669bb542279e1ba7f2125dbd91cacb94d650847e",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/handler/HttpHandler.java",
+      "blob_sha": "beffb571038e23c0dfa64f0f10fe037e294e0941",
+      "sha256": "c2328534ae0eb096bbf6ab936455f5c06cc51842cb10cfd281ea286c8ae6dee2",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/handler/MessageListener.java",
+      "blob_sha": "1e1ea25231d1bc1d7c8562fd185b21f7beb34dd7",
+      "sha256": "dd3cda1b8cacdef7de7925cdd81b1a9a84cc0c69b1699093340fa1632be3663d",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/handler/MqttHandler.java",
+      "blob_sha": "e9907cd02b33fa0f91defff528701a588773a68e",
+      "sha256": "f7b9fa075a05121ad6521890713c5d6319a7ac336be99a0d0cff6eb167d7b7d9",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/handler/OutboundPayload.java",
+      "blob_sha": "2320c851d3d28a2a2d75599c4ab8dac5a974773e",
+      "sha256": "b0d007d6a230253ce1c3cf433d24424173ee3f43a1e0b22be60f4a1c194e0215",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/handler/OutboundPayloadFactory.java",
+      "blob_sha": "006a44729faf7689b705dc29bcbfbd32391d98e9",
+      "sha256": "2720e3a0600b02dc82811d640b44e8f8fec7b5b9449066d101ef2fbe211f33a7",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/handler/Payload.java",
+      "blob_sha": "8db8b80e7c77a085d33da22f35675895091b5375",
+      "sha256": "16dec0d2f12c4826a2f1be57606e2c5c9a12717fb3dee76343df6c17d061411a",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/handler/QueueHandler.java",
+      "blob_sha": "bb34c513670503ce2caeae4b0c45f48ca1964841",
+      "sha256": "e6a480cab380a6beab80fabd9e6a271f0a7d6bbb70ae2bd402f083a4ccec2b34",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/handler/RawBytesPayload.java",
+      "blob_sha": "ae539becee2ef1a278aa67b23297b3d86ed9614b",
+      "sha256": "6c4e606a70d0ac16bb6bb831bc6e4f547379962a3dc304009bd9be207f13d156",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/handler/RestHandler.java",
+      "blob_sha": "47a4ba3b51d655e1d64b90b5cf9b5e94a52db91e",
+      "sha256": "86085e562b777e9fb475918fbdb229847a6220094dd900699708c669d2d5a1a1",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/handler/ServiceCallProxy.java",
+      "blob_sha": "130b1ce102d7ac0c75ee22be88d6fdbc76f9d310",
+      "sha256": "a8dc7502fa3b8fb2c71207fee9c34fe0c8d869b5bfc78aab203e00ff574f1872",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/handler/TcpHandler.java",
+      "blob_sha": "a6a573c2fc020c16a29415268877b59444858202",
+      "sha256": "a7472fc08bde10dda34b9ca3e920e5f638c8f401713aa0b56256aedd7e59ee3b",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/handler/WebrtcHandler.java",
+      "blob_sha": "1b55abd7fb60d021ea879e55b4fb669605a87996",
+      "sha256": "f2af937a015a762795a57ee479606f479a6e6a6da68adc821798bb0efc795588",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/handler/WebsocketHandler.java",
+      "blob_sha": "000ef344b94f43446ca15a619732bf8bfdd06822",
+      "sha256": "22392cfa4d185839f42c949bf67d6ce88d266c337e129c3be278a7efad983499",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/AccessServlet.java",
+      "blob_sha": "02fe6acff43c4930cda4f25ebee7cbc77a74a84a",
+      "sha256": "d06131a80e9d788bcd8d9941181dfa207404b97692389d839f3818f6aa8746a7",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/AsyncCheckServlet.java",
+      "blob_sha": "d5d73d00500ba442c566e4f4278a6927d8864161",
+      "sha256": "bbfa63eb43edbab420cab946052d55cdb4c93c89ae0ffa1040fb8da60b61550f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/AsyncErrorHandler.java",
+      "blob_sha": "94c88564f2770f2ed2413bc69f9067e4ec6b109e",
+      "sha256": "4115b9bec7b9c1e47fdb3476f55806c616cb815a741155fc83fb6bbe47b6b7c4",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/AsyncFilter.java",
+      "blob_sha": "0a34923bc10205c7d7d3846af35e279524a62f9f",
+      "sha256": "fd4fbec85abfe6bfd5faf053f5bde29aab584641171580a94883a62a8243b320",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/AsyncServiceCallServlet.java",
+      "blob_sha": "f78c76f028599cafa50099cdfebc831e8910d089",
+      "sha256": "5e19625d7d2ddd3601ece3c48c0e1a48e7b086d4f9591ff2cc9f13596be6c9f8",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/AsyncServlet.java",
+      "blob_sha": "a8ebfa70b0f2bc80b29ac040cf3a604b7555e9b5",
+      "sha256": "e1ae2b55c5f6351582fc76f3c2c190f76add1969102724adb56aa4a9597bf9ac",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/AsyncWebSocketAdapter.java",
+      "blob_sha": "4d706b1fb6ebc1cd653873b52baa617f44f35318",
+      "sha256": "df2fda8ee732dd650677cd493d9e30e242767c371145c462d59e4fe30de5601c",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/AutoResponseServlet.java",
+      "blob_sha": "bded632567c25474974eae595667c0325a79d679",
+      "sha256": "5f4fdf2f42c3b1277c6f307d3628613b33a7bae44817ba9998fcf9012fa68d75",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/BusinessLimitServlet.java",
+      "blob_sha": "4d19aef01bac27a0b73b2c2d46227149f2013b58",
+      "sha256": "18951c325b9ac715f267bc627873ba866e336c07f6fd71e898fe2dbf4336425d",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/CacheServlet.java",
+      "blob_sha": "b1ffb45a873c5af3dc324fad3e40fd8c0fe3cf54",
+      "sha256": "eb7ca18728e1e06931cc8c38542416b568683947c9331ec82a5014c53a7a038f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/ClientServlet.java",
+      "blob_sha": "a247fa0c45474de08216396156ec080b2414a2cf",
+      "sha256": "f75a4291af391c8519c2c5f80561bbac276393cfcb0749bda22abbe014e232af",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/EmbeddedHttpServer.java",
+      "blob_sha": "d9b5e6be73b0f40a5aac9afb8c63b1f420025265",
+      "sha256": "a4de32569f69d6477de0f673fae2665797211066a30a1ec4d4127d439c20592f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/HealthCheckServlet.java",
+      "blob_sha": "615e4a5f0aac8612d2d7531f9e5f07bd7d5e5b4b",
+      "sha256": "c9adfdd81d334d8e142a1a02e99baf6272abdbc893dbb16c4484b7a25c80c357",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/IPAddressLimitServlet.java",
+      "blob_sha": "8641aac918011efa132497abe90c837888948fd6",
+      "sha256": "0776cef10c92051f472404fe4d3627ab283160d24934ad9782fcf3c0ae86598c",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/JettyQueueSizeLogger.java",
+      "blob_sha": "f3a75eacad2003711e5fea9d1aafaaf1be9da000",
+      "sha256": "29af17bdc24c1cde8ed564ec3da077447c612c46b671eed942c77793142318d5",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/ManageServlet.java",
+      "blob_sha": "6f622e67f5a6c3449d266f19fd0fbe079d5c961a",
+      "sha256": "e6c6bac041ac20020f268a7c9e50ff309d3aefa6fc25762751c9cd4715c3d264",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/MessageSaverServlet.java",
+      "blob_sha": "2e5cbe314239da1801c65a99532bacc06a95c697",
+      "sha256": "9454abd2691d414bd276b9eb42a2db2674c55dac777165fe999db9e7a1670270",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/MqttServlet.java",
+      "blob_sha": "e0e91f2bdd0c524f199c12c2f03e2339eb37d59b",
+      "sha256": "d7e0dd1dfc65050fdb342065a61dc5c22c06074eaeab1a7b6eba25cb160c9935",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/PaymentCoreServlet.java",
+      "blob_sha": "03748de559ee4865356aacb7be9539de2724a9ee",
+      "sha256": "ccbc2f3f7b8917a554a562728a02c5c2eebbd20bbd5f0d932fccb064b8ba9430",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/ProviderRateLimitServlet.java",
+      "blob_sha": "cb86f261b328fdeccde1e5231bb29ad101a9ce3f",
+      "sha256": "beab1df1933be65745dc975269bd8264db5dad1a8ce4c3ddbf7a6cfe269d55e0",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/ProviderServicesServlet.java",
+      "blob_sha": "f7e14cefd64b379079eaf5ce0a5f5d075e7beebc",
+      "sha256": "ada2a248db8d4f2b6c9c711e3381ae9aef432c0f9b4b3865571a290128105bcf",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/RateLimitServlet.java",
+      "blob_sha": "8e0538e4fbcf3168b140cda03732be7024a8fe4e",
+      "sha256": "e3813fbe63d96649607263b8b9e79fb79fb81ac3f936978aeaa2b649e1000610",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/RegisterServlet.java",
+      "blob_sha": "1a566ecd234b10ea919cecb6c2241612dcbf246a",
+      "sha256": "14d1952e157f58f01d65821b9759c2d57e697baa72a482cb49bc48a3beb75eb1",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/RegisterWebrtcServlet.java",
+      "blob_sha": "e5121e5d0ef6918b83d5f9764db70d0e60b1f4f9",
+      "sha256": "e78529c16fd03472b97f4042df3e73021bef4a782dc7988fe0316f52fe851b3a",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/RootServlet.java",
+      "blob_sha": "a0843967da6352d4b980744160ee99ea2b20cd4a",
+      "sha256": "f9e6c186b4cbbece249f126447008ee3cc4becd51339e3846dfd59dd2a662133",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/ServiceCallServlet.java",
+      "blob_sha": "7183b16dde9c2b869f66a7d4b6a103af29a9946f",
+      "sha256": "43f845365037f8d22e311af7d9bcc7873f19c1f364e20e643ec56e10648bf1bc",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/ServiceProviderServlet.java",
+      "blob_sha": "0d8c7f2b3ec838dd6465fd31b86aa1d2ed6118b7",
+      "sha256": "3bf340ed11ecf7bb791aa73915cf0d231aedf5806f7c899cbc959debb8d9ec1c",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/SwaggerUiServlet.java",
+      "blob_sha": "bd57b3c43ddfd3186b0b9fbaa94f91a340e825e8",
+      "sha256": "b3ce6b1e3c357a882ffaeb037c54b70050b43248a5945d2fda28e4337ad477ba",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/UnregisterServlet.java",
+      "blob_sha": "4531257a3088860b86612388fc925f627bcc33b5",
+      "sha256": "0720940988d330d8b2bd71830d2e921b0fc5f8a0c2377f495b0b36855f1b8e39",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/log/HttpLog.java",
+      "blob_sha": "3a87b0cd1fcce818cf77b750fda9332feeef83b5",
+      "sha256": "14d4ac30c9c40e7c52be2a44f4bd63ce50c7fdb182ee05e0f23ea121c7ad58ff",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/log/HttpRequestLogger.java",
+      "blob_sha": "6d9e343587aa9fc35c9194521f1d76f2bffb1f7f",
+      "sha256": "bbad6207ff9795ff84a1692a522a17e24e7de5483a6b16b55f77780b56c89149",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/vo/RegisterResponseVO.java",
+      "blob_sha": "c0459d2e1cef195a467be4ed9854ce4f4cb32ee6",
+      "sha256": "f47c4908d3dc829a4016f713041c70844ad60a3e301f8dd44dadc31f3d3e16ce",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/httpserver/vo/ResultVO.java",
+      "blob_sha": "5ffaa4ac2e22a9aca06f60666839fabf7e4747c4",
+      "sha256": "fb3f2b9e8ccbff3c531e136b2cc5d08161a3e795cc71e3cf95daeaeb23167e27",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/DefaultReceivingHttpMediator.java",
+      "blob_sha": "2b99e0c39dff32966f0b26c32cc4f460ddf9a505",
+      "sha256": "d9143175835e49d418520af966a89d2f6eb5b38d3c91f65fe28adc409c3e1548",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/DefaultSendingHttpMediator.java",
+      "blob_sha": "a6e143e3de241ddcf4d69665050759d2b2357c00",
+      "sha256": "c1a17dd6d4e9004c01eb40e0790c59ba5c42fe211bdf93d57b03fbbd1f9792fb",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/HttpMediator.java",
+      "blob_sha": "06a05402d5373518686d7f6bdbabb8aeb315f1b0",
+      "sha256": "9b04da39ff18dd26cd0a7eace6f1f916c24cb487d095f5d8591dfcce1a8fefde",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/MediateChain.java",
+      "blob_sha": "f59b9266094b27042448de3a219e964403b15f90",
+      "sha256": "93a4ba6f1dae64fc33f90586e10a51ad437aae567cb86d1914ec6cdc12a0593d",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/Mediator.java",
+      "blob_sha": "83a7f867b9b464d68f4d2f65264fd4b23677fe9f",
+      "sha256": "0e6de2a00261a9079d9e0c508dc70eca1218d3257d176a295c4aac729ca22777",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/MediatorManager.java",
+      "blob_sha": "f2f0c6cdc5c5de087f289a5c626130e31ed66759",
+      "sha256": "588590ecd8e23c6d392fe7b4ff31ebd4b8c36b3047858b545863c28f7ad79e92",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/exception/MediationException.java",
+      "blob_sha": "34abe27364a9b1808c574a4e4d0007591a908e8a",
+      "sha256": "5bc7ca6a592062dde58bef93154c36494cad4bfea19aa723ef993361e25606da",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/generic/GenericReceivingHttpMediator.java",
+      "blob_sha": "edec1f46bebf6934e3810d94d2e77431aadf910b",
+      "sha256": "2b19070f5ad7f65b21edb5f7ab03eb052ffc196b09020d7f14f52580e0c0afaf",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/generic/GenericSendingHttpMediator.java",
+      "blob_sha": "b3b0f44994f0ae3a42b0d28c29469cf6cf274405",
+      "sha256": "0d22b89ce6e2624084e27f68fcf7d47eb94dc4469b8ae4c401e2419db8640fbe",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/generic/ServiceDefinitionProvider.java",
+      "blob_sha": "c2ae8d62caeba2469364c8a05715e34d997fa6fe",
+      "sha256": "71e022aa496e05a38be55a4f6a6a20626b5c6fc3497ba81ea0b78e6aeb0ce157",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/generic/vo/GenericRequest.java",
+      "blob_sha": "6f764f74e415578efde40b159713623bdc109785",
+      "sha256": "c6fd385276c3b3fb555229d2fd046ad477f2c63508504827a373efa844c81899",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/generic/vo/GenericResponse.java",
+      "blob_sha": "d19aaed742715561dc68684da37eee3943098ddb",
+      "sha256": "2d35430d8e8e65205926af444ac9c9c4b2600b14a62a19f1ee68c024b977a26b",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/generic/vo/Service.java",
+      "blob_sha": "1b7a03f7734548fc677059eb1201720515b26540",
+      "sha256": "d52137e31c583016d8963bb838e638220b02258c53fa9e9212904356ba2deb48",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/generic/vo/ServiceMethod.java",
+      "blob_sha": "a155b46a6e39520de9e4df875ceeb3390ae9edbb",
+      "sha256": "19d39db66f84d0b656bcb01efab3c479d28d5ce9c02b0ccca5bb107baabbf3b4",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/generic/vo/ServiceParameter.java",
+      "blob_sha": "bf2fefe3f08f43db49c3a265d585a631ba07070a",
+      "sha256": "e5c66762346116d94bb3e67da29e9b1f98273b77346c5b84f97408bacafca5ce",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/generic/vo/ServiceProvider.java",
+      "blob_sha": "4697a9b3d20debcff386b0a133d714b200e05b9f",
+      "sha256": "d0c8394329ebfec57d97429e79c25a06cf8c4b9c7b7d2d065dc8a660029d859d",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/generic/vo/ServiceProviderConfig.java",
+      "blob_sha": "2eca198537aac4145069482526cd0a3c87e34607",
+      "sha256": "73231bdf3d450892ef86022f47d69d5d8b27e2c3f2ea1db9fd2a52bdf585d298",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/hamsam/HamsamReceivingHttpMediator.java",
+      "blob_sha": "afd30c72db3d580d34bdbc64a9f7195697ce7238",
+      "sha256": "f82dbce3790db980f85600e5e5e72dbf3be784a4a84b37d52a6396532e5df7aa",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/hamsam/HamsamSendingHttpMediator.java",
+      "blob_sha": "6490def1fac5ee8708a1a95f9be517244f459488",
+      "sha256": "f0a53b2169810ab1c7df71040a8c05bbe5be0099e62c1ed4badabd4383760c85",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/hamsam/ResultSrv.java",
+      "blob_sha": "46ac974c918c6d508aa31d6499f327ab658b487f",
+      "sha256": "26ceac90c72104585474316227954e506b3ef3ed9fe99aa9ce41e43a7ad8ce1b",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/hamsam/ServiceRequest.java",
+      "blob_sha": "57c93a4d6322d3b0f5e07c0ce27926c73b294598",
+      "sha256": "d683ed07c2c5c35248812522e55e3ab785de95a3e614374200469c909be7e065",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/hamsam/ServiceRequestParameter.java",
+      "blob_sha": "4a7fdc2bd646882902cf1d8e5f4e8a989cfa5024",
+      "sha256": "0c5187960b69acc6e1f46634f67dd391442857520c24800e2ca566222bdc4e81",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/notification/NotificationReceivingHttpMediator.java",
+      "blob_sha": "bc4d7a150be756d689e8658f9c9406b3c1311066",
+      "sha256": "71dd5dcc946e7322b4a4e37cc3ccfb74dc781c6b3eec0ff5cef45b7de6dc6d0e",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/notification/NotificationSendingHttpMediator.java",
+      "blob_sha": "0aff63e866b0cfa84e2c5d0bdfa2ae9ad82d8f78",
+      "sha256": "6f933a58d2847eee0268af0c090930b1627fa862a736bcd8bb6ecc6f30d43075",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/vo/HttpContent.java",
+      "blob_sha": "41305b26985049199bb1030110e4b201409be126",
+      "sha256": "98a8384371cbcdb607a48041fcb8fbc945001d2e8ab94438f17b2ce9d1db7bd0",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/vo/Request.java",
+      "blob_sha": "a512bad96f20db5bb8405a74358b89f725099932",
+      "sha256": "68eb3744e7fb07e0951e44e5eef1147985761f8f22497720bede70cf07fdb47a",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mediation/vo/RequestHeader.java",
+      "blob_sha": "5613a39d88323fefe4393b60dc4b44439f941201",
+      "sha256": "fc42c952c97b6dc4808cb1fbd4063d49f20837a763eb7a6bc5c98ac1b763435d",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/model/AddIceCandidate.java",
+      "blob_sha": "bfdde9045a2389ece49676985e6a8ee6d02c28f1",
+      "sha256": "723644108896336f19a81376c92213c2a9b2d9ec7dc7eb058923ff040365aac9",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/model/CandidateDto.java",
+      "blob_sha": "1c285b973640b5f1d46552eacd3b1a614d3f93d3",
+      "sha256": "6d47074fce1dc9b8644192358f580be0749b3419136ccffadb7fe1f47485171c",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/model/CoapRegistration.java",
+      "blob_sha": "a8b7a0e95699a4f7ca9d7b26283b89237b2f4fbf",
+      "sha256": "7f538b027937c4092b61207e3df63030a087e1f2c91afc5f9495b7a095bd75d1",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/model/DeviceRegistration.java",
+      "blob_sha": "5c84a6fe45a20fbe21d5a7e65df1109c5244aea3",
+      "sha256": "056157cee97e5ce268d68550711602430145331f900f18990beb80ab98bfc512",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/model/IceCandidate.java",
+      "blob_sha": "2187bdc9f284d8fe0597166a09b02b1fdafa13e3",
+      "sha256": "fc37c760a1e18f3b481621e6d62a1a6d636ca1968908e6cbe6c58d38aa86be4f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/model/IceCandidatesResponse.java",
+      "blob_sha": "67801777bd527dbd9161663419422ac9ecd22204",
+      "sha256": "2152d199fa464aa984d05447cfb5f55bc266dd84dc318e113bab842195a52fc0",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/model/MediatorMapping.java",
+      "blob_sha": "4c3dcd32b01b1cb46d3cb64f164fc586636c3df8",
+      "sha256": "223773ae28d4dae71cf759af5506e1cf967193aff196186237436ca17b7cc5fc",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/model/Message.java",
+      "blob_sha": "8de813d8f7ce98671ccb4c7c3ca918b431ab971b",
+      "sha256": "bf20ea8b06bfcf1d37bd7ee4e1d8b2fad6e22b7f16a399f95066a9b29ea91012",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/model/Peer.java",
+      "blob_sha": "858131392f9229d5847b0605aa61fc010dad16c9",
+      "sha256": "43b9f68f6dfe8ab3051140b4508f181d3ec1307a08202f306b7266aa159a8235",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/model/PeerRegistration.java",
+      "blob_sha": "1f847dec93643d602c807b5b0ea5b6eb5f11daec",
+      "sha256": "c243bf5a86e646c6c9c71e75e25f1d18d80be2c275fa13fed5571aed8e9f3cfb",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/model/QueueRegistration.java",
+      "blob_sha": "5f70ef0040fd9c7ac71499a0484259cdc989334e",
+      "sha256": "abc697a730ba09bf60630874de438b84aec544e5e7cdd6645670ab544748eb45",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/model/RestRegistration.java",
+      "blob_sha": "85a02dc4a7572baf8b2230538d1abcc22351b9d1",
+      "sha256": "d795d8d5e965aab2d4fd5cc2bacbdc16f4059954530c3dce15ec90f4ea577561",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/model/SdpAnswerResponse.java",
+      "blob_sha": "7f8e59665491dfde39a1ac575f8d89227b77e69f",
+      "sha256": "4b97bd34578a635c724d941561b035c76ed042a249d88fe03d8cc797d47ceb64",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/model/SdpOffer.java",
+      "blob_sha": "b2cb9997913529b67439fcec8ba61bc782d25f5b",
+      "sha256": "b1991de992c319b281072b7ef322899bc1a3aefed81ac7188e2d608c00d5e9fe",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/model/ServiceCallConfig.java",
+      "blob_sha": "21beb5089ccf2d51736c84a1ef779d4cef7a62e9",
+      "sha256": "a8f85b7340def2219f7e90fec6315991479e16cc5bb3b30f24cc5f9f19699970",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/model/TurnAddresses.java",
+      "blob_sha": "b558250cd9179d163c9ee4ca0baca64e9ae5dd7d",
+      "sha256": "56b442aff3b9213476d78cf582d30fdebd1bd149156296767bb415004f996f4c",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mosquette/EmbeddedMQTTServer.java",
+      "blob_sha": "5b72b440f6891718c628b4eb2fe32d7e2ad04de2",
+      "sha256": "ffd61fa824950a091c5295d1eff57b99cbd5b60a797dd44b7d19f242f00b4027",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/mosquette/MyIAuthenticator.java",
+      "blob_sha": "1ce480b5443b83edc5a842e31677a397c9bd5b73",
+      "sha256": "2e8380202a0aaf3b0970d78a9917f4fd95e339ea70ec5629c74aa7b5bcd0c287",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/AccessibilityCrud.java",
+      "blob_sha": "e4fa2fa933e3d614ad2d4e7eb38a0dd4d22935f5",
+      "sha256": "cf3576110a612bf404d17e94185df78f68ed9a0a4a881aaeb44af0dfe666cf93",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/AccessibilityCrudInterface.java",
+      "blob_sha": "2957a85d32fcd4e65d098b7eb9f5cca9232a9746",
+      "sha256": "fbf1db6784138888d9cf97a638a4799df87327e15ae7d9abfacd70b323a513cd",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/ClientCRUD.java",
+      "blob_sha": "acb29064b5731c1816f3edd27fb1f47940e71370",
+      "sha256": "7a3c94a3b689c7a89621bc7733329993ef89b5d80a5404de392ae37e5b062e60",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/ClientCRUDInterface.java",
+      "blob_sha": "93bd71538644f2f59a54118fdc9b1609611845e6",
+      "sha256": "5362d841a19fb6c159d51db6169f075d6418898d8ab4ec0a7c378c6a14431f6a",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/CoapCRUD.java",
+      "blob_sha": "c3897e19a740720ce1beae95b6839bc560bc9f14",
+      "sha256": "8b92fa06fb12a0c7174a4d3d49ecf467ebbc9795046b0fa5289840d83d50606f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/CoapCRUDInterface.java",
+      "blob_sha": "750f1ec512eb199ee87025eba522b50dcf704fa9",
+      "sha256": "38291dd0a8435fc903d8ebd7d12d8cf7ec76da2eaec042320c5b2c7c7228f965",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/ConnectionFactory.java",
+      "blob_sha": "c5b0a9a06cd90b4e742b0cb434b1f005702b6bcf",
+      "sha256": "7b5d8bb461c413ea6dfe3e47de3b38e38e2bdfe8a52eaccab2a358a889c0a55a",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/DeviceCRUD.java",
+      "blob_sha": "7e2c6b384ea9e6c88f1a1f202a556f39984965c2",
+      "sha256": "db8a3e41e77a7c7cba73e81eb994570065ae994f234f48c2a6be9640418d80e6",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/DeviceCRUDInterface.java",
+      "blob_sha": "371bee41cf65577003629baddcabc9e275f90514",
+      "sha256": "2bfbfc9d3d4a7685a516e45aef74695e291e663249a831b071b06df98c40fefa",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/MessageCRUD.java",
+      "blob_sha": "18370bb3bd2bedc432173d811ccae621ae9942e0",
+      "sha256": "f884bee7d9a9d87a36c7b4cd2d7b222b320395685bd63f8e04f25977421fcdba",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/MessageCRUDInterface.java",
+      "blob_sha": "ecec34707feee1b1a5c9d5660a188edfe1f33f91",
+      "sha256": "081fa4becfbfb13cfc1ff23e110694528266b7317748f70744d115684a0200db",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/PeerCRUD.java",
+      "blob_sha": "065d2aa186bf3a2692222fa34aeb3aaeab04b73e",
+      "sha256": "56eb14c0df4c3d447cae5d137c40fa9b2a0be441ef2027dad1202a18901c50a6",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/PeerCRUDInterface.java",
+      "blob_sha": "a6315d7bd22cdf1b5fd799650eef7c55fd9dc838",
+      "sha256": "c020aa4869a719b5243694a438cb6a78567514d981ee102b1993548b5e862af8",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/QueueCRUD.java",
+      "blob_sha": "cb19f002d33e1fa7e63ff0617adf1a4203a35f48",
+      "sha256": "6a71e109052e65a7d2eb555f113189cf759cf27c4cf9f04b3b36226eed35a0a2",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/QueueCRUDInterface.java",
+      "blob_sha": "ad438c7540a96d329abd859bef02dff6bc4c15a5",
+      "sha256": "fb0055f197ea2658a8bf522fe39e6185949e390c6a10051574f34f3254ae6cc3",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/RateLimitCrud.java",
+      "blob_sha": "1a10dc47f2e64d1066e5ff4b9c847a742f0c6083",
+      "sha256": "4eccf3159c3df0a3dcf4247b62d299e13178f4cac4fc06529fb06354cd013c05",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/RateLimitCrudInterface.java",
+      "blob_sha": "9cc6cd88d2f8dfccdd27291db65dcb7128d155d9",
+      "sha256": "eacc81cfda5f1c1ad690fdcc4b6153da339f47aeb8349b18b7572be6beb1443f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/RestCRUD.java",
+      "blob_sha": "33366bfa8b674165566126b3d78615ffe0eb57ac",
+      "sha256": "40c5c00f50f80a8a8fd817ed8b071d3c53dba5190f545625383dc7b314e679f8",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/RestCRUDInterface.java",
+      "blob_sha": "289ca0b220fc6beab8a68cb6564b50fa3ecc0d20",
+      "sha256": "fe3f47c5b96f9e3611a66e5d1a0a5b416727da12c9b65f025f9bc3031e21c448",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/ServiceCallCRUDInterface.java",
+      "blob_sha": "d6c8f3238f6037ed85f8fe31f564b34774ef68c3",
+      "sha256": "aca7ce77bf6b51e73a25a895dd4fc93c8342ba3b997ddb881ff7a9cff76d3779",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/ServiceCallCrud.java",
+      "blob_sha": "9b893ec66188f98be9859d243dac2e2c31750ba0",
+      "sha256": "256dfb213bf02f490e3a31e9f2ebbfdffb6786ca0bc14d5e335dde8cca3b6440",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/ServiceProviderCrud.java",
+      "blob_sha": "7ff10061e79f7744f423d56e223c66dacc34057c",
+      "sha256": "d5c10b679a34e42c0feb59b30b3290e34901075ef2ad95a12c46dbcb5f8b7d0f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/ServiceProviderCrudInterface.java",
+      "blob_sha": "6f2a7164fd7ccc99ef7d47841327fe1de04507e9",
+      "sha256": "0d647b9fd218fccce72bdd019b5137a4f7c4d6b0cbf3375846bc73e29a9b541f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/MySQLAccessibilityCRUD.java",
+      "blob_sha": "178ea949aef5ef3009dfdbff2cb00272f99ebe69",
+      "sha256": "023410e50b4741162af758e5f7d7009d6edb1266fe7c4326116a37a62387f66f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/MySQLClientCRUD.java",
+      "blob_sha": "1789e573b403069b2035b26be1d84a50049dfa4a",
+      "sha256": "0ae197699f02768c9cea693a637f8985836e58ea1658072a6480a098bc9e0fd8",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/MySQLCoapCRUD.java",
+      "blob_sha": "f3f8402cca81b3f24abf5079cfa63d2e34711fbd",
+      "sha256": "44ed82b95181d853200195994c467098df1b95fccb121ac40c593292db3aeaf8",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/MySQLDeviceCRUD.java",
+      "blob_sha": "4ba0fbc0f2a1c3f9b8754d552702d5cf243c6607",
+      "sha256": "45fc95e78b98724c830990893da1034a5f7898c2696e60ebe48b50c92162b3f3",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/MySQLMessageCRUD.java",
+      "blob_sha": "ec60306962f2d6c1b0a347fe0d4e3e2c354b1cad",
+      "sha256": "ab5126e985669e7a694bef3eb635e542fe43162cea79f578342de8524251147b",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/MySQLPeerCRUD.java",
+      "blob_sha": "39fb3fa7a6cd0dbb94fd380203d8b59812e2c8a9",
+      "sha256": "e0a302f784c35e111397f83ada051fef5fb35f05315360071ac774f06fb87e35",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/MySQLQueueCRUD.java",
+      "blob_sha": "9954b59ae63446ab5b172166fd8c46dc9f5b9894",
+      "sha256": "76040ee7bf01583ae0ec41401534a618a0ec76abfee2568812c38d197af22da0",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/MySQLRateLimitCrud.java",
+      "blob_sha": "ef48712849ebc869c3064545cbe9e6805bccc2e7",
+      "sha256": "3e15eab97bdb8ce9cc5aa8977c53f089dd39674f66cb6b0b9b39a2a807db2257",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/MySQLRestCRUD.java",
+      "blob_sha": "5fd859c94baf51be7ba2fabf415dd984320735e4",
+      "sha256": "93fef6e5fec526304ee0e4d7ef70478850e60f237c5d706ae2c0cd1b26df0ad8",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/MySQLServiceCallCRUD.java",
+      "blob_sha": "4184770ed1c7638ee093c90b42d33e8ea240d7aa",
+      "sha256": "5bfb25a9c137df31c42d02b5492b80ad1f2b26de6986e3911ba6bdb21e5eb612",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/MySQLServiceProviderCrud.java",
+      "blob_sha": "106fd135926ef882caeb9ac259cb1214faf763f4",
+      "sha256": "7657c8d3e7cc4b2694ef78fd2f239b269f9f093c4314b0027f178f5b294dfd2e",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/OracleAccessibilityCRUD.java",
+      "blob_sha": "b13b7d793a8eaed4c60eaf330ae49190201e4176",
+      "sha256": "d7166cdd877a48eaddeee13a8628f44e949ab3ec20c42267f890af273aa32dca",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/OracleClientCRUD.java",
+      "blob_sha": "da62245981f3abc82482f90b9baad074335257b1",
+      "sha256": "83d9c4aa817647f07e8fc53b91b9b342b36b0a4eb5845962b27f74272e48ceb4",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/OracleCoapCRUD.java",
+      "blob_sha": "694be7d605b6617c8ab1fdc6952d178fe76592af",
+      "sha256": "3b61365e46857cbae0a1f798a5e46c30a81cbf9837ea937268aebaf0f498ac6c",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/OracleDeviceCRUD.java",
+      "blob_sha": "6626763cf8d8c41542d78d137c7de71f3440bb96",
+      "sha256": "c7c90faf6a258a7c5c4aca8b49bf68e0fbd870e35dd53d49c9ef52c7da7f24ac",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/OracleMessageCRUD.java",
+      "blob_sha": "bc025c552c698b602505db0c99c71eb03c4db9d9",
+      "sha256": "e71c2a8a5803cdd738360657db2f5586779fb8efa1d42e239f2a02cb32b6953d",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/OraclePeerCRUD.java",
+      "blob_sha": "15b71214c93fcde0b9023fda91d4f7a944cf81d0",
+      "sha256": "337f558fd8fd7511034b5e615a64941e5fe79b8f78a78f195f53f8cbbb916883",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/OracleQueueCRUD.java",
+      "blob_sha": "3f42b7e00b2ecd3b548b42625f4cb3c2960d8992",
+      "sha256": "91c14ee7ea7d2dd6876f4eeaa2f3953998a30d6d5d5e8013d0b1063fca9fbca3",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/OracleRateLimitCrud.java",
+      "blob_sha": "4df43675d072a6e5d441557d388101b98d14f0f8",
+      "sha256": "77c1ded3bff79bf0f3b15c597fc4d6bba1545d0df5c53791a9cd1a68895577c8",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/OracleRestCRUD.java",
+      "blob_sha": "93d95afdffd4d0e1b340c377e114853008c23d84",
+      "sha256": "24bd0679075395e4e730c9be715d6e42e586a30b71229e11831a1205da7b9c77",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/OracleServiceCallCRUD.java",
+      "blob_sha": "1cb241c7473eb00cdbd93d91313b13575ad636de",
+      "sha256": "1a9a2a292d3ccc427e5d491ff7ca86f315a0827044112b5050b2af9e3b91f59c",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/persistance/impl/OracleServiceProviderCrud.java",
+      "blob_sha": "4ef3451cd336b9148289b6009ad8552892707aa7",
+      "sha256": "c78521e3d014636df7e9d23d860dd39959bb7e5a19642f9070ad0f1ad5ff72f4",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/ratelimit/BaseRateLimiter.java",
+      "blob_sha": "78a9eb09dc4d0e8de1998937bbf4874f109f2679",
+      "sha256": "f75b4642ba0031855d5038e55586b036c5dfe8ebc95ebd2368602250c82a22c6",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/ratelimit/BusinessProviderRateLimiter.java",
+      "blob_sha": "f5c442c142b7855566ac7b4185449e79a5e29678",
+      "sha256": "ae69e215dc05a3e83433d3175af9719fac55619e8276d06bdf9502652fe3266f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/ratelimit/BusinessProviderServiceRateLimiter.java",
+      "blob_sha": "a4dc0cd0f12cc14926d4f7a83990f0d4c7f4f868",
+      "sha256": "ce039d0dc88881ceb2d7b9b28ff0cfbaf39d83965fa0f4d5230e1d5255c686e8",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/ratelimit/BusinessRateLimiter.java",
+      "blob_sha": "1a6d9ab1dd4a55ef831fa8df474d36709a2ffcf4",
+      "sha256": "2efed4513cdba0140869ddeecdb2888c59aa27ad97abd71bdc8e07619cfd2210",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/ratelimit/IpProviderRateLimiter.java",
+      "blob_sha": "6d8d9339c2f47d8de10d82d6557552941fe31273",
+      "sha256": "44947dc1a6823ec26d2ba086852e82d8ea817a6ef8ec240b54426a8b16224bbd",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/ratelimit/IpProviderServiceRateLimiter.java",
+      "blob_sha": "ce9625fd78f45220e269fc6a425cfb389112d53f",
+      "sha256": "979822f363f2b83ab50525a571cef33d16419fe3b19748cb651a3c9cb745821b",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/ratelimit/IpRateLimiter.java",
+      "blob_sha": "e2c616115399a10c56628c4814b9c0d1940b7491",
+      "sha256": "c190d3c0176733b058acb0d014f460823a25dacca70fd46b0af7b72e4d6cf20a",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/ratelimit/RateLimitBusiness.java",
+      "blob_sha": "b4597a04f05fd950d42f020b3fec5a6298bfecbb",
+      "sha256": "195553778ea1ac4ff43098bb4cbbd6cf8c99cabb9938fdb390e2814447748a31",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/ratelimit/RateLimitIpAddress.java",
+      "blob_sha": "1980c011199d42a17114489f0240030f2e60761e",
+      "sha256": "5a63f6bd57832977cbe71c77cd5f2a1943251eb9d5dfc4d5928071aa5c8fc8d5",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/ratelimit/RateLimitService.java",
+      "blob_sha": "5d0bc1618397fcd35a4d33f13d872fbc09ec8ce5",
+      "sha256": "9d1118a77416d462488f53bd04e6bf1df58dfc638546a25d4ca8ebe6ebe9edef",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/ratelimit/RateLimitType.java",
+      "blob_sha": "72381015acce318b579ff400c339c8ee681e03ea",
+      "sha256": "97ee13aff11aabbee1d7ad0a59c9c6d6e9cb2b27eb71d1205e8b717dcb9460b6",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/ratelimit/RateLimiterFactory.java",
+      "blob_sha": "50a6eee43bf2994a46af4478f41e0e0976a4f55e",
+      "sha256": "855583c81a74da70c2c469f6e71d528e1a2950df8ef1d30ea43015b9b4c1156e",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/ratelimit/kafka/RateLimitKafkaManager.java",
+      "blob_sha": "4e0ffbdba2ce6d1e376543184c0d82e4bfec8904",
+      "sha256": "ddb126e83c42370c8104a7e3ef279205ebcb7eb8c9612f0e8d53a18a1ad8cf57",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/ratelimit/kafka/RateLimitKafkaProducer.java",
+      "blob_sha": "eadae6a7fd5bbdc8e5341c8e252460f9dc5be4bb",
+      "sha256": "d7034fd16aa37fcd3265a003d2f69ffa9cfdd5c989ba9ee32bd1275061dba62c",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/BlockingQueueMap.java",
+      "blob_sha": "6add5f0668daa8590df6d7c27b361c6f0f3b2c0f",
+      "sha256": "630b2b3f4ce34e44d35e19517fcc1da7e15df5e30ba29af2afe10295fe74dc50",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/ByteUtil.java",
+      "blob_sha": "bb0e16f740c9c662143be442b4081eeaee80d581",
+      "sha256": "6c4947a20b1185a6a9f73f7b1fbd58366f21208ffae7bfb72fd23d411321720f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/CacheCRUDInterface.java",
+      "blob_sha": "d8f9e517a93544fac95e68ca9db1528a558ff6f8",
+      "sha256": "d32447e51fcf0ea00b45e6e716cd127a99ff67e0ff344c55c7beee16d61e54f7",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/CacheUtil.java",
+      "blob_sha": "4bd40142049c655e0c1e0713c0fa0d5c4666cf55",
+      "sha256": "378eb93c7fbd38cab27a9c8266f25db1daf975332abc9c26917406eaf6dc8565",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/CaffeineCacheCRUDInterface.java",
+      "blob_sha": "664b4abf64282165087abdf41974eeda86926bfa",
+      "sha256": "1793952f74d4465ff3cfe25e77b2360574a9cc9878ee855e240f0522e20dc3c3",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/ClientHelper.java",
+      "blob_sha": "0aa1f850fcc2812d1f42e67430fe869d1ec8a681",
+      "sha256": "90dc4de53c72ae5f121819c7a7b80a5db7d92d153e704f8b456cf8ab3d6480cb",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/ClientPoolFactory.java",
+      "blob_sha": "df54e123b62ce68cfe1e0a8236bef1b35cec5692",
+      "sha256": "bf4fa2839fabfd073e917f8d5789b6e278c4cf30a5cb330b1b845f20e2fbfa2a",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/GstUtil.java",
+      "blob_sha": "be033c4d64e376513e005c65cfd5bd85f9415d45",
+      "sha256": "86daad0c7b155398e0dcbc06e8a4c00b0810dc8e6ca0e2780044156fbc4ce9c2",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/JsonUtil.java",
+      "blob_sha": "2428bd5436d1261667498ec354ff8d3463dc6a6b",
+      "sha256": "ab99c82c4dd2d0b0e93f6f9d43e6e8948a979b63531642e8e92ba8d1de116872",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/KeyleadUtil.java",
+      "blob_sha": "038731f61ae5fad4d9b00a026475b0e1ce72cd6b",
+      "sha256": "9f5632c02896c0f018d7a7714e96d1e76de6b970138a8daed3a002c14cba908f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/LRUCache.java",
+      "blob_sha": "d118e6e16f2059ccb68e7855490df738c8c03c2a",
+      "sha256": "8cf7bf1c80b01d9536792baaf9989988268451ee443ee5a1c89f7b21a78e18af",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/MemoryCacheCRUD.java",
+      "blob_sha": "122b580d1b94542857b3c2415c284c8ec478d5cc",
+      "sha256": "c9f8d1092d42db6be498147dda8b400fc4bacbbcdcf1a892ee141ae0a2cfe96a",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/MessageType.java",
+      "blob_sha": "8da64938d080db78d2f72a045d798d4973639e3d",
+      "sha256": "af27c86906f13a40bb2a905a957cd4424be6b566aea50ecb097f430a8ce312b0",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/MessageUtil.java",
+      "blob_sha": "c6ddfe4a3861ecaf75ba178c1c6328b3a46efeaf",
+      "sha256": "e3023a907e6f3c1f5957bcac005fc7539c0fcd6fdbe336c2bf7beb1b6aafa7a7",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/PODLogUtil.java",
+      "blob_sha": "5b7bd53498c3b0de8a4dea82ea1db36f828e74d5",
+      "sha256": "6f3ced4ea846994b68c37a8c7e02727191ee23680de8b16f6b1db9713e36b5ca",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/ResourceHelper.java",
+      "blob_sha": "9bb40e68e10fc36691fe967ecec274a93a14606a",
+      "sha256": "03ae8ffe8399bc9b35bb181421ba77a749531d93ac7e472f2eeb2dc98e168a0f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/StringUtil.java",
+      "blob_sha": "ddd6ca036cc62a59b24d9274ae67b6aa580ee84a",
+      "sha256": "392cf518a778a32052c7b7b3d7cde0ec58676347b10e2c3c0656a6f457840c70",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/Timeoutable.java",
+      "blob_sha": "ceba3343dd521af9338df93c3bdbe2c0d70270ad",
+      "sha256": "3ae4d761e86f721a5cd505f49fb845c509dab89c92211936d76c813bf9e2429b",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/TrackerUtil.java",
+      "blob_sha": "45d5ee1f5192b34bf3eba52d48da93d6da105bba",
+      "sha256": "470f8bbd47910813c94e9c2568fa3a3c54d1607a36ae4e6a6e9dea3665b271af",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/configurationresolver/config/ConfigurationResourceRepository.java",
+      "blob_sha": "356ae37f21da21847abfa04cba64fa062fa9db74",
+      "sha256": "59cd5ace8f82835bc8aac13554fac8acb0d78461508017104df4f1bac3523a64",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/configurationresolver/zookeeper/ZooKeeperProvider.java",
+      "blob_sha": "f326c372b50befad42e00225cb7dca3b566af04d",
+      "sha256": "b1eeef92de75a93f39e7217b0fbd6db86516a702a0f8d5bc47f6eddd55030c2f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/configurationresolver/zookeeper/ZookeeperUtil.java",
+      "blob_sha": "172919a339257aae121f887f1a8935def3a3d233",
+      "sha256": "53f5535d1b5ce240c7913127bc56f0cbc8cf671d97950b97093fce7418b77870",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/nosql/CacheHealthChecker.java",
+      "blob_sha": "e33fbe69ee86dbe50259cdc66babc1a0cace0204",
+      "sha256": "c64746e783868fb001b30b910779cf0547fb777b035de77454ca4328d6c3987a",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/nosql/FallBack.java",
+      "blob_sha": "99666b28420c02d2e86d5aa06d0224466d382c62",
+      "sha256": "4c4ae6cb69a767481500c74382630afdbb9a8b2a652ca0e59c4a644fef969bd6",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/nosql/ResilientCacheInterface.java",
+      "blob_sha": "bdba71deca3053a8ee75d19e0dc1ee77d82c9402",
+      "sha256": "fcd741df56a4cce6ff1bb5518ad250d529318953f1ef4282021b1dcc29f51fc0",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/nosql/aerospike/AerospikeCRUD.java",
+      "blob_sha": "5ed631c4aea00fe2399b33d9e66501a7e80d0f98",
+      "sha256": "3a53a7463a00aab6038d854effb70ce699d748ae7fa053bfb141f35d6838f348",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/nosql/aerospike/AerospikeFactory.java",
+      "blob_sha": "c294586897b54cd640b32bbe8a37df68153b53f8",
+      "sha256": "151a7c54176682dde67636d631698f88297e31b4b18a78d6eef5d22ed778c542",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/nosql/redis/RedisConnectionFactory.java",
+      "blob_sha": "cc59081eab452050691f5feb93ae78e420551141",
+      "sha256": "1a9fd448ad529bfb58cd4455f28a78a727618bbed5abef9ba80f9ebae12ef873",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/util/nosql/redis/RedisCrud.java",
+      "blob_sha": "bb3cf4bcc12dcd7cddfc1a2eec88aee6e5313dee",
+      "sha256": "ef99b37a6872f0581e66503da5ce5511e77cb3d7674737697adf4db5e3460d44",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/AccessDTO.java",
+      "blob_sha": "57845f3720e775c9a2203c8a69c12932aebf8f07",
+      "sha256": "4cec1d9c6862f9f166858186e2f1fa45d909b4ce71b610431162b0fe07ba677b",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/ClientMessage.java",
+      "blob_sha": "3659fe80a9742bbe8c9f5d5da8d6aa4ba9f80ae1",
+      "sha256": "58497b24b2ced38b2b63da5c893ba3645fc872bf6b6de89fdac6c36a73509539",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/KeyValue.java",
+      "blob_sha": "2b8e1819dcd82afbfcb31f5282441d79dc659a80",
+      "sha256": "4a746e878278473d698991f6fd9ac1c6a1d67eb2d906d0305b821c812c0e8660",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/MessageVO.java",
+      "blob_sha": "0d24398bfecaeb77a178fc07effa674ff6883a1f",
+      "sha256": "712e06a8f1e8a4d116907b1e9aa15e37e5a33a4d6b12ef8d1064da1d9b04a010",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/MessageWrapperVO.java",
+      "blob_sha": "ec3a49afc7707278cc677425cd024314da796d41",
+      "sha256": "e150cd7bc57d99f33d489ef40ae739b3acf3e83c8cc4225c0eae4046c3c13c4d",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/PeerInfoVO.java",
+      "blob_sha": "fd04fd44799dd66b342c904b007ea3f203f6c410",
+      "sha256": "2af608b69899bb836e8418d21c4a109b7d1b641c85ce5e41193815dc7979ade8",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/RegistrationRequestVO.java",
+      "blob_sha": "d9fcf337be2f7c99d68f3e8b7d7525b8898453f1",
+      "sha256": "dcf8fd35ba2c2099ab9e22e40951bb685ea93e685fd1e0a3ed1f1aff6bcb278a",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/dto/PeerDto.java",
+      "blob_sha": "b9f0c21f6a6e1a7db49dcef6075452e3d7f69b68",
+      "sha256": "69c90fb5d519887f65ee7141b95e546f1375d4b646644b0ab55c7ee57ba29b6f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/log/AfterSendLog.java",
+      "blob_sha": "2c8d30831f905728d250bf8d02c0b2c5d7334519",
+      "sha256": "a73540087694569b33ead96e88dc684d037c113f8b235c3c43263f70df82f42c",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/log/BaseLog.java",
+      "blob_sha": "0e3fcfe4a6adb30071149364b22e3a61f40e6c78",
+      "sha256": "5e6652a6b63bb44912a3011f9ecee8867c9d3f10de5db9e59c5a553ba07d3df1",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/log/BeforeSendLog.java",
+      "blob_sha": "38e87903b58178bb6fb10476746738be2aa04841",
+      "sha256": "1f443eb896a74750d4975ec97a935439916a5ac7501ea67aac5c0842afd52034",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/log/OpenClientAddressLog.java",
+      "blob_sha": "97219d13dff65c949a78e9938442a86b78177783",
+      "sha256": "ffcaeb64797afbc4777fcfdbc6d987c8d5265f046bb883ad69e9ab2d033016b0",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/log/PODMonitoringLog.java",
+      "blob_sha": "370073a078c6dd0033be7b5a6e2600f7f782c517",
+      "sha256": "7380d1643748b2b43f9b8439f6e46534c8a121d59f99c1c260006f6c2704319c",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/log/RateLimitLog.java",
+      "blob_sha": "3514a1668e6dce148823f61e53f03bd44ef24849",
+      "sha256": "91d6eac2e94395ecbc61c21e8d740dee62f371bf7e58b3164ac251d29c42b3c9",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/log/ServiceCallLog.java",
+      "blob_sha": "ba6874be8286d59b5cedf82ca2d41d8d55af95bc",
+      "sha256": "877a7e4a50a04f9a7e4dd831083a797573e4942cf76d49588d61578095e0ac23",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/log/ServiceTimeLog.java",
+      "blob_sha": "939b9010370bb69e520861e43b5e3ce348fe90fb",
+      "sha256": "a60e87a0e77976115c3c34dbc6d8231e3940567513b8c3bdc693a844b14b2865",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/log/WebsocketAddressLog.java",
+      "blob_sha": "046461d6d497d9588b85bc250637e45b20aeb8ba",
+      "sha256": "4fe3a1e925592a548a50aa54d8b64073b712cb1c0a4cacd5cf7545ad0e4cddce",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/rateLimit/AtomicLongDeserializer.java",
+      "blob_sha": "9cd5d791760886914d65bc3de04769b65236cbaf",
+      "sha256": "03d75623d7386ca6509f56de8d492d84b316205b7956f7c097211d6fe20c3c2c",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/rateLimit/RateLimitConfig.java",
+      "blob_sha": "0db1080e31e2d1488ba6f855534cc8028377b041",
+      "sha256": "f8be5a63d0d3e39944d405dabfb4e843826bd78584266de2fc1a15f5f1e245f5",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/rateLimit/RateLimitDto.java",
+      "blob_sha": "4633d373b853d1902bd815dd5bb45fc017b0f2e8",
+      "sha256": "c4df2e164343c0828d29d4b6f76a468c27d1800a550f36aea6bba93a7b4ca786",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/rateLimit/ResultResponse.java",
+      "blob_sha": "de8c0bb893b8ceb3fef2e40a909e23f4ca82d35d",
+      "sha256": "1c8a9299311fdc0b4ce620dface19665d9ff925eac6b3afd5546944741a3409f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/rateLimit/business/BusinessCallsDto.java",
+      "blob_sha": "e62bf34bce715f39032e233562d3fd6ae9b47d13",
+      "sha256": "b734b7b4fba77078ed874e5406cf15b686e445f26352f04a4e090856bd5c9cf7",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/rateLimit/business/BusinessConfig.java",
+      "blob_sha": "2a5684b2411c32408c5e89ca7c75389d9c426fab",
+      "sha256": "16759049474744c21e430bcaf3f1e77eb8f6985723fa771525f9ce165dcf7aa1",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/rateLimit/business/BusinessProviderConfig.java",
+      "blob_sha": "5bbb866316af53693aa73823dd9873f73728a95c",
+      "sha256": "e4cb233e153cb7554fcca053e8f747c46a3296162bd1cfa8cf0edfada48dd5f4",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/rateLimit/business/BusinessVo.java",
+      "blob_sha": "f2ef0f7661307912a2ec5d638cb8e70552736123",
+      "sha256": "ba5c859b821bdb04dc174aff0fc143dcf4ce612ae245077ef54ceb78d1e17347",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/rateLimit/business/GatherBusinessDto.java",
+      "blob_sha": "5c2f8b99ce978260f6b03699ccda18d3402a38dd",
+      "sha256": "57273a6ed8aac9791e0bd03ca2372268b5f880af16f6911859a21230fff65fd1",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/rateLimit/ip/GatherIpDto.java",
+      "blob_sha": "dc658dfb2bcc3e1c968972e8b12777bdc5d80b22",
+      "sha256": "34fbc2f380d735d0b07131661b498b568c9049b6a91ecf22151dad4745d5b936",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/rateLimit/ip/IPAddressConfig.java",
+      "blob_sha": "deb0df8fe08448c36905a250c66f3611b851f9aa",
+      "sha256": "bfcd25fdfb2c3361b0b0c180958a8fb2a56ca39501b863f6701140dd00fdf71a",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/rateLimit/provider/EndpointConfig.java",
+      "blob_sha": "67a045a92a89bbf9503e1db8a0efda98d55feab3",
+      "sha256": "ff53c04394a27ba6fb38b5016d396eb599abb401bd26fcb902de81dbecce08e9",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/com/nozha/async/server/vo/rateLimit/provider/GatherDto.java",
+      "blob_sha": "643ed8679b2c15282ef6095c7f42603a04643664",
+      "sha256": "9141a60a78919fb34da0604df3feace1d1463eaaaafbbad58611de4255e4cc6a",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/io/moquette/broker/Server.java",
+      "blob_sha": "a39334c15710e82e6e4a218010a207ef1886ea38",
+      "sha256": "4bfa7c52e0291f126348c708c4e3faa888e411e0670a7d3381375b7abde96af4",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/apache/activemq/artemis/core/remoting/impl/netty/NettyAcceptor.java",
+      "blob_sha": "1d8dab0f38c02007b984982360443a68b39c44a0",
+      "sha256": "de1c2e9243af784d06c7511695615c1192d00d68760d7efe562ca3c0d87f5788",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/freedesktop/gstreamer/webrtc/WebRTC.java",
+      "blob_sha": "9abf75fc49a49db72278c715ea33c3d0c25a6593",
+      "sha256": "87b5ba47ac53809005eb206f5697b99c8caa6dd2cc6f439b8d4b56c5b09aee63",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/freedesktop/gstreamer/webrtc/WebRTCBin.java",
+      "blob_sha": "214079f9967b9b686dad22d8284c930d23a5bfab",
+      "sha256": "eeab39e3323edefd08176cfebf6668e6591bc0838e6a9c24ae582db74e9ed9b8",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/freedesktop/gstreamer/webrtc/WebRTCBundlePolicy.java",
+      "blob_sha": "9201c3b59aab7494c6991561ab5417eec8a247fd",
+      "sha256": "d7192fc7f8f63cb3ac4e19407dea39348684ed428f885c3fdb38ee2966941ebb",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/freedesktop/gstreamer/webrtc/WebRTCDataChannel.java",
+      "blob_sha": "0fddd49eeec84d31c4fabc71d2dc6888c51025ce",
+      "sha256": "e0dd81c51dfac775a8c70f86c5160c8a3ed13524df78846964b5a629df850b65",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/freedesktop/gstreamer/webrtc/WebRTCPeerConnectionState.java",
+      "blob_sha": "30266144891ddcd603d1295bcca1fccfb3521f33",
+      "sha256": "23c972d13e90de27d0556801de0ac075265f93bcbbf20960ae55b3321863b5ec",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/freedesktop/gstreamer/webrtc/WebRTCRTPTransceiver.java",
+      "blob_sha": "6362f1b3aead37b6b6c976c6665af2608c4617a9",
+      "sha256": "165de4bccab1db7e1a2c6321e3900752d6e4c0da8790edbef5213489a2748b6d",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/freedesktop/gstreamer/webrtc/WebRTCSDPType.java",
+      "blob_sha": "d45f892aa76b08d29455c536dfa3508e741c9e31",
+      "sha256": "98c311e08c60e95f2e6bc87d36dc65d8660995b0fbf16f50532de6f17adc9fef",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/freedesktop/gstreamer/webrtc/WebRTCSessionDescription.java",
+      "blob_sha": "9ffc23b42d164dbfe099a067467d8f968e862fd6",
+      "sha256": "6c91e078ab09f897bf6f21d4bd3cdfa9aced588d4247de0b385b5eef2ab7c930",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/freedesktop/gstreamer/webrtc/WebRTCTransceiverDirection.java",
+      "blob_sha": "e2ecd0535235d4c515309c379d1382dccf98b87a",
+      "sha256": "c1672a28c98ce16c594b4e0b385a118ffa7988aca5739fa60c444caf6286300f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/http/server/DefaultPathContainer.java",
+      "blob_sha": "f04ec98db56d440c2351cb9590ff9c894bcebf06",
+      "sha256": "60042edeafad09b26785161c077f48b54f9dbd3f6e9965e0071f5dce41b24cac",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/http/server/PathContainer.java",
+      "blob_sha": "85f463ed6a349cd593d443fe81fdb68d00cac84c",
+      "sha256": "39e12e33d200a0c0c6e0bcbbbf882f07873087d9f74a4443204e85066e116f37",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/lang/NonNull.java",
+      "blob_sha": "5a1a53639389c204a3d1a9f9123259ac21a94bb2",
+      "sha256": "dd54e6873cb32d655c4f8cec001d44bee94c65c3ddbb9edaf648473da4c3abd7",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/lang/Nullable.java",
+      "blob_sha": "efbab1527c5f16a7fc898f79cf8369e3095ad377",
+      "sha256": "314162ad50a1518a6a62efa23cd74fde3a1733751149ec2b02477dc871f92fb5",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/AlternativeJdkIdGenerator.java",
+      "blob_sha": "c363c0fb2ad43f7c9308524b04e79716dde67f4e",
+      "sha256": "a13d8c7221db4264fb99d6b3151b2f8c31ef39b79d0fa742df89a4045f0a25e9",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/AntPathMatcher.java",
+      "blob_sha": "8e1118aa196361f8c7e0d4c398a0b543db905ec3",
+      "sha256": "a85f432719e57e6a15cb3e06cb5451e69592b94a643112e74642a8be41ac09a6",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/Assert.java",
+      "blob_sha": "2e1afcc315b380b3e5f0874bf60bd77713dd007d",
+      "sha256": "4fe2ec6beb238dd4980c8572b160f5cd7b885da78b26328bb7baa46e39999813",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/AutoPopulatingList.java",
+      "blob_sha": "b72a110700db003498234fc99528eb8febe6bbd9",
+      "sha256": "bc9b81084c54275b47e1db111fe3b8f841b535bf3027ec479cf86c7dfb9a528b",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/Base64Utils.java",
+      "blob_sha": "ea8d0db26e9c0fd8c4510f7f9fc88554d2ec9d87",
+      "sha256": "d0b7e53a25d3a314420a42c8bfdd10e3cd5edde2a9ca7a04f71f60ff67f80cf4",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/ClassUtils.java",
+      "blob_sha": "d735ba6cde843772b0a7538550ff239ed458e6f1",
+      "sha256": "5ffe5521168e7d6e2e6cbf5c0269cf2f441eccf92c7f27190cdbc9c5b38e93f9",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/CollectionUtils.java",
+      "blob_sha": "499f8886ea7fb38f4ef2176192c38b9cb6a0942e",
+      "sha256": "0d1a0f67855fc426bb3d3aca66f57d7e36aa3f19802453712e45cd76aff23977",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/CommonsLogWriter.java",
+      "blob_sha": "d7e44321eaa88d1c09102bb15ca19b5219e9f5a3",
+      "sha256": "c132323c6249150d6d61d63100ac7ae0b66958eea62aefd98bf51f32566c8f47",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/CompositeIterator.java",
+      "blob_sha": "2f075de8e9abe19cc143d276eb5ac0fc4bf9d18a",
+      "sha256": "e6f4b500db8b44800e850d0b67f599dd48d18eec18c1f8dba255905b6ff16e5b",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/ConcurrencyThrottleSupport.java",
+      "blob_sha": "f5774e8c35146c3de95833454b0cfd2d298318ac",
+      "sha256": "81727e93f0c79946ed436ce846394bae15f9448a63accaf817bd5ebb0a1a1eb3",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/ConcurrentLruCache.java",
+      "blob_sha": "2c356629c314da7153634e1537e72144dafeb73b",
+      "sha256": "f96af6a3cf0700fef3c69fb1cdd143d078bfbd8f212b22022705a1b8fdb2da8e",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/ConcurrentReferenceHashMap.java",
+      "blob_sha": "fc43f0d8ed30fb879e18f7e3e33fddeb15c112a2",
+      "sha256": "c213690d31300d3e3e1324c8d18865598f1371db6f8ea6c198877e96803b07cc",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/CustomizableThreadCreator.java",
+      "blob_sha": "866daa51143205d63307b2a41e903c2380336339",
+      "sha256": "b5f75fbd87270e3cea87f166f6de82b216c3f4ca0f6a7fd27b287f407bb1b881",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/DefaultPropertiesPersister.java",
+      "blob_sha": "5e3f1067bf8b33886062765551cbb0d7880a5456",
+      "sha256": "26cc5f745940cb3bd249ad8ec67ed12babbba7f587254c04769429efb7b74f6c",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/DigestUtils.java",
+      "blob_sha": "f91e0debc1a0c85494f25290ddd532f0d2ecaca9",
+      "sha256": "40c3f925572eba2a77acd882b1f54a7398a04459648ae9bd1ddf3a232e45aed9",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/ErrorHandler.java",
+      "blob_sha": "d1c85bc5224d25b6dd9476a05fc46bdd47237ab3",
+      "sha256": "064fa7843b0d6513dda3323ef72a733f00e599bbc0114f43bfc17c783267ac3d",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/ExceptionTypeFilter.java",
+      "blob_sha": "1a8b634b8551da60a6b97df5e6501a0eccbdcfb8",
+      "sha256": "95444570a909a585704478a1214ab2c3507f64df13196d3d4c61a5fcb170a493",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/FastByteArrayOutputStream.java",
+      "blob_sha": "7decdcfddf7eb9ce035d9accc30713633ed3b7f4",
+      "sha256": "eafd2be134c475d148456993011ce23875c182643e11ffe448723dd001760856",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/FileCopyUtils.java",
+      "blob_sha": "4d9b51cdcc5d41daa65e8da1030926e8a1b92d7f",
+      "sha256": "bee37346d806535183545c9c9e0e1b431e35a25a30820ffd028b71de36faf419",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/FileSystemUtils.java",
+      "blob_sha": "5a2179ebeccc33bb4202428e4c9e80b337a917bc",
+      "sha256": "a1f8c413a5ca44640c7b573543d888965901c7a07a6b701e6e5b4684e9ce7814",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/IdGenerator.java",
+      "blob_sha": "0e012f7a79c1055fb09d024047ada1a02b0d39d7",
+      "sha256": "d1942f2ebae1c5667b7967c79a1d3098a6f715d7431f10f2935be30eeba219ca",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/InstanceFilter.java",
+      "blob_sha": "2a323b351b342a9032afea894c0189c8f5de0330",
+      "sha256": "17e94a715f7c99ca6bea4b0bc60c0e842def3fc99bad0e8b8b0e0a60cec2d019",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/InvalidMimeTypeException.java",
+      "blob_sha": "9c46e8353e082756e448a4b1e1b9ca210efc4a66",
+      "sha256": "bc9671464e9948af94fd76ed3bc1e67829d40dfd41a24dfa311b0f6953d725b5",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/JdkIdGenerator.java",
+      "blob_sha": "c49a2b50d43e7a79fcfc4af6392c573ff87e507c",
+      "sha256": "c7d885dbb01fb24149a90a12cd02670ced43015f6ccd8b7933f4c2a47c3356b4",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/LinkedCaseInsensitiveMap.java",
+      "blob_sha": "c45d8957df76c55a8b2b0e3caecec1dbc9f39fb3",
+      "sha256": "c19c5f33dc3658d3440e61ad74d719f804b8ca20e462eab7f58025e124c7b26d",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/LinkedMultiValueMap.java",
+      "blob_sha": "40bf4bc778c5a9b4a49f16f60930aa801c321772",
+      "sha256": "dfa05d722ac7dd62ad331cc635c8b66011d76261bff47da783780212d0c2b4b6",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/MethodInvoker.java",
+      "blob_sha": "eddaa62536d3ab9338e19ee8c1322972a6d6c688",
+      "sha256": "2ddd69d6f3e5e3fb41ca737e9cee57d473a57d99757204b2303124120d3f1ff7",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/MimeType.java",
+      "blob_sha": "0a93b3081a14c8abeb62d9740e24757fc3cc1893",
+      "sha256": "6be3e230778d844204f1f3b4d106fc8e469314289b11258dfbefc89d699918ad",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/MimeTypeUtils.java",
+      "blob_sha": "bb3314dd1b3777563e3c4976d5c9b480d2eb5c2b",
+      "sha256": "f0463994792d6280e55f76711b2ffa5811d862d7a28641a57802c9f7c5388e43",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/MultiValueMap.java",
+      "blob_sha": "c38b58d90e005ed36f3602339711791658e4a027",
+      "sha256": "7974197383364b84ed585dfc2a1c7121496b3c1fe3ecc1dead083f919a8edf3d",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/MultiValueMapAdapter.java",
+      "blob_sha": "2ea312b0727c4478b794f44194e0b73e01a092e0",
+      "sha256": "a3e114993f7fb8d25578294b8b22fe6a8868ade77371627f6d094c8cbb11aa86",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/NumberUtils.java",
+      "blob_sha": "efe4cd695d6f3ccd3ebbb0e2a114a4bca7797f19",
+      "sha256": "30c91c860013b3cb4469fb9a25f3f6ce219ba4e1c17d29f327bb1053acc0f1de",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/ObjectUtils.java",
+      "blob_sha": "6980c3ab81894ce6cd051d49e579da0e5789064d",
+      "sha256": "4b513ec3013be61d1ac976b5b9a59e4956c34ca06c8103239cb56e62750fa632",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/PathMatcher.java",
+      "blob_sha": "d92ec8d868580c37c8c1e79f415be16cb0aed3a1",
+      "sha256": "0d6f49c06ba69474f659eb7b8a9d5a3b4aaa86160aae9023c882d32bb5e64922",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/PatternMatchUtils.java",
+      "blob_sha": "83664bc5223ebaf3e1df6623a2fa6e39f1251237",
+      "sha256": "4e7810b2c3cb81017ff3ccc99823d5dc5d887774cba4ece2adda88ebffc99c1d",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/PropertiesPersister.java",
+      "blob_sha": "0a9828055da8602c2e7da0b02261865844ea2b7c",
+      "sha256": "89100d45a83f37b35b9cdee9f42ede49b0c4aa9eeea0e7fd16b579108d71293e",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/PropertyPlaceholderHelper.java",
+      "blob_sha": "479b22b87c560964c794a952db3a21f117f16bbc",
+      "sha256": "156346ea689272f667c1613461fc58617801942d2bdc364f17a6926bf25aa956",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/ReflectionUtils.java",
+      "blob_sha": "83fc2dcd800d680bd83ca04559c9de26402b0335",
+      "sha256": "5bb4721e8e2b56d977d4ef41418501456363c9a08a01ff566cb5e82865a4ea95",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/ResizableByteArrayOutputStream.java",
+      "blob_sha": "1846d15d8ba17caa94f31ef3172912e8b4c07171",
+      "sha256": "3a070f191f0218bc265b30b3ef8402ef3660ebe3359379f86b250a77366ce983",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/ResourceUtils.java",
+      "blob_sha": "35e0e2add24bcd108399bf6c148679c66a5b3d10",
+      "sha256": "bb17e6623dc4aaef77a51d7cb7cf10662d896f72cdbc5d32797d984f1da54439",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/RouteMatcher.java",
+      "blob_sha": "f0893b7d5ea754d6e72b5b6f5cca3b11985171bf",
+      "sha256": "a083da7beef2f6a5b576119b3d9170d97784444203be9eb03d7b5d9cbb087f9b",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/SerializationUtils.java",
+      "blob_sha": "7a17fbc51f6353dcbabd4bd05c7f021bb889e407",
+      "sha256": "11f84542ae17265646166a295f974f0b5cca0d1f8cbd5dd5b342c4087f9d666a",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/SimpleIdGenerator.java",
+      "blob_sha": "bb193ae6d0dc90c457e979de9b822a6b6dd3cab5",
+      "sha256": "df1e75da47bd1807bd19f6e4d74764cbf82381e486c80234f7f08ba669f07bfa",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/SimpleRouteMatcher.java",
+      "blob_sha": "edaebf4f02158a95264757bfe383497cb937d20d",
+      "sha256": "21cfcbdd1c7e8e378775831d27628c8a8e528e77f6abeab2c454f0a1baec06aa",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/SocketUtils.java",
+      "blob_sha": "d470a89aeb7b13829f790d8c67763c97d17ecc3b",
+      "sha256": "9ba9fde9cf2a4baee0372e9dd95e7dd2d1b1faae4bb1ab8256f015afe15c5643",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/StopWatch.java",
+      "blob_sha": "ad764a6b2f3a883721521d1717e686ca47a34e05",
+      "sha256": "a524a0ac68d79b508fb718d6c401e94f832b2609f04d7f2a6458034a3e421dd0",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/StreamUtils.java",
+      "blob_sha": "f65ca665e5eba9883ed83dcdf3182662062bf94b",
+      "sha256": "9c3d515fca32db8aaf74fceb7345b7b1ae74531408b1bb922cea5a1bb0aa1494",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/StringUtils.java",
+      "blob_sha": "17611fcffe5f5f776f29822aeadf21c0bd27f369",
+      "sha256": "1a50f0aec6f894f5ae5e1dbd9a5835d0bcbc05f4df1a17fe017231dcab47cfcd",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/StringValueResolver.java",
+      "blob_sha": "9aa83100685a29907ca354e92cb16fbae11f1492",
+      "sha256": "2ae2d66f8028e8cec71913b9379307548273f95e359724dfbde08ae6470d0acc",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/SystemPropertyUtils.java",
+      "blob_sha": "a865f520a19bd176c68868ba7a944ca4819327fa",
+      "sha256": "de9e9727b134c12d93e620f2bc5c1c4411c8fb62f1306b41787f31d6e9840dc9",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/TypeUtils.java",
+      "blob_sha": "52fa9a693c50142ca2f5349c6a575e4186c566f0",
+      "sha256": "267921baa0fae1640e26ab73a9e48d50306fc684860bbaa70886a5d2d6a7506e",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/UpdateMessageDigestInputStream.java",
+      "blob_sha": "5ddae0d40501a3aa2e88b068908a1476ad3424ee",
+      "sha256": "b94f9432751e4e50e752126ed47f61afc811f72fa887b0ec2a42c273f65ec830",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/backoff/BackOff.java",
+      "blob_sha": "0e3894fa0cc60f7a963f5f503192e5ff917f8a8d",
+      "sha256": "4b103d290b5713889f16cb52ac800bef189f81c361de259619025c0a7b171416",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/backoff/BackOffExecution.java",
+      "blob_sha": "9826c3896d3a956fa96df52dc0f10fed21fa48f5",
+      "sha256": "59fcc702f8d9ee1a3f768adad77646ab141d22c5658e87bacb21a6409221efda",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/backoff/ExponentialBackOff.java",
+      "blob_sha": "1a1cdb69ad987d3469a03fb9c4c9210dadcdc370",
+      "sha256": "02a47529d66b9b390583115a1e7f8f56c6a03fc74f64760a52a82ae37169dcb8",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/backoff/FixedBackOff.java",
+      "blob_sha": "e060e8462b42b1d244e0ab98abf1269bf3937db1",
+      "sha256": "5e991b429f87b1817c3746278b4ced51154507552208c5cf13c3ed8811faff40",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/comparator/BooleanComparator.java",
+      "blob_sha": "3be6e9dae89c0cb3a256dd66188e824ba676b92d",
+      "sha256": "2f927a8512df219f8dac140a7fb7373332a5da6ac29442ccd1c6477b22a71dd3",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/comparator/ComparableComparator.java",
+      "blob_sha": "ead91505939e10a7dd006d776bc68e4778d09830",
+      "sha256": "85231b55b23a80ccb310a583be0a83cf7c8eca93f904a6a919d143301ab2c48b",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/comparator/Comparators.java",
+      "blob_sha": "a32da05c742019271430e36f364a3a36aa86b014",
+      "sha256": "a41b31b9c75aee51cc5269778d20b35e3ffbb7707ccd25bc74d5a475a90db522",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/comparator/CompoundComparator.java",
+      "blob_sha": "8d4b3b8b8772f8f721e16e8540a5a77ce5cc3cad",
+      "sha256": "3e4d9dfca0b883d5a42b39fa7e12eaa7fba917136a66d90677bd17621a9382fb",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/comparator/InstanceComparator.java",
+      "blob_sha": "05c9fc03eac2731151f70958dbf9b59e55d2afc4",
+      "sha256": "e99cfa1f69ba867054f076c22c10d83da866be509bcb76d8a32b70fa42a18a3f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/comparator/InvertibleComparator.java",
+      "blob_sha": "b2dff08d00b97955e021116d9d1cd0582ba3e271",
+      "sha256": "c798762277a03a601e419807c907782ee76add2149ccf1385e5eabed87531eb0",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/comparator/NullSafeComparator.java",
+      "blob_sha": "80d404e0d37cfd4441f37ed834cc58044197ef94",
+      "sha256": "cb199dc3ee731fd251e542d0261675431da74912c43059204f4c44536c59b2da",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/concurrent/CompletableToListenableFutureAdapter.java",
+      "blob_sha": "4f7583bb7b62b57a2635fb86a5377f7aae6a7e61",
+      "sha256": "5011e47ed5af0353ebe0a17d82a283ac6d7eb642cb857910765ffc589ccf50e5",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/concurrent/DelegatingCompletableFuture.java",
+      "blob_sha": "812f897579f02dd2b268721fc5b489fa2f274ba4",
+      "sha256": "3c125aa25f703bd5b619296041aab7f4f2b7f61f82a5ea444dde8bab53a9c7f0",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/concurrent/FailureCallback.java",
+      "blob_sha": "23a01b3e2c2790d9e05c3772db1436910e548ee9",
+      "sha256": "15c2812ad7fc47bb43c12bc0e401dfe334647761a8e56b50e3a273429c0c5531",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/concurrent/FutureAdapter.java",
+      "blob_sha": "1d20cc8d5f6a6855ae84b82bc31077fe549e7c70",
+      "sha256": "623c5606d6c76deba7a0aa27b6c61d63ae4fef201a4491e1401d648dfd2b6189",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/concurrent/ListenableFuture.java",
+      "blob_sha": "0716e2212e862af50be309eaf5e4f8fc091a0f0c",
+      "sha256": "4305cfcc73f50c568cc6c11bf5c36b8456452a1b5fd0313de4b4c9c0c2d541c0",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/concurrent/ListenableFutureAdapter.java",
+      "blob_sha": "b1fa0dd66bad2ca2838877203aebb128b9e6949a",
+      "sha256": "31f185713e36526023186f398939d37b5919012cf36ad9eb021bc6bc615b3130",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/concurrent/ListenableFutureCallback.java",
+      "blob_sha": "8676508653c60ae44264af71a8d74033de38e32c",
+      "sha256": "0d535dadb3e719f5dc4138ded94bee93aedad6d850b6efbc192319941e702891",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/concurrent/ListenableFutureCallbackRegistry.java",
+      "blob_sha": "2364ac0e6f80ae6c78cbec9996fe14301463538a",
+      "sha256": "c21bfcb17723ae3875458e6d03ac67dab0ebe551b6df4cd3eccf144e1672990d",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/concurrent/ListenableFutureTask.java",
+      "blob_sha": "a736d89f8f7e5fef0c32d7bce75fe8444cc1764d",
+      "sha256": "8b4843f2a1603fc024423858882bd7f600e70cac4bbc8dfeeb1a1ff1f29292f7",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/concurrent/SettableListenableFuture.java",
+      "blob_sha": "80c68fc1b506f072d5523f761a59b04399850799",
+      "sha256": "d7c64de5673d13a3aac41c0c48d34c5d3a6a0c5d4b42d16375590207cd9c7df6",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/concurrent/SuccessCallback.java",
+      "blob_sha": "aac79077d35ed813f68931ba334464129a49e337",
+      "sha256": "fb8f5e5e0df07f38ee15f04bc2a316cf8d2c7eea2cee1569ca5fa2f851601cbd",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/function/SingletonSupplier.java",
+      "blob_sha": "24ce69e68333b80ef819871f06891f5e392fbf2d",
+      "sha256": "745176a68c863708649f33df97d29aeee1aa57994008659767b3d8027578a6f9",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/function/SupplierUtils.java",
+      "blob_sha": "1d79c80b2c702867284e048604003ebfb02b5c1b",
+      "sha256": "d13fbfa8b5be7b147b0d6c900a2883b0a4fb46de3c15894a2945bfc8a6a69c92",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/unit/DataSize.java",
+      "blob_sha": "21e76afb357ca28d17cbb33038ac2c1781fc03c2",
+      "sha256": "f44966eb063729c6a296541c54da0d91118b8c877187554d899ec1aefff148fe",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/unit/DataUnit.java",
+      "blob_sha": "728b5ebcae15e09b9e7c4ed7c32b2acc718b832f",
+      "sha256": "873e653e4da544b2b5e9843273e2b1caa91e881fd6674e110baa640a8fafda9f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/AbstractStaxHandler.java",
+      "blob_sha": "74c7d0995096bb14ebb46f6d764d73934bcbf2ad",
+      "sha256": "17c95bf9058c9b1eaf4814e5140ad1535e53607910a59d206eadac9785052bd0",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/AbstractStaxXMLReader.java",
+      "blob_sha": "c5f46c851fe3881a31e87ba033941fedcea21e84",
+      "sha256": "4f57f3204799aecffcde639fed2d38e31b0b96cde0da75212e49440743210a85",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/AbstractXMLEventReader.java",
+      "blob_sha": "de982fac6cefc3fa26e7124096325f449b967921",
+      "sha256": "94813294e69738f870f7683cf2a90b2c1d9974a41f105f7670fa66076b36c7a9",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/AbstractXMLReader.java",
+      "blob_sha": "f5b1e53c21edc32f8395fd2da4f0c86f963a660c",
+      "sha256": "bf5ae49ebc19407eb7c4ed75479c85c94b0dcd568331113225e46cc497dfc5ad",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/AbstractXMLStreamReader.java",
+      "blob_sha": "a7168169a56b26df4f49c4f976deb1da2ba8c26d",
+      "sha256": "117d66ebea6ebbcefc2c88b367bdf9c9431c4644f8604d33f85575c2ca61978f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/DomContentHandler.java",
+      "blob_sha": "e82566cc4e2ee57ce746b2987af77e1d5f96ecd8",
+      "sha256": "cfff77f192a31393e54f95a64d5c26f1efe2a6a53d5f8c98d4a9212401bc3558",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/DomUtils.java",
+      "blob_sha": "26be3ad72e5812f7de7d46278b053f1cba157051",
+      "sha256": "4df704fc4d48ae5a0d3b59de27db3b36ae969a6b2b41e10e4556064357084225",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/ListBasedXMLEventReader.java",
+      "blob_sha": "764c531a9b0a07084a02475e3d39ff7a4c756e6b",
+      "sha256": "4fb11e8e41ae5774d502ce215f1b2edbba2bcb2a72a51cb24e2da10860a35292",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/SimpleNamespaceContext.java",
+      "blob_sha": "3523a1fdd6e0f89b9c07712ec692aa2b54e3f901",
+      "sha256": "78d59a70e4c23e826e17600830b1359bbeac8b162fed4603d320d2e8321b51ea",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/SimpleSaxErrorHandler.java",
+      "blob_sha": "860fe1ed476f63e06682ce3164a1f54dd294fb3c",
+      "sha256": "e3dac9fb8d7e623a0edf9be2a373bc3e63cd2d1499a6e0b2c21468c681610e7d",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/SimpleTransformErrorListener.java",
+      "blob_sha": "220beefc47a0c0cfc150d0a412ca05db0b9227f5",
+      "sha256": "427225f31a26fe34576507ec40efa0d404c1f177ac1c2d5091fabef6f5b14bf7",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/StaxEventHandler.java",
+      "blob_sha": "62803a68fb2020e21252ef57ac0750e29e8cb666",
+      "sha256": "ecad078e17bd4cf108bee740035551b084e3145a616ff4216408954da1676d36",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/StaxEventXMLReader.java",
+      "blob_sha": "4c934c168dbee46e1303e8e1b68836f002e40861",
+      "sha256": "023af841cfd745af3b9dc139eb41fd143b287f5a678d9d5e3e3dbcfa793ecef5",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/StaxResult.java",
+      "blob_sha": "398eba2891c428d8247a324f1d68d71092787326",
+      "sha256": "dbe3c14bbe3899f9cb8365e4776ccd9f801c46a843ef98eb718f02e9f7f0f025",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/StaxSource.java",
+      "blob_sha": "2678d2dc3b3d575ff3b4ce9f382d7366ca6ccbf7",
+      "sha256": "1c56cbcc75225165d962e07e02be7f38b43b2b8ab97acb2aee75ff5d4f7948d4",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/StaxStreamHandler.java",
+      "blob_sha": "3967f5797bf55f3553112e4532b478c131cb4b58",
+      "sha256": "05df977cd33a1799c824049c5e5719806d36dea8d05ff4856e76712d653750ab",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/StaxStreamXMLReader.java",
+      "blob_sha": "97029da4198157d14912d1b2e324863254ea5e51",
+      "sha256": "717a487e666d8b2333612a76f62a78ec2bc4bd27c389524f6b1d239baab4d44a",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/StaxUtils.java",
+      "blob_sha": "fa77de766d620da5b4c85ec7412e4d1cc188c947",
+      "sha256": "33be2dda9dc439f218ad48478bc630a698083d8f77670549d2e53e7b050ab98b",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/TransformerUtils.java",
+      "blob_sha": "b61e932f70124eadcd47f7b7c209b88f3c374369",
+      "sha256": "69f626d9b07d76af1dd60f96aff8e8c65e9988c63921457416d9c13f2d185cd4",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/XMLEventStreamReader.java",
+      "blob_sha": "2c03a3d3b94388d70525900b9e39dc5d50abf0de",
+      "sha256": "f876366ebcdf756c37efd932e2a43e9c744c52e10740fa32f140345226fff746",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/XMLEventStreamWriter.java",
+      "blob_sha": "d0fe8afcaff3242fd10ca564d750f41a3e57bf40",
+      "sha256": "9d0399b1fb03093afeb04b90a211831048193cfe0648b33098556e0485c16857",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/util/xml/XmlValidationModeDetector.java",
+      "blob_sha": "bd8f14e2aa151f542fee384bd158440c08cc6e14",
+      "sha256": "fceb0db4c08fd3f4f801fe40ffce473dcafacd2294f7981c9789bc9cd9c596f7",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/web/util/pattern/CaptureTheRestPathElement.java",
+      "blob_sha": "ab8b9175f239e6552afd8288f34f7ae075144b40",
+      "sha256": "587ce41a57fb0e615495de4c2040c1290faf2f205fe6b7126f001c5001518791",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/web/util/pattern/CaptureVariablePathElement.java",
+      "blob_sha": "1f39700cc9ef4a51d2afaf868e2f1bee0a411986",
+      "sha256": "dc9680d8acbb4e95651138b3af8b122b89f3ad83312ee3ba41f4767ed995deee",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/web/util/pattern/InternalPathPatternParser.java",
+      "blob_sha": "ec635449b56802f09e3529663b42fca993af2967",
+      "sha256": "4d3f11fba7b9d06952c17020395d9413f5cf5feedd7f10f4a8ec81dda4768d40",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/web/util/pattern/LiteralPathElement.java",
+      "blob_sha": "50f8d87d2666a24abffe45d9930f8d5c8de419ae",
+      "sha256": "76037da550021918381e571dc9bcf0bf8ab20804e8ea480fba2fc90a9413dba7",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/web/util/pattern/PathElement.java",
+      "blob_sha": "9158d45840b51f9814de71caccf3e64371f18973",
+      "sha256": "5f042d27a472268306ae70d3374f0d7fc17913fc6915fe89145233f338e58b0c",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/web/util/pattern/PathPattern.java",
+      "blob_sha": "0b4935b29234e2cf98b7370808a1b27b6832dda3",
+      "sha256": "955cea17ff91b3864234b1db8cea2467c4d4f3b786a9ffa1821e9fc2da1ac835",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/web/util/pattern/PathPatternParser.java",
+      "blob_sha": "1e6c320240a796000b7e3b978ad486586c4c6948",
+      "sha256": "5515c63d96eaf77fdd7a7b20ba8fd1604d9de6c5d1b57bd9ba548a7476d40780",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/web/util/pattern/PathPatternRouteMatcher.java",
+      "blob_sha": "36ddba21ce927ba328d2c6a6c087f3697a855a9c",
+      "sha256": "49a51dd64a98ef938fc0e4c2da3e0cf71808bc559a87e3642eb8c8b5b800799d",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/web/util/pattern/PatternParseException.java",
+      "blob_sha": "7dba28e1b97815619f2bb5a3ecda485fbeb534a5",
+      "sha256": "dcd48d80da49ac8242917ad1015fa471e0b7432c009819ed15d1d85a448c207f",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/web/util/pattern/RegexPathElement.java",
+      "blob_sha": "e3a939720e8f939ea8b4f8bbf38fe285a5acfe2e",
+      "sha256": "3a77df92931b3f2502e4dcb327ee857464726fff45b3f253fbdfb62f856d6ee8",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/web/util/pattern/SeparatorPathElement.java",
+      "blob_sha": "6a817756bceb31967f064974df7b74d526764394",
+      "sha256": "34f47233ae74d9c884309c79f928dd9eecbc5731af4c5417da1ebe56d5a40ab6",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/web/util/pattern/SingleCharWildcardedPathElement.java",
+      "blob_sha": "0b4efa873171c6409fb4fbb0a0e821acb83f6208",
+      "sha256": "f975e1e182f7232454a4417e2c8b69328f1c15bb18ab87b153f7258d803d3463",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/web/util/pattern/WildcardPathElement.java",
+      "blob_sha": "6f563e06ecdf45fbfa32a3c8b98161e1f22a991d",
+      "sha256": "46c1b9d4ed50457427ff681fd741f283559e1effe0bad5754012b7be0bf0263a",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    },
+    {
+      "source_path": "src/org/springframework/web/util/pattern/WildcardTheRestPathElement.java",
+      "blob_sha": "f6db90312c91a2d1b681c103eb257c2f68d90b30",
+      "sha256": "6490c04f47b9ec51afbec2e31bd60fcfddb828e0ca485c25dea91659128b9f9c",
+      "comparison": "byte-equal",
+      "source_commit": "781e6c4c61706a798883818982f72fb8fa53a661"
+    }
+  ]
+}

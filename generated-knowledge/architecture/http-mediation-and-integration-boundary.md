@@ -76,3 +76,9 @@ Do not mark the second item as a universal absence across all specialized code w
 - `ServiceDefinitionProvider.getService`
 - `MediatorManager.mediate`, `getHttpMediatorsForReceive`, `getHttpMediatorsForSend`
 - `ServiceCallProxy.handleDoServiceCall`, `createRequest`, `sendRequest`
+
+## Source-review additions
+
+Cached receiving mediator instances carry mutable request-specific state; inspect MediatorManager, GenericReceivingHttpMediator and HamsamReceivingHttpMediator dossiers for the evidenced assignments/caller path and concurrency risk. This is a source candidate requiring concurrent sandbox reproduction, not a confirmed incident. Dedicated ServiceCallProxy has permissive certificate/hostname checks in the pinned implementation. The generic transformation/workflow capability boundaries above are retained.
+
+Candidate evidence/navigation: [class dossiers and flow index](../../agent-observations/inbox/2026-10-12-class-audit/completion/README.md), [source provenance](../../agent-observations/inbox/2026-10-12-class-audit/completion/source-provenance.json), [log reconciliation](../../agent-observations/inbox/2026-10-12-class-audit/completion/log-registry-reconciliation.json). No human promotion is recorded by this supplement.

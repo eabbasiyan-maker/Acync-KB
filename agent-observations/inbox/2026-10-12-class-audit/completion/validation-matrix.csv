@@ -1,0 +1,15 @@
+id,priority,scenario,scope,expected_assertion,evidence_to_capture,status
+VT-01,P0,ServiceCall TLS certificate and hostname mismatch,ServiceCallProxy outbound HTTPS,Request fails closed for untrusted certificate and wrong hostname,Exception/status plus sanitized client log,NOT_RUN
+VT-02,P1,Async active-save threshold 0/below/at/above and reused executor,MessageCRUD plus caller path,Admission matches approved policy and is not based on lifetime cumulative work,Submitted tasks plus persisted row and caller result,NOT_RUN
+VT-03,P1,Worker DB exception after async submission,MessageCRUD plus selected vendor CRUD,Failure is observable and message state follows approved recovery policy,Future/error signal DB row and correlated logs,NOT_RUN
+VT-04,P1,Oracle cleanup with valid sender and unexpired message,OracleMessageCRUD timeout/delete,Only rows satisfying approved expiry and sender rule are selected,Selected IDs before delete and transaction result,NOT_RUN
+VT-05,P1,Collapsed-message JDBC bindings,MySQLMessageCRUD and OracleMessageCRUD,Every placeholder has one intended value and update affects expected row,PreparedStatement binding trace and row values,NOT_RUN
+VT-06,P1,ACK from correct and incorrect receiver,MessageManager plus each vendor CRUD,Only authorized receiver changes ACK state and reply behavior matches approved contract,State before/after and emitted response,NOT_RUN
+VT-07,P1,Pending retry at expiry boundaries,MessageManager plus each vendor CRUD,Backoff and terminal state match owner-approved retry contract,Attempt timestamps status and receiver-visible outcome,NOT_RUN
+VT-08,P1,Registration with authentication dependency inactive/invalid,RegistrationManager and routes,Rejected identities cannot register; approved fallback behavior is consistent,HTTP/transport response and registration rows,NOT_RUN
+VT-09,P1,Rate-limit count at threshold and expiration boundaries,RateLimitService and servlet mappings,Response status/counter/redirect match approved API contract,Counter transitions status body and exact branch log,NOT_RUN
+VT-10,P1,Service Call downstream timeout/non-200/exception,ServiceCallProxy and ServiceCallServlet,Each failure maps to approved HTTP status and duration semantics,Downstream fixture response plus caller response/logs,NOT_RUN
+VT-11,P1,Log masking of body/query/token/message preview,HTTP and ServiceCall loggers,Configured sensitive values do not appear in captured logs,Sanitized appender output and field scan,NOT_RUN
+VT-12,P2,Health endpoints while DB/broker unavailable,AsyncCheckServlet and HealthCheckServlet,Readiness/liveness meaning matches route contract,Status/body with dependency toggled,NOT_RUN
+VT-13,P2,HTTP mediator concurrent requests through cached instance,MediatorManager and receiving mediators,Request-specific state does not leak across concurrent requests,Parallel test with distinct headers/body/correlation IDs,NOT_RUN
+VT-14,P2,Feature flags across startup and request handling,Settings/Server and targeted handlers,Effective flag values and disabled behavior are explicit and consistent,Startup config snapshot and branch outcomes,NOT_RUN

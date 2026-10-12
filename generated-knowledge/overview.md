@@ -138,3 +138,9 @@ Evidence:
 ## Explicit unknowns
 
 Source does not establish product purpose or business intent. Senior Architect and operational input supplies candidate context for Async as POD's ESB/Messaging Backbone, bounded multi-protocol rationale, reported topology totals, and organizational usage. Approved scope, owners, actual consumers, exact topology mapping/resilience design, service objectives beyond the reported absence of a formal delivery SLA, supported environment details, deeper decision history, production configuration, and canonical glossary status remain **UNKNOWN** or **REQUIRES_HUMAN_VALIDATION**.
+
+## Source audit navigation
+
+All 401 Java files now have individual candidate dossiers describing technical behavior, code-observed product/indirect role, errors, and logging/RCA. Six files contain no executable type declaration because their source is entirely commented. The remaining files declare 501 types including nested types; 401 files must not be called 401 active classes. Bundled vendor code is separated from Async-owned rules. See the class index and per-file records below; business approval and production support are separate evidence gates.
+
+Candidate evidence/navigation: [class dossiers and flow index](../agent-observations/inbox/2026-10-12-class-audit/completion/README.md), [source provenance](../agent-observations/inbox/2026-10-12-class-audit/completion/source-provenance.json), [log reconciliation](../agent-observations/inbox/2026-10-12-class-audit/completion/log-registry-reconciliation.json). No human promotion is recorded by this supplement.

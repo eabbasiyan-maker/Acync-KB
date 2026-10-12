@@ -52,3 +52,9 @@ Representative source areas:
 ## Explicit unknowns
 
 Which interfaces are officially supported, stable, deprecated, internal-only, or production-enabled is not fully established by the current validated dataset.
+
+## Exact handlers and response semantics
+
+Use the HTTP flow map and servlet dossiers for every registered route, HTTP method/action, validation and response/error mapping. /healthcheck/* (AsyncCheckServlet) and /health-check/* (HealthCheckServlet) are different handlers. Both RateLimitServlet and ServiceCallServlet can forward the default zero status from no-status HttpException validation constructors. That is a source path, not a Jetty/client response verified in runtime. The separate AsyncManager excerpt is not part of the 401-file Async source scope and has its own commit/source boundary.
+
+Candidate evidence/navigation: [class dossiers and flow index](../../agent-observations/inbox/2026-10-12-class-audit/completion/README.md), [source provenance](../../agent-observations/inbox/2026-10-12-class-audit/completion/source-provenance.json), [log reconciliation](../../agent-observations/inbox/2026-10-12-class-audit/completion/log-registry-reconciliation.json). No human promotion is recorded by this supplement.
