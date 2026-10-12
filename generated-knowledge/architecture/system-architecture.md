@@ -67,3 +67,9 @@ Human input reports five clusters in total and component node totals for Async C
 ## Explicit boundary
 
 Trusted claim maintained separately in `mvp/validated-claims.yaml`: Async is responsible for connection and message transport and not the Business Logic of provider/consumer services.
+
+## Class and executable-code boundary
+
+Use the class dossier index for exact responsibilities, method behavior and dependency evidence. ChatClient/ChatHandler and the bundled Moquette Server plus its two Async wrapper files are entirely commented in this snapshot: their file presence is not executable protocol support. The executable Artemis MQTT path is distinct. Multi-protocol, cache and queue enablement still depends on configuration. Cross-class flow maps record implementation stages, not an approved end-to-end delivery contract.
+
+Candidate evidence/navigation: [class dossiers and flow index](../../agent-observations/inbox/2026-10-12-class-audit/completion/README.md), [source provenance](../../agent-observations/inbox/2026-10-12-class-audit/completion/source-provenance.json), [log reconciliation](../../agent-observations/inbox/2026-10-12-class-audit/completion/log-registry-reconciliation.json). No human promotion is recorded by this supplement.
