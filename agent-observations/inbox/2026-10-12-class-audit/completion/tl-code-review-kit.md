@@ -48,4 +48,4 @@ Do not approve a source-backed change proposal until its impact record identifie
 
 ## Evidence limitation
 
-The 401 dossiers are grouped in 22 Markdown files in PR #21. Some source-relative links still assume the original `classes/` tree; the PR's packaged representation must be corrected before treating every internal class link as navigable. See `dossier-quality-gaps.csv`.
+The 401 dossiers are grouped in 22 Markdown files in PR #21. Dossier-to-dossier links and coverage-matrix references resolve to the actual PR batch files and stable anchors. `dossier-quality-gaps.csv` tracks method-detail placeholders separately.
