@@ -1,7 +1,9 @@
-# Async Java class dossiers — candidate batch 8
+# Async class dossiers — review batch 08
 
 
 ---
+
+### dossier-src-com-nozha-async-server-mediation-generic-servicedefinitionprovider
 
 <!-- source dossier: src/com/nozha/async/server/mediation/generic/ServiceDefinitionProvider.md -->
 
@@ -203,8 +205,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/architecture/http-mediation-and-integration-boundary.md`: HTTP envelope/opaque body/generic response and fixed selected chain observations agree; this dossier adds specialized/cached-state/exception details without claiming arbitrary transformation/workflow support. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-mediation-generic-vo-genericrequest
 
 <!-- source dossier: src/com/nozha/async/server/mediation/generic/vo/GenericRequest.md -->
 
@@ -302,8 +305,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/architecture/http-mediation-and-integration-boundary.md`: HTTP envelope/opaque body/generic response and fixed selected chain observations agree; this dossier adds specialized/cached-state/exception details without claiming arbitrary transformation/workflow support. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-mediation-generic-vo-genericresponse
 
 <!-- source dossier: src/com/nozha/async/server/mediation/generic/vo/GenericResponse.md -->
 
@@ -392,8 +396,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/architecture/http-mediation-and-integration-boundary.md`: HTTP envelope/opaque body/generic response and fixed selected chain observations agree; this dossier adds specialized/cached-state/exception details without claiming arbitrary transformation/workflow support. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-mediation-generic-vo-service
 
 <!-- source dossier: src/com/nozha/async/server/mediation/generic/vo/Service.md -->
 
@@ -489,8 +494,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/architecture/http-mediation-and-integration-boundary.md`: HTTP envelope/opaque body/generic response and fixed selected chain observations agree; this dossier adds specialized/cached-state/exception details without claiming arbitrary transformation/workflow support. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-mediation-generic-vo-servicemethod
 
 <!-- source dossier: src/com/nozha/async/server/mediation/generic/vo/ServiceMethod.md -->
 
@@ -584,8 +590,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/architecture/http-mediation-and-integration-boundary.md`: HTTP envelope/opaque body/generic response and fixed selected chain observations agree; this dossier adds specialized/cached-state/exception details without claiming arbitrary transformation/workflow support. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-mediation-generic-vo-serviceparameter
 
 <!-- source dossier: src/com/nozha/async/server/mediation/generic/vo/ServiceParameter.md -->
 
@@ -681,8 +688,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/architecture/http-mediation-and-integration-boundary.md`: HTTP envelope/opaque body/generic response and fixed selected chain observations agree; this dossier adds specialized/cached-state/exception details without claiming arbitrary transformation/workflow support. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-mediation-generic-vo-serviceprovider
 
 <!-- source dossier: src/com/nozha/async/server/mediation/generic/vo/ServiceProvider.md -->
 
@@ -777,8 +785,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/architecture/http-mediation-and-integration-boundary.md`: HTTP envelope/opaque body/generic response and fixed selected chain observations agree; this dossier adds specialized/cached-state/exception details without claiming arbitrary transformation/workflow support. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-mediation-generic-vo-serviceproviderconfig
 
 <!-- source dossier: src/com/nozha/async/server/mediation/generic/vo/ServiceProviderConfig.md -->
 
@@ -880,8 +889,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/architecture/http-mediation-and-integration-boundary.md`: HTTP envelope/opaque body/generic response and fixed selected chain observations agree; this dossier adds specialized/cached-state/exception details without claiming arbitrary transformation/workflow support. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-mediation-hamsam-hamsamreceivinghttpmediator
 
 <!-- source dossier: src/com/nozha/async/server/mediation/hamsam/HamsamReceivingHttpMediator.md -->
 
@@ -977,8 +987,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/architecture/http-mediation-and-integration-boundary.md`: HTTP envelope/opaque body/generic response and fixed selected chain observations agree; this dossier adds specialized/cached-state/exception details without claiming arbitrary transformation/workflow support. Compared `generated-knowledge/observability/source-reviewed-critical-signatures.md` and `source-logging-semantics.md` service-call notes: raw management bodies and proxy-vs-message boundary must stay distinct; proxy 408/227 findings belong ServiceCallProxy, not this class. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-mediation-hamsam-hamsamsendinghttpmediator
 
 <!-- source dossier: src/com/nozha/async/server/mediation/hamsam/HamsamSendingHttpMediator.md -->
 
@@ -1056,8 +1067,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/architecture/http-mediation-and-integration-boundary.md`: HTTP envelope/opaque body/generic response and fixed selected chain observations agree; this dossier adds specialized/cached-state/exception details without claiming arbitrary transformation/workflow support. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-mediation-hamsam-resultsrv
 
 <!-- source dossier: src/com/nozha/async/server/mediation/hamsam/ResultSrv.md -->
 
@@ -1157,8 +1169,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/architecture/http-mediation-and-integration-boundary.md`: HTTP envelope/opaque body/generic response and fixed selected chain observations agree; this dossier adds specialized/cached-state/exception details without claiming arbitrary transformation/workflow support. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-mediation-hamsam-servicerequest
 
 <!-- source dossier: src/com/nozha/async/server/mediation/hamsam/ServiceRequest.md -->
 
@@ -1254,8 +1267,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/architecture/http-mediation-and-integration-boundary.md`: HTTP envelope/opaque body/generic response and fixed selected chain observations agree; this dossier adds specialized/cached-state/exception details without claiming arbitrary transformation/workflow support. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-mediation-hamsam-servicerequestparameter
 
 <!-- source dossier: src/com/nozha/async/server/mediation/hamsam/ServiceRequestParameter.md -->
 
@@ -1343,8 +1357,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/architecture/http-mediation-and-integration-boundary.md`: HTTP envelope/opaque body/generic response and fixed selected chain observations agree; this dossier adds specialized/cached-state/exception details without claiming arbitrary transformation/workflow support. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-mediation-notification-notificationreceivinghttpmediator
 
 <!-- source dossier: src/com/nozha/async/server/mediation/notification/NotificationReceivingHttpMediator.md -->
 
@@ -1433,8 +1448,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/architecture/http-mediation-and-integration-boundary.md`: HTTP envelope/opaque body/generic response and fixed selected chain observations agree; this dossier adds specialized/cached-state/exception details without claiming arbitrary transformation/workflow support. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-mediation-notification-notificationsendinghttpmediator
 
 <!-- source dossier: src/com/nozha/async/server/mediation/notification/NotificationSendingHttpMediator.md -->
 
@@ -1509,8 +1525,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/architecture/http-mediation-and-integration-boundary.md`: HTTP envelope/opaque body/generic response and fixed selected chain observations agree; this dossier adds specialized/cached-state/exception details without claiming arbitrary transformation/workflow support. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-mediation-vo-httpcontent
 
 <!-- source dossier: src/com/nozha/async/server/mediation/vo/HttpContent.md -->
 
@@ -1595,8 +1612,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/architecture/http-mediation-and-integration-boundary.md`: HTTP envelope/opaque body/generic response and fixed selected chain observations agree; this dossier adds specialized/cached-state/exception details without claiming arbitrary transformation/workflow support. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-mediation-vo-request
 
 <!-- source dossier: src/com/nozha/async/server/mediation/vo/Request.md -->
 
@@ -1691,8 +1709,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/architecture/http-mediation-and-integration-boundary.md`: HTTP envelope/opaque body/generic response and fixed selected chain observations agree; this dossier adds specialized/cached-state/exception details without claiming arbitrary transformation/workflow support. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-mediation-vo-requestheader
 
 <!-- source dossier: src/com/nozha/async/server/mediation/vo/RequestHeader.md -->
 
@@ -1791,8 +1810,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/architecture/http-mediation-and-integration-boundary.md`: HTTP envelope/opaque body/generic response and fixed selected chain observations agree; this dossier adds specialized/cached-state/exception details without claiming arbitrary transformation/workflow support. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-model-addicecandidate
 
 <!-- source dossier: src/com/nozha/async/server/model/AddIceCandidate.md -->
 
@@ -1856,4 +1876,4 @@ Every active logger call below is reconciled by source path/line with existing r
 Registry reconciliation: 0 active calls, 0 joined registry IDs. No unmatched existing per-class registry rows.
 Privacy/correlation: Exact emitted argument expressions above determine exposure; identity/IP/URI/business/key/body/token fields are sensitive when present, exception messages may include input. No universal request-ID propagation or redaction is evidenced by class declaration alone. Join explicit messageId/trackerId/uuid/ARN/ARNStep/peerId/businessId/serverId when actually logged; timestamps/host/thread are secondary context, not a unique join key.
 RCA: search exact template or structured logType and level within a bounded host/time window; identify the listed method/true-or-else/catch path, then follow dependencies and companion caller logs. A catch log proves that branch was entered, not that recovery succeeded. An INFO after API return proves only that return; a before-send record proves attempted stage, and an after-send record does not replace recipient ACK. Absence of a record may be log-level/routing/sampling/no-log path; require runtime config/log samples to conclude outage or silence.
-Reuse existing cross-class material: [registry](../../../../../../../../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../../../../../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../../../../../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
+Reuse existing cross-class material: [registry](../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
