@@ -1,7 +1,9 @@
-# Async Java class dossiers — candidate batch 12
+# Async class dossiers — review batch 12
 
 
 ---
+
+### dossier-src-com-nozha-async-server-persistance-impl-mysqlserviceprovidercrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/impl/MySQLServiceProviderCrud.md -->
 
@@ -93,8 +95,9 @@ Reconciliation: 6 active source calls, 6 registry cards for this source; all sou
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-impl-oracleaccessibilitycrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/impl/OracleAccessibilityCRUD.md -->
 
@@ -167,8 +170,9 @@ Reconciliation: 2 active source calls, 2 registry cards for this source; all sou
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-impl-oracleclientcrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/impl/OracleClientCRUD.md -->
 
@@ -277,8 +281,9 @@ Reconciliation: 17 active source calls, 17 registry cards for this source; all s
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-impl-oraclecoapcrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/impl/OracleCoapCRUD.md -->
 
@@ -380,8 +385,9 @@ Reconciliation: 13 active source calls, 13 registry cards for this source; all s
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-impl-oracledevicecrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/impl/OracleDeviceCRUD.md -->
 
@@ -487,8 +493,9 @@ Reconciliation: 15 active source calls, 15 registry cards for this source; all s
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-impl-oraclemessagecrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/impl/OracleMessageCRUD.md -->
 
@@ -667,8 +674,9 @@ Reconciliation: 41 active source calls, 41 registry cards for this source; all s
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-impl-oraclepeercrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/impl/OraclePeerCRUD.md -->
 
@@ -850,8 +858,9 @@ Reconciliation: 51 active source calls, 51 registry cards for this source; all s
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-impl-oraclequeuecrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/impl/OracleQueueCRUD.md -->
 
