@@ -23,7 +23,7 @@ This plan separates source-review work from approvals and runtime evidence that 
 
 **DoD:** every nontrivial method states its actual purpose and important branch/side effect/failure behavior from the pinned source; trivial/empty/abstract methods are labeled accurately; exact source lines are linked; inference from callers is labeled; no template phrase remains in the method inventory; the gap register count is zero only after the corresponding dossier is source-checked.
 
-**Execution now:** `ServiceDefinitionProvider` (21 entries) rewritten from the pinned source and its source review. **138 entries across 40 dossiers remain.** The updated row is `SOURCE_SUMMARIES_ADDED_REVIEW_PENDING`, not human-approved.
+**Execution now:** All 159 generic method-inventory entries have now been replaced with source-specific descriptions, including branch, effect or error behavior where relevant. Static consistency checks pass. The dossiers still require technical-owner review; this is not runtime or business approval.
 
 ## W3 — Story/Bug impact analysis
 
@@ -39,7 +39,7 @@ This plan separates source-review work from approvals and runtime evidence that 
 
 **DoD per decision:** accountable owner is named; their decision is recorded in their own words; scope and exceptions are explicit; acceptance evidence/test is linked; effective version/date and any superseded decision are recorded; relevant knowledge is updated by an authorized reviewer. Source observation alone never satisfies this DoD.
 
-**Execution now:** questions, proposed owner roles and evidence requests are prepared. All 11 remain `OWNER_DECISION_REQUIRED` because no accountable owner decision was supplied in this task.
+**Execution now:** questions, proposed owner roles and evidence requests are prepared. All 11 now include a proposed baseline for owner review; none is approved because no accountable owner decision was supplied in this task. Their register status is `PROPOSAL_FOR_OWNER_REVIEW`.
 
 ## W5 — Runtime validation
 
