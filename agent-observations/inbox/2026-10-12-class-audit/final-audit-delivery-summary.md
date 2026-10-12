@@ -60,3 +60,7 @@ Companion: [source-reviewed-priority-findings.md](source-reviewed-priority-findi
 - Complete Maven/integration build or tests; only two isolated JDK tests PASS.
 
 **Decision:** Candidate audit and gap mapping **DELIVERED FOR REVIEW**; full production-valid knowledge certification **NOT YET SATISFIED**. Treat this PR as a traceable discovery and evidence layer, not a clean-bill-of-health signoff.
+
+## Completion update — 2026-10-12
+
+The follow-on class-by-class source review is now complete for all 401 Java files. Every file has an individual four-lens dossier and a row in the coverage matrix; cross-class flow maps and evidence reconciliations are included in `completion/`. Eleven existing candidate knowledge documents received source-backed supplements, and nine dangling catalog references to the absent Governance Report were corrected. These remain candidate/untrusted observations. Business approval: 0; application Runtime tests: 0; promoted documents: 0. See `completion/FINAL_REPORT_FA.md` for detailed counts and limits.
