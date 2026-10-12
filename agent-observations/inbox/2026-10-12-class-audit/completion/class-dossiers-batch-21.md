@@ -1,7 +1,78 @@
-# Async Java class dossiers — candidate batch 21
+# Async class dossiers — review batch 21
 
 
 ---
+
+### dossier-src-org-springframework-util-backoff-fixedbackoff
+
+<!-- source dossier: src/org/springframework/util/backoff/FixedBackOff.md -->
+
+---
+doc_class: observation
+truth_type: operational
+sensitivity: internal
+evidence_refs: []
+trust_level: untrusted-content
+lifecycle: snapshot
+confidence: high
+verification: source-reviewed
+review_status: source-reviewed
+source_commit: 781e6c4c61706a798883818982f72fb8fa53a661
+last_validated_commit: 781e6c4c61706a798883818982f72fb8fa53a661
+source_path: src/org/springframework/util/backoff/FixedBackOff.java
+source_refs:
+  - "src/org/springframework/util/backoff/FixedBackOff.java:1-121"
+owner: REQUIRES_HUMAN_VALIDATION
+---
+
+# FixedBackOff
+
+## Technical
+
+SOURCE_OBSERVED — package `org.springframework.util.backoff`; ownership: candidate bundled Spring Framework utility, evidenced by package/native or Spring API imports, not independently approved upstream provenance. Reviewed complete source `src/org/springframework/util/backoff/FixedBackOff.java:1–121`.
+
+Configuration interval default 5000ms, maxAttempts Long.MAX_VALUE; setters/constructors accept arbitrary longs (`src/org/springframework/util/backoff/FixedBackOff.java:26–87`). start creates own attempt counter; nextBackOff increments first and returns interval while attempts<=configured maximum else STOP (`src/org/springframework/util/backoff/FixedBackOff.java:90–107`). Execution reads live outer values; toString shows unlimited label. No sleep, scheduler, wall-clock timeout or synchronization.
+
+Method/declaration evidence (overloads and nested hooks included; behavior grouped above):
+- `src/org/springframework/util/backoff/FixedBackOff.java:47` `public FixedBackOff() {`
+- `src/org/springframework/util/backoff/FixedBackOff.java:55` `public FixedBackOff(long interval, long maxAttempts) {`
+- `src/org/springframework/util/backoff/FixedBackOff.java:64` `public void setInterval(long interval) {`
+- `src/org/springframework/util/backoff/FixedBackOff.java:71` `public long getInterval() {`
+- `src/org/springframework/util/backoff/FixedBackOff.java:78` `public void setMaxAttempts(long maxAttempts) {`
+- `src/org/springframework/util/backoff/FixedBackOff.java:85` `public long getMaxAttempts() {`
+- `src/org/springframework/util/backoff/FixedBackOff.java:90` `public BackOffExecution start() {`
+- `src/org/springframework/util/backoff/FixedBackOff.java:100` `public long nextBackOff() {`
+- `src/org/springframework/util/backoff/FixedBackOff.java:111` `public String toString() {`
+
+Nested nonstatic FixedBackOffExecution is the per-start counter, currentAttempts=0. nextBackOff increments and compares against live outer maxAttempts before returning live interval or STOP (`src/org/springframework/util/backoff/FixedBackOff.java:95–107`). toString includes live outer interval/maxAttempts and this counter, rendering Long.MAX_VALUE as unlimited (`src/org/springframework/util/backoff/FixedBackOff.java:110–117`). No scheduling or synchronization occurs in this inner class; fresh executions isolate counters while sharing configuration.
+
+## Business
+
+SOURCE_OBSERVED — searched all first-party `src/com/nozha/**/*.java` for exact class/type token, excluding comments and unrelated JetBrains Nullable. No direct first-party reference found. Runtime use UNKNOWN: reflection, native registration and external dependency callers are not excluded by this search.
+
+INFERENCE — generic dependency role is the algorithm/interface described in Technical; impact on Async users cannot be established without a runtime or first-party calling path. No proven product retries/SLA/configuration policy may be inferred from this helper.
+
+APPROVED_INTENT: absent; owner decision/human approval UNKNOWN. Business lens source-reviewed only; no runtime validation, production incident, contractual SLA or trusted promotion claimed.
+
+## Errors
+
+SOURCE_OBSERVED — No direct error path in class. Zero/negative attempts immediately STOP; negative intervals can collide with STOP; long attempt count can overflow if called indefinitely. Consumer errors propagate outside this class.
+
+**No explicit throw/catch/assert statements.**
+
+Reproduction/validation: exercise the named failing input or callback/state branch from Technical and the statements above; for native WebRTC require compatible GStreamer/JNA and signaling peer. Static review performed; no executable test/runtime reproduction in this dossier. Use caller handling to determine business-visible impact; unhandled utility errors do not automatically imply a particular HTTP response.
+
+## Logs and RCA
+
+**NO_LOG_IN_CLASS** — complete executable source `src/org/springframework/util/backoff/FixedBackOff.java:1–121` has no direct logging call. Registry rows for this source: 0; expected zero, no discrepancy.
+
+No direct first-party consumer found, so caller observability/runtime log route UNKNOWN. Other source references in Business provide specific callers/dependencies to inspect; exceptions/return sentinel/callback outcomes must be measured at those boundaries. Reproduce algorithm with branch-specific input, capture thrown cause or returned state, and search caller job/request time plus IDs only if caller supplies them; no local payload/ID privacy fields or appender evidence.
+
+Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
+
+---
+
+### dossier-src-org-springframework-util-comparator-booleancomparator
 
 <!-- source dossier: src/org/springframework/util/comparator/BooleanComparator.md -->
 
@@ -62,8 +133,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-comparator-comparablecomparator
 
 <!-- source dossier: src/org/springframework/util/comparator/ComparableComparator.md -->
 
@@ -122,8 +194,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-comparator-comparators
 
 <!-- source dossier: src/org/springframework/util/comparator/Comparators.md -->
 
@@ -186,8 +259,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-comparator-compoundcomparator
 
 <!-- source dossier: src/org/springframework/util/comparator/CompoundComparator.md -->
 
@@ -262,8 +336,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-comparator-instancecomparator
 
 <!-- source dossier: src/org/springframework/util/comparator/InstanceComparator.md -->
 
@@ -323,8 +398,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-comparator-invertiblecomparator
 
 <!-- source dossier: src/org/springframework/util/comparator/InvertibleComparator.md -->
 
@@ -393,8 +469,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-comparator-nullsafecomparator
 
 <!-- source dossier: src/org/springframework/util/comparator/NullSafeComparator.md -->
 
@@ -459,8 +536,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-concurrent-completabletolistenablefutureadapter
 
 <!-- source dossier: src/org/springframework/util/concurrent/CompletableToListenableFutureAdapter.md -->
 
@@ -526,8 +604,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-concurrent-delegatingcompletablefuture
 
 <!-- source dossier: src/org/springframework/util/concurrent/DelegatingCompletableFuture.md -->
 
@@ -590,8 +669,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-concurrent-failurecallback
 
 <!-- source dossier: src/org/springframework/util/concurrent/FailureCallback.md -->
 
@@ -647,8 +727,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-concurrent-futureadapter
 
 <!-- source dossier: src/org/springframework/util/concurrent/FutureAdapter.md -->
 
@@ -725,8 +806,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-concurrent-listenablefuture
 
 <!-- source dossier: src/org/springframework/util/concurrent/ListenableFuture.md -->
 
@@ -787,8 +869,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-concurrent-listenablefutureadapter
 
 <!-- source dossier: src/org/springframework/util/concurrent/ListenableFutureAdapter.md -->
 
@@ -853,8 +936,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-concurrent-listenablefuturecallback
 
 <!-- source dossier: src/org/springframework/util/concurrent/ListenableFutureCallback.md -->
 
@@ -910,8 +994,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-concurrent-listenablefuturecallbackregistry
 
 <!-- source dossier: src/org/springframework/util/concurrent/ListenableFutureCallbackRegistry.md -->
 
@@ -986,8 +1071,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-concurrent-listenablefuturetask
 
 <!-- source dossier: src/org/springframework/util/concurrent/ListenableFutureTask.md -->
 
@@ -1054,8 +1140,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-concurrent-settablelistenablefuture
 
 <!-- source dossier: src/org/springframework/util/concurrent/SettableListenableFuture.md -->
 
@@ -1129,8 +1216,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-concurrent-successcallback
 
 <!-- source dossier: src/org/springframework/util/concurrent/SuccessCallback.md -->
 
@@ -1186,8 +1274,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-function-singletonsupplier
 
 <!-- source dossier: src/org/springframework/util/function/SingletonSupplier.md -->
 
@@ -1256,8 +1345,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-function-supplierutils
 
 <!-- source dossier: src/org/springframework/util/function/SupplierUtils.md -->
 
@@ -1314,8 +1404,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-unit-datasize
 
 <!-- source dossier: src/org/springframework/util/unit/DataSize.md -->
 
@@ -1402,8 +1493,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-unit-dataunit
 
 <!-- source dossier: src/org/springframework/util/unit/DataUnit.md -->
 
@@ -1463,8 +1555,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-abstractstaxhandler
 
 <!-- source dossier: src/org/springframework/util/xml/AbstractStaxHandler.md -->
 
@@ -1578,8 +1671,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-abstractstaxxmlreader
 
 <!-- source dossier: src/org/springframework/util/xml/AbstractStaxXMLReader.md -->
 
@@ -1659,8 +1753,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-abstractxmleventreader
 
 <!-- source dossier: src/org/springframework/util/xml/AbstractXMLEventReader.md -->
 
@@ -1728,8 +1823,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-abstractxmlreader
 
 <!-- source dossier: src/org/springframework/util/xml/AbstractXMLReader.md -->
 
@@ -1805,8 +1901,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-abstractxmlstreamreader
 
 <!-- source dossier: src/org/springframework/util/xml/AbstractXMLStreamReader.md -->
 
@@ -1895,8 +1992,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-domcontenthandler
 
 <!-- source dossier: src/org/springframework/util/xml/DomContentHandler.md -->
 
@@ -1968,8 +2066,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-domutils
 
 <!-- source dossier: src/org/springframework/util/xml/DomUtils.md -->
 
@@ -2045,8 +2144,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-listbasedxmleventreader
 
 <!-- source dossier: src/org/springframework/util/xml/ListBasedXMLEventReader.md -->
 
@@ -2117,8 +2217,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-simplenamespacecontext
 
 <!-- source dossier: src/org/springframework/util/xml/SimpleNamespaceContext.md -->
 
@@ -2190,8 +2291,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-simplesaxerrorhandler
 
 <!-- source dossier: src/org/springframework/util/xml/SimpleSaxErrorHandler.md -->
 
@@ -2256,8 +2358,9 @@ Logger/appender: WebRTCDataChannel owns LoggerFactory class logger; XML listener
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-simpletransformerrorlistener
 
 <!-- source dossier: src/org/springframework/util/xml/SimpleTransformErrorListener.md -->
 
@@ -2324,8 +2427,9 @@ Logger/appender: WebRTCDataChannel owns LoggerFactory class logger; XML listener
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-staxeventhandler
 
 <!-- source dossier: src/org/springframework/util/xml/StaxEventHandler.md -->
 
@@ -2405,8 +2509,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-staxeventxmlreader
 
 <!-- source dossier: src/org/springframework/util/xml/StaxEventXMLReader.md -->
 
@@ -2488,8 +2593,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-staxresult
 
 <!-- source dossier: src/org/springframework/util/xml/StaxResult.md -->
 
@@ -2555,8 +2661,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-staxsource
 
 <!-- source dossier: src/org/springframework/util/xml/StaxSource.md -->
 
@@ -2620,8 +2727,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-staxstreamhandler
 
 <!-- source dossier: src/org/springframework/util/xml/StaxStreamHandler.md -->
 
@@ -2694,8 +2802,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-staxstreamxmlreader
 
 <!-- source dossier: src/org/springframework/util/xml/StaxStreamXMLReader.md -->
 
@@ -2773,8 +2882,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-staxutils
 
 <!-- source dossier: src/org/springframework/util/xml/StaxUtils.md -->
 
@@ -2860,8 +2970,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-xml-transformerutils
 
 <!-- source dossier: src/org/springframework/util/xml/TransformerUtils.md -->
 
@@ -2919,108 +3030,6 @@ Reproduction/validation: exercise the named failing input or callback/state bran
 ## Logs and RCA
 
 **NO_LOG_IN_CLASS** — complete executable source `src/org/springframework/util/xml/TransformerUtils.java:1–86` has no direct logging call. Registry rows for this source: 0; expected zero, no discrepancy.
-
-No direct first-party consumer found, so caller observability/runtime log route UNKNOWN. Other source references in Business provide specific callers/dependencies to inspect; exceptions/return sentinel/callback outcomes must be measured at those boundaries. Reproduce algorithm with branch-specific input, capture thrown cause or returned state, and search caller job/request time plus IDs only if caller supplies them; no local payload/ID privacy fields or appender evidence.
-
-Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
-
-
----
-
-<!-- source dossier: src/org/springframework/util/xml/XMLEventStreamReader.md -->
-
----
-doc_class: observation
-truth_type: operational
-sensitivity: internal
-evidence_refs: []
-trust_level: untrusted-content
-lifecycle: snapshot
-confidence: high
-verification: source-reviewed
-review_status: source-reviewed
-source_commit: 781e6c4c61706a798883818982f72fb8fa53a661
-last_validated_commit: 781e6c4c61706a798883818982f72fb8fa53a661
-source_path: src/org/springframework/util/xml/XMLEventStreamReader.java
-source_refs:
-  - "src/org/springframework/util/xml/XMLEventStreamReader.java:1-298"
-owner: REQUIRES_HUMAN_VALIDATION
----
-
-# XMLEventStreamReader
-
-## Technical
-
-SOURCE_OBSERVED — package `org.springframework.util.xml`; ownership: candidate bundled Spring Framework utility, evidenced by package/native or Spring API imports, not independently approved upstream provenance. Reviewed complete source `src/org/springframework/util/xml/XMLEventStreamReader.java:1–298`.
-
-Construct consumes first XMLEvent; next advances and returns event type, close delegates reader (51–54,277–284). getName accepts start/end element; version/standalone only start document, encoding methods always null; PI/text require appropriate event (`src/org/springframework/util/xml/XMLEventStreamReader.java:58–163`). Attribute methods require start element and count/scan iterator to requested index; namespace count/index accepts start/end, context only start; iterator counting O(n) each query (`src/org/springframework/util/xml/XMLEventStreamReader.java:168–295`). Location/property delegate; base handles text aggregation and predicates.
-
-Method/declaration evidence (overloads and nested hooks included; behavior grouped above):
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:51` `public XMLEventStreamReader(XMLEventReader eventReader) throws XMLStreamException {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:58` `public QName getName() {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:71` `public Location getLocation() {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:76` `public int getEventType() {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:82` `public String getVersion() {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:92` `public Object getProperty(String name) throws IllegalArgumentException {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:97` `public boolean isStandalone() {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:107` `public boolean standaloneSet() {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:118` `public String getEncoding() {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:124` `public String getCharacterEncodingScheme() {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:129` `public String getPITarget() {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:139` `public String getPIData() {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:149` `public int getTextStart() {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:154` `public String getText() {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:168` `public int getAttributeCount() {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:177` `public boolean isAttributeSpecified(int index) {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:182` `public QName getAttributeName(int index) {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:187` `public String getAttributeType(int index) {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:192` `public String getAttributeValue(int index) {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:197` `private Attribute getAttribute(int index) {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:216` `public NamespaceContext getNamespaceContext() {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:227` `public int getNamespaceCount() {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:242` `public String getNamespacePrefix(int index) {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:247` `public String getNamespaceURI(int index) {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:252` `private Namespace getNamespace(int index) {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:277` `public int next() throws XMLStreamException {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:283` `public void close() throws XMLStreamException {`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:289` `private static int countIterator(Iterator iterator) {`
-
-## Business
-
-SOURCE_OBSERVED — searched all first-party `src/com/nozha/**/*.java` for exact class/type token, excluding comments and unrelated JetBrains Nullable. No direct first-party reference found. Runtime use UNKNOWN: reflection, native registration and external dependency callers are not excluded by this search.
-
-INFERENCE — generic dependency role is the algorithm/interface described in Technical; impact on Async users cannot be established without a runtime or first-party calling path. No proven product retries/SLA/configuration policy may be inferred from this helper.
-
-Other source references (lexical evidence, not proof of execution): `src/org/springframework/util/xml/StaxUtils.java:309`.
-
-APPROVED_INTENT: absent; owner decision/human approval UNKNOWN. Business lens source-reviewed only; no runtime validation, production incident, contractual SLA or trusted promotion claimed.
-
-## Errors
-
-SOURCE_OBSERVED — Wrong event IllegalStateException; absent index IllegalArgumentException; reader XMLStreamException and property failure propagate. No direct catch/recovery or stale-event reset on close.
-
-Explicit failure/validation/recovery statements (exact source expressions):
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:66–66` `throw new IllegalStateException();`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:102–102` `throw new IllegalStateException();`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:112–112` `throw new IllegalStateException();`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:134–134` `throw new IllegalStateException();`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:144–144` `throw new IllegalStateException();`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:162–162` `throw new IllegalStateException();`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:170–170` `throw new IllegalStateException();`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:199–199` `throw new IllegalStateException();`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:212–212` `throw new IllegalArgumentException();`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:221–221` `throw new IllegalStateException();`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:236–236` `throw new IllegalStateException();`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:261–261` `throw new IllegalStateException();`
-- `src/org/springframework/util/xml/XMLEventStreamReader.java:273–273` `throw new IllegalArgumentException();`
-
-Candidate source risk, not production incident: getEncoding/getCharacterEncodingScheme always null even when StartDocument has encoding metadata.
-
-Reproduction/validation: exercise the named failing input or callback/state branch from Technical and the statements above; for native WebRTC require compatible GStreamer/JNA and signaling peer. Static review performed; no executable test/runtime reproduction in this dossier. Use caller handling to determine business-visible impact; unhandled utility errors do not automatically imply a particular HTTP response.
-
-## Logs and RCA
-
-**NO_LOG_IN_CLASS** — complete executable source `src/org/springframework/util/xml/XMLEventStreamReader.java:1–298` has no direct logging call. Registry rows for this source: 0; expected zero, no discrepancy.
 
 No direct first-party consumer found, so caller observability/runtime log route UNKNOWN. Other source references in Business provide specific callers/dependencies to inspect; exceptions/return sentinel/callback outcomes must be measured at those boundaries. Reproduce algorithm with branch-specific input, capture thrown cause or returned state, and search caller job/request time plus IDs only if caller supplies them; no local payload/ID privacy fields or appender evidence.
 
