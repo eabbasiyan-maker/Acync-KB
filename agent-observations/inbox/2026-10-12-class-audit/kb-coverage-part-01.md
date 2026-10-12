@@ -1,3 +1,15 @@
+---
+doc_class: observation
+trust_level: untrusted-content
+lifecycle: snapshot
+confidence: medium
+verification: source-indexed
+truth_type: operational
+owner: REQUIRES_HUMAN_VALIDATION
+sensitivity: internal
+last_validated_commit: 781e6c4c61706a798883818982f72fb8fa53a661
+---
+
 # KB lexical source-name presence audit — part 1/2
 **Method:** case-sensitive word-boundary class-name presence across existing KB Markdown; a name mention does NOT establish full correct class/method/error/business/log documentation. Existing KB MAIN snapshot 2026-10-12. No changed trusted documents.
 

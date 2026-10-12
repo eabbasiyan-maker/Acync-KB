@@ -1,3 +1,15 @@
+---
+doc_class: observation
+trust_level: untrusted-content
+lifecycle: snapshot
+confidence: medium
+verification: source-indexed
+truth_type: operational
+owner: REQUIRES_HUMAN_VALIDATION
+sensitivity: internal
+last_validated_commit: 781e6c4c61706a798883818982f72fb8fa53a661
+---
+
 # Async Java non-product-namespace source register
 
 **Scope:** 133 Java files outside `src/com/nozha/**`, which are NOT to be silently treated as Async-owned product business rules. `org/**` is **candidate vendored source**, not confirmed without licenses/owners. Root/sample files require separate classification. Static path check only; no runtime proof. Pinned source commit `781e6c4c61706a798883818982f72fb8fa53a661`.
