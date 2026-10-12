@@ -29,7 +29,7 @@ This package contains one source-grounded dossier for each of the 401 Java files
 - `flows-core.md`, `flows-http-mediation.md` — cross-class flows with source citations and explicit unknowns.
 - `log-registry-reconciliation.json` — reconciliation with the historical logger registry; distinguish executable, commented and separately detected logger calls.
 - `source-provenance.json`, `java-ast-evidence.json`, `source-counterexamples.json` — provenance, static inventory and isolated checks.
-- `proposed-existing-docs.patch` is a draft proposal only; it did not apply cleanly to this checkout and must not be treated as applied documentation changes.
+- `existing-document-update-record.md` records source-backed supplements applied to existing candidate docs and the Catalog. The original malformed patch was superseded; trusted status was not promoted.
 
 ## Review boundaries
 
