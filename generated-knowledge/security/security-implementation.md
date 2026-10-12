@@ -46,3 +46,9 @@ Representative source areas include:
 ## Explicit unknowns
 
 Official authentication requirements, authorization ownership, connection permissions, production TLS requirements, secret rotation, network zones, and security exception processes remain unvalidated in the current MVP knowledge set.
+
+## Source-backed security candidates
+
+The per-class audit records conditional admin-token checks, broker authentication and transport security precisely. A management check accepts a nonempty header longer than six characters without an external validation call when Keylead is inactive and the token differs from KEYLEAD_API_TOKEN; the active broker SecurityManager returns success. ServiceCallProxy disables certificate and hostname validation. Accessibility SQL AND/OR grouping, CORS fallback and raw body/query/message-preview logging have dedicated source evidence. Exposure and exploitability depend on actual configuration/network reachability; no production exploit is asserted.
+
+Candidate evidence/navigation: [class dossiers and flow index](../../agent-observations/inbox/2026-10-12-class-audit/completion/README.md), [source provenance](../../agent-observations/inbox/2026-10-12-class-audit/completion/source-provenance.json), [log reconciliation](../../agent-observations/inbox/2026-10-12-class-audit/completion/log-registry-reconciliation.json). No human promotion is recorded by this supplement.
