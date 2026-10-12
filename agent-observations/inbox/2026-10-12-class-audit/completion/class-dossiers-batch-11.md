@@ -1,7 +1,9 @@
-# Async Java class dossiers — candidate batch 11
+# Async class dossiers — review batch 11
 
 
 ---
+
+### dossier-src-com-nozha-async-server-persistance-servicecallcrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/ServiceCallCrud.md -->
 
@@ -33,8 +35,8 @@ Class initialization selects a single vendor implementation from Settings.DB_VEN
 
 Method and branch review:
 
-- `loadServiceCallDispatcherConfig()`: Returns the result of `serviceCallCRUDInterface.loadServiceCallDispatcher()`. No local SQL, transaction management, validation or catch occurs in this method. Downstream semantics: [MySQLServiceCallCRUD dossier](impl/MySQLServiceCallCRUD.md), [OracleServiceCallCRUD dossier](impl/OracleServiceCallCRUD.md). [facade:L21–23](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/ServiceCallCrud.java#L21-L23)
-- `loadServiceCallBlockerConfig()`: Returns the result of `serviceCallCRUDInterface.loadServiceCallBlocker()`. No local SQL, transaction management, validation or catch occurs in this method. Downstream semantics: [MySQLServiceCallCRUD dossier](impl/MySQLServiceCallCRUD.md), [OracleServiceCallCRUD dossier](impl/OracleServiceCallCRUD.md). [facade:L25–27](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/ServiceCallCrud.java#L25-L27)
+- `loadServiceCallDispatcherConfig()`: Returns the result of `serviceCallCRUDInterface.loadServiceCallDispatcher()`. No local SQL, transaction management, validation or catch occurs in this method. Downstream semantics: [MySQLServiceCallCRUD dossier](class-dossiers-batch-11.md#dossier-src-com-nozha-async-server-persistance-impl-mysqlservicecallcrud), [OracleServiceCallCRUD dossier](class-dossiers-batch-13.md#dossier-src-com-nozha-async-server-persistance-impl-oracleservicecallcrud). [facade:L21–23](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/ServiceCallCrud.java#L21-L23)
+- `loadServiceCallBlockerConfig()`: Returns the result of `serviceCallCRUDInterface.loadServiceCallBlocker()`. No local SQL, transaction management, validation or catch occurs in this method. Downstream semantics: [MySQLServiceCallCRUD dossier](class-dossiers-batch-11.md#dossier-src-com-nozha-async-server-persistance-impl-mysqlservicecallcrud), [OracleServiceCallCRUD dossier](class-dossiers-batch-13.md#dossier-src-com-nozha-async-server-persistance-impl-oracleservicecallcrud). [facade:L25–27](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/ServiceCallCrud.java#L25-L27)
 
 Direct source references/callers (static/class construction or interface implementation; declaration imports alone are excluded):
 
@@ -60,8 +62,9 @@ Static reproduction ideas: use an isolated schema/stub connection to force each 
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-serviceprovidercrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/ServiceProviderCrud.md -->
 
@@ -93,10 +96,10 @@ Class initialization selects a single vendor implementation from Settings.DB_VEN
 
 Method and branch review:
 
-- `createServiceProviderConfig(ServiceProviderConfig serviceProviderConfig, List<String> serverIds)`: Invokes `serviceProviderCrudInterface.createServiceProviderConfig(serviceProviderConfig,serverIds)`. Declared SQLException propagates without local conversion. Declares HttpException; no HTTP response mapping occurs here. No local SQL, transaction management, validation or catch occurs in this method. Downstream semantics: [MySQLServiceProviderCrud dossier](impl/MySQLServiceProviderCrud.md), [OracleServiceProviderCrud dossier](impl/OracleServiceProviderCrud.md). [facade:L23–25](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/ServiceProviderCrud.java#L23-L25)
-- `getServiceProviderConfigs()`: Returns the result of `serviceProviderCrudInterface.getServiceProviderConfigs()`. Declared SQLException propagates without local conversion. No local SQL, transaction management, validation or catch occurs in this method. Downstream semantics: [MySQLServiceProviderCrud dossier](impl/MySQLServiceProviderCrud.md), [OracleServiceProviderCrud dossier](impl/OracleServiceProviderCrud.md). [facade:L27–29](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/ServiceProviderCrud.java#L27-L29)
-- `getServiceProviderConfigs(String peerName, List<String> serverIds)`: Returns the result of `serviceProviderCrudInterface.getServiceProviderConfigs(peerName,serverIds)`. Declared SQLException propagates without local conversion. No local SQL, transaction management, validation or catch occurs in this method. Downstream semantics: [MySQLServiceProviderCrud dossier](impl/MySQLServiceProviderCrud.md), [OracleServiceProviderCrud dossier](impl/OracleServiceProviderCrud.md). [facade:L31–33](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/ServiceProviderCrud.java#L31-L33)
-- `deleteServiceProviderConfigs(String peerName, List<String> serverIds)`: Invokes `serviceProviderCrudInterface.deleteServiceProviderConfig(peerName,serverIds)`. Declared SQLException propagates without local conversion. No local SQL, transaction management, validation or catch occurs in this method. Downstream semantics: [MySQLServiceProviderCrud dossier](impl/MySQLServiceProviderCrud.md), [OracleServiceProviderCrud dossier](impl/OracleServiceProviderCrud.md). [facade:L35–37](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/ServiceProviderCrud.java#L35-L37)
+- `createServiceProviderConfig(ServiceProviderConfig serviceProviderConfig, List<String> serverIds)`: Invokes `serviceProviderCrudInterface.createServiceProviderConfig(serviceProviderConfig,serverIds)`. Declared SQLException propagates without local conversion. Declares HttpException; no HTTP response mapping occurs here. No local SQL, transaction management, validation or catch occurs in this method. Downstream semantics: [MySQLServiceProviderCrud dossier](class-dossiers-batch-12.md#dossier-src-com-nozha-async-server-persistance-impl-mysqlserviceprovidercrud), [OracleServiceProviderCrud dossier](class-dossiers-batch-13.md#dossier-src-com-nozha-async-server-persistance-impl-oracleserviceprovidercrud). [facade:L23–25](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/ServiceProviderCrud.java#L23-L25)
+- `getServiceProviderConfigs()`: Returns the result of `serviceProviderCrudInterface.getServiceProviderConfigs()`. Declared SQLException propagates without local conversion. No local SQL, transaction management, validation or catch occurs in this method. Downstream semantics: [MySQLServiceProviderCrud dossier](class-dossiers-batch-12.md#dossier-src-com-nozha-async-server-persistance-impl-mysqlserviceprovidercrud), [OracleServiceProviderCrud dossier](class-dossiers-batch-13.md#dossier-src-com-nozha-async-server-persistance-impl-oracleserviceprovidercrud). [facade:L27–29](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/ServiceProviderCrud.java#L27-L29)
+- `getServiceProviderConfigs(String peerName, List<String> serverIds)`: Returns the result of `serviceProviderCrudInterface.getServiceProviderConfigs(peerName,serverIds)`. Declared SQLException propagates without local conversion. No local SQL, transaction management, validation or catch occurs in this method. Downstream semantics: [MySQLServiceProviderCrud dossier](class-dossiers-batch-12.md#dossier-src-com-nozha-async-server-persistance-impl-mysqlserviceprovidercrud), [OracleServiceProviderCrud dossier](class-dossiers-batch-13.md#dossier-src-com-nozha-async-server-persistance-impl-oracleserviceprovidercrud). [facade:L31–33](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/ServiceProviderCrud.java#L31-L33)
+- `deleteServiceProviderConfigs(String peerName, List<String> serverIds)`: Invokes `serviceProviderCrudInterface.deleteServiceProviderConfig(peerName,serverIds)`. Declared SQLException propagates without local conversion. No local SQL, transaction management, validation or catch occurs in this method. Downstream semantics: [MySQLServiceProviderCrud dossier](class-dossiers-batch-12.md#dossier-src-com-nozha-async-server-persistance-impl-mysqlserviceprovidercrud), [OracleServiceProviderCrud dossier](class-dossiers-batch-13.md#dossier-src-com-nozha-async-server-persistance-impl-oracleserviceprovidercrud). [facade:L35–37](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/persistance/ServiceProviderCrud.java#L35-L37)
 
 Direct source references/callers (static/class construction or interface implementation; declaration imports alone are excluded):
 
@@ -123,8 +126,9 @@ Static reproduction ideas: use an isolated schema/stub connection to force each 
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-serviceprovidercrudinterface
 
 <!-- source dossier: src/com/nozha/async/server/persistance/ServiceProviderCrudInterface.md -->
 
@@ -190,8 +194,9 @@ Static reproduction ideas: use an isolated schema/stub connection to force each 
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-impl-mysqlaccessibilitycrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/impl/MySQLAccessibilityCRUD.md -->
 
@@ -264,8 +269,9 @@ Reconciliation: 2 active source calls, 2 registry cards for this source; all sou
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-impl-mysqlclientcrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/impl/MySQLClientCRUD.md -->
 
@@ -370,8 +376,9 @@ Reconciliation: 9 active source calls, 9 registry cards for this source; all sou
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-impl-mysqlcoapcrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/impl/MySQLCoapCRUD.md -->
 
@@ -471,8 +478,9 @@ Reconciliation: 7 active source calls, 7 registry cards for this source; all sou
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-impl-mysqldevicecrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/impl/MySQLDeviceCRUD.md -->
 
@@ -571,8 +579,9 @@ Reconciliation: 8 active source calls, 8 registry cards for this source; all sou
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-impl-mysqlmessagecrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/impl/MySQLMessageCRUD.md -->
 
@@ -728,8 +737,9 @@ Reconciliation: 24 active source calls, 24 registry cards for this source; all s
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-impl-mysqlpeercrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/impl/MySQLPeerCRUD.md -->
 
@@ -894,8 +904,9 @@ Reconciliation: 33 active source calls, 33 registry cards for this source; all s
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-impl-mysqlqueuecrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/impl/MySQLQueueCRUD.md -->
 
@@ -980,8 +991,9 @@ Reconciliation: 5 active source calls, 5 registry cards for this source; all sou
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-impl-mysqlratelimitcrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/impl/MySQLRateLimitCrud.md -->
 
@@ -1134,8 +1146,9 @@ Reconciliation: 28 active source calls, 28 registry cards for this source; all s
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-impl-mysqlrestcrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/impl/MySQLRestCRUD.md -->
 
@@ -1224,8 +1237,9 @@ Reconciliation: 6 active source calls, 6 registry cards for this source; all sou
 
 Triage: select pinned vendor and operation first, search exact template plus class logger and time/node, then correlate peer/message/tracker/server IDs where actually present. Check exception cause, affected rows and transaction evidence before attributing a user-visible failure. Credentials/content/URLs reside in registration/message objects or SQL; this inventory identifies only fields explicitly logged and does not authorize exporting those records. Reused generic templates and absent success logs limit correlation; no production log/sample was compared.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-persistance-impl-mysqlservicecallcrud
 
 <!-- source dossier: src/com/nozha/async/server/persistance/impl/MySQLServiceCallCRUD.md -->
 
