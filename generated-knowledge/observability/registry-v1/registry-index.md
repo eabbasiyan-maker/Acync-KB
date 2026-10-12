@@ -68,3 +68,9 @@ This CSV is the **complete inventory**. It can be filtered by subsystem and clas
 ## Governance
 
 Keep candidate trust classification until human owners review specific semantics, source/production version parity, Appender/Log Level/Log Ingestion and real incident corroboration. Do not bulk-promote these 956 rows to `mvp/validated-claims.yaml`.
+
+## 2026-10-12 reconciliation supplement
+
+The earlier archive-parity limitation has now been resolved for all 401 Java files: GitHub-pinned file content is byte-equal to the supplied archive, recorded in source-provenance.json. All 956 existing cards remain canonical for their IDs/templates. Eleven additional typed Artemis logger invocations appear in the reconciliation supplement, bringing detected executable logger invocations to 967; this includes external typed calls with unresolved annotation-level severity/template. System.out/System.err sites are console diagnostics, documented separately rather than silently folded into the original registry. Production version and ingestion remain unknown.
+
+Candidate evidence/navigation: [class dossiers and flow index](../../../agent-observations/inbox/2026-10-12-class-audit/completion/README.md), [source provenance](../../../agent-observations/inbox/2026-10-12-class-audit/completion/source-provenance.json), [log reconciliation](../../../agent-observations/inbox/2026-10-12-class-audit/completion/log-registry-reconciliation.json). No human promotion is recorded by this supplement.
