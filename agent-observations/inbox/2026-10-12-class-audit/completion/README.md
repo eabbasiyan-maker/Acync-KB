@@ -25,7 +25,7 @@ This package contains one source-grounded dossier for each of the 401 Java files
 ## Navigation
 
 - `class-coverage-matrix.csv` — exact 401-file coverage ledger, source SHA, AST counts, four dimension statuses, unknowns and dossier path.
-- `classes/` — one Markdown dossier per Java source file, matching source tree paths.
+- `class-dossiers-batch-*.md` — 22 Markdown files; each dossier has a stable source-path heading and direct internal links. The coverage matrix points to each dossier anchor.
 - `flows-core.md`, `flows-http-mediation.md` — cross-class flows with source citations and explicit unknowns.
 - `log-registry-reconciliation.json` — reconciliation with the historical logger registry; distinguish executable, commented and separately detected logger calls.
 - `source-provenance.json`, `java-ast-evidence.json`, `source-counterexamples.json` — provenance, static inventory and isolated checks.
