@@ -36,7 +36,7 @@ src/com/nozha/async/server/mediation/hamsam/ServiceRequest.java,1,Clarify valida
 src/com/nozha/async/server/mediation/hamsam/HamsamSendingHttpMediator.java,2,Clarify outgoing call and response conversion,NEEDS_METHOD_SUMMARY_REVIEW
 src/com/nozha/async/server/mediation/generic/GenericReceivingHttpMediator.java,4,Prioritize path/body mapping and missing-parameter behavior,NEEDS_METHOD_SUMMARY_REVIEW
 src/com/nozha/async/server/mediation/generic/GenericSendingHttpMediator.java,1,Clarify request/response transformation boundary,NEEDS_METHOD_SUMMARY_REVIEW
-src/com/nozha/async/server/mediation/generic/ServiceDefinitionProvider.java,21,Prioritize configuration reload/URL update/error recovery semantics,NEEDS_METHOD_SUMMARY_REVIEW
+src/com/nozha/async/server/mediation/generic/ServiceDefinitionProvider.java,0,"Replaced all 21 generic method-inventory summaries with source-specific behavior, branch, effect, and failure notes; technical owner review remains open.",SOURCE_SUMMARIES_ADDED_REVIEW_PENDING
 src/com/nozha/async/server/mediation/generic/vo/Service.java,1,Clarify serialization/config role and defaults,NEEDS_METHOD_SUMMARY_REVIEW
 src/com/nozha/async/server/mediation/generic/vo/ServiceProvider.java,1,Clarify config parsing and defaults,NEEDS_METHOD_SUMMARY_REVIEW
 src/com/nozha/async/server/httpserver/log/HttpRequestLogger.java,1,"Clarify URL/query fields, masking and request/response logging phases",NEEDS_METHOD_SUMMARY_REVIEW
