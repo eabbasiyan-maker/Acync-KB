@@ -90,3 +90,9 @@ evidence_refs: []
 - برای وقوع واقعی در گذشته به `historical-runtime-evidence-2026-08-18.md` مراجعه کنید.
 - برای روش تشخیص و رفع به `incident-investigation-playbooks.md` مراجعه کنید.
 - تمام ادعاهای Runtime/Production تا دریافت نسخه Deploy، تنظیمات و Evidence معتبر `UNKNOWN` هستند.
+
+## Complete class linkage and additional logger calls
+
+All original 956 registry call sites were reconciled at exact source lines against the pinned code and an AST. Eleven additional executable calls use ActiveMQServerLogger.LOGGER typed methods in NettyAcceptor; their severity/message definitions live in the external logger annotation dependency and must not be inferred from method names. Fifty-two commented logger calls are excluded. The AST adds exact lexical method ownership and local enclosing syntax; this does not by itself prove the complete upstream triggering condition or production emission. Class dossiers supply reviewed local semantics and caller evidence.
+
+Candidate evidence/navigation: [class dossiers and flow index](../../agent-observations/inbox/2026-10-12-class-audit/completion/README.md), [source provenance](../../agent-observations/inbox/2026-10-12-class-audit/completion/source-provenance.json), [log reconciliation](../../agent-observations/inbox/2026-10-12-class-audit/completion/log-registry-reconciliation.json). No human promotion is recorded by this supplement.
