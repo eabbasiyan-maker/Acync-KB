@@ -40,3 +40,9 @@ These broader gaps are not automatically P0 gating claims for the MVP unless pro
 - `trusted` claim: human-validated fact usable as authoritative project knowledge.
 - `known_gap` claim: explicitly registered unresolved topic; Agent must not fill it using general knowledge.
 - generated knowledge document: supporting context only unless separately promoted.
+
+## Class audit versus official registered gaps
+
+The 401-file class audit has completed source-backed candidate descriptions. Its unresolved business approvals, deployed schema/configuration, dependency runtime use, logger ingestion and end-to-end proof are tracked in the completion gap register. They are audit evidence gaps, not automatically official known_gap claims; validated-claims.yaml remains unchanged. Candidate defect findings likewise are not production incidents or approved architectural decisions.
+
+Candidate evidence/navigation: [class dossiers and flow index](../../agent-observations/inbox/2026-10-12-class-audit/completion/README.md), [source provenance](../../agent-observations/inbox/2026-10-12-class-audit/completion/source-provenance.json), [log reconciliation](../../agent-observations/inbox/2026-10-12-class-audit/completion/log-registry-reconciliation.json). No human promotion is recorded by this supplement.
