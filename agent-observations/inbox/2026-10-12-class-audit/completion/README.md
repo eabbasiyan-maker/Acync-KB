@@ -25,7 +25,7 @@ This package contains one source-grounded dossier for each of the 401 Java files
 ## Navigation
 
 - `class-coverage-matrix.csv` — exact 401-file coverage ledger, source SHA, AST counts, four dimension statuses, unknowns and PR dossier anchors.
-- `tl-code-review-kit.md`, `remaining-work-plan.md`, `business-decision-register.csv`, `validation-matrix.csv`, `dossier-quality-gaps.csv`, and `follow-up-review.md` — TL workflow, DoD, unresolved owner decisions, test cases and self-review disposition.
+- `tl-code-review-kit.md`, `remaining-work-plan.md`, `business-decision-register.csv`, `business-decision-proposals.md`, `validation-matrix.csv`, `validation-execution-handoff.md`, `dossier-quality-gaps.csv`, and `follow-up-review.md` — TL workflow, DoD, owner proposals, test cases, runtime prerequisites and self-review disposition.
 - `class-dossiers-batch-*.md` — 22 Markdown files; each dossier has a stable source-path heading and direct internal links. The coverage matrix points to each dossier anchor.
 - `flows-core.md`, `flows-http-mediation.md` — cross-class flows with source citations and explicit unknowns.
 - `log-registry-reconciliation.json` — reconciliation with the historical logger registry; distinguish executable, commented and separately detected logger calls.
