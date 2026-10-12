@@ -1,7 +1,9 @@
-# Async Java class dossiers — candidate batch 1
+# Async class dossiers — review batch 01
 
 
 ---
+
+### dossier-src-byteclassloader
 
 <!-- source dossier: src/ByteClassLoader.md -->
 
@@ -62,10 +64,11 @@ Every active logger call below is reconciled by source path/line with existing r
 Registry reconciliation: 0 active calls, 0 joined registry IDs. No unmatched existing per-class registry rows.
 Privacy/correlation: Exact emitted argument expressions above determine exposure; identity/IP/URI/business/key/body/token fields are sensitive when present, exception messages may include input. No universal request-ID propagation or redaction is evidenced by class declaration alone. Join explicit messageId/trackerId/uuid/ARN/ARNStep/peerId/businessId/serverId when actually logged; timestamps/host/thread are secondary context, not a unique join key.
 RCA: search exact template or structured logType and level within a bounded host/time window; identify the listed method/true-or-else/catch path, then follow dependencies and companion caller logs. A catch log proves that branch was entered, not that recovery succeeded. An INFO after API return proves only that return; a before-send record proves attempted stage, and an after-send record does not replace recipient ACK. Absence of a record may be log-level/routing/sampling/no-log path; require runtime config/log samples to conclude outage or silence.
-Reuse existing cross-class material: [registry](../../../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
-
+Reuse existing cross-class material: [registry](../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
 
 ---
+
+### dossier-src-chatserver
 
 <!-- source dossier: src/ChatServer.md -->
 
@@ -119,10 +122,11 @@ Every active logger call below is reconciled by source path/line with existing r
 Registry reconciliation: 0 active calls, 0 joined registry IDs. No unmatched existing per-class registry rows.
 Privacy/correlation: Exact emitted argument expressions above determine exposure; identity/IP/URI/business/key/body/token fields are sensitive when present, exception messages may include input. No universal request-ID propagation or redaction is evidenced by class declaration alone. Join explicit messageId/trackerId/uuid/ARN/ARNStep/peerId/businessId/serverId when actually logged; timestamps/host/thread are secondary context, not a unique join key.
 RCA: search exact template or structured logType and level within a bounded host/time window; identify the listed method/true-or-else/catch path, then follow dependencies and companion caller logs. A catch log proves that branch was entered, not that recovery succeeded. An INFO after API return proves only that return; a before-send record proves attempted stage, and an after-send record does not replace recipient ACK. Absence of a record may be log-level/routing/sampling/no-log path; require runtime config/log samples to conclude outage or silence.
-Reuse existing cross-class material: [registry](../../../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
-
+Reuse existing cross-class material: [registry](../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
 
 ---
+
+### dossier-src-helper
 
 <!-- source dossier: src/Helper.md -->
 
@@ -183,10 +187,11 @@ Additional direct console/stderr diagnostics (not logger registry): [src/Helper.
 Registry reconciliation: 0 active calls, 0 joined registry IDs. No unmatched existing per-class registry rows.
 Privacy/correlation: Exact emitted argument expressions above determine exposure; identity/IP/URI/business/key/body/token fields are sensitive when present, exception messages may include input. No universal request-ID propagation or redaction is evidenced by class declaration alone. Join explicit messageId/trackerId/uuid/ARN/ARNStep/peerId/businessId/serverId when actually logged; timestamps/host/thread are secondary context, not a unique join key.
 RCA: search exact template or structured logType and level within a bounded host/time window; identify the listed method/true-or-else/catch path, then follow dependencies and companion caller logs. A catch log proves that branch was entered, not that recovery succeeded. An INFO after API return proves only that return; a before-send record proves attempted stage, and an after-send record does not replace recipient ACK. Absence of a record may be log-level/routing/sampling/no-log path; require runtime config/log samples to conclude outage or silence.
-Reuse existing cross-class material: [registry](../../../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
-
+Reuse existing cross-class material: [registry](../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
 
 ---
+
+### dossier-src-simplemqttclient
 
 <!-- source dossier: src/SimpleMqttClient.md -->
 
@@ -267,10 +272,11 @@ Additional direct console/stderr diagnostics (not logger registry): [src/SimpleM
 Registry reconciliation: 0 active calls, 0 joined registry IDs. No unmatched existing per-class registry rows.
 Privacy/correlation: model fields requiring consumer/emitter privacy review: M2MIO_USERNAME, M2MIO_PASSWORD_MD5. Exact emitted argument expressions above determine exposure; identity/IP/URI/business/key/body/token fields are sensitive when present, exception messages may include input. No universal request-ID propagation or redaction is evidenced by class declaration alone. Join explicit messageId/trackerId/uuid/ARN/ARNStep/peerId/businessId/serverId when actually logged; timestamps/host/thread are secondary context, not a unique join key.
 RCA: search exact template or structured logType and level within a bounded host/time window; identify the listed method/true-or-else/catch path, then follow dependencies and companion caller logs. A catch log proves that branch was entered, not that recovery succeeded. An INFO after API return proves only that return; a before-send record proves attempted stage, and an after-send record does not replace recipient ACK. Absence of a record may be log-level/routing/sampling/no-log path; require runtime config/log samples to conclude outage or silence.
-Reuse existing cross-class material: [registry](../../../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
-
+Reuse existing cross-class material: [registry](../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
 
 ---
+
+### dossier-src-com-nozha-myhtmllayout
 
 <!-- source dossier: src/com/nozha/MyHTMLLayout.md -->
 
@@ -335,10 +341,11 @@ Every active logger call below is reconciled by source path/line with existing r
 Registry reconciliation: 0 active calls, 0 joined registry IDs. No unmatched existing per-class registry rows.
 Privacy/correlation: Exact emitted argument expressions above determine exposure; identity/IP/URI/business/key/body/token fields are sensitive when present, exception messages may include input. No universal request-ID propagation or redaction is evidenced by class declaration alone. Join explicit messageId/trackerId/uuid/ARN/ARNStep/peerId/businessId/serverId when actually logged; timestamps/host/thread are secondary context, not a unique join key.
 RCA: search exact template or structured logType and level within a bounded host/time window; identify the listed method/true-or-else/catch path, then follow dependencies and companion caller logs. A catch log proves that branch was entered, not that recovery succeeded. An INFO after API return proves only that return; a before-send record proves attempted stage, and an after-send record does not replace recipient ACK. Absence of a record may be log-level/routing/sampling/no-log path; require runtime config/log samples to conclude outage or silence.
-Reuse existing cross-class material: [registry](../../../../../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
-
+Reuse existing cross-class material: [registry](../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
 
 ---
+
+### dossier-src-com-nozha-settings
 
 <!-- source dossier: src/com/nozha/Settings.md -->
 
@@ -779,10 +786,11 @@ Additional direct console/stderr diagnostics (not logger registry): [src/com/noz
 Registry reconciliation: 2 active calls, 2 joined registry IDs. No unmatched existing per-class registry rows.
 Privacy/correlation: model fields requiring consumer/emitter privacy review: REST_ENDPOINT_URI, DB_ADDRESS, DB_USERNAME, DB_PASSWORD, AEROSPIKE_USERNAME, AEROSPIKE_PASSWORD, AEROSPIKE_ADDRESS, KEYSTORE_PASSWORD, HTTP_MAX_FORM_CONTENT_SIZE, ORIGIN_HEADER_NAME, HTTP_PROXY_CLIENT_ADDRESS_HEADER_NAMES, KEYLEAD_API_TOKEN, KEYLEAD_CLIENT_SECRET, MASK_TOKEN_MAX_SIZE, MASK_TOKEN_VISIBLE_PERCENT, SERVER_PEER_QUEUE_ADDRESS, SERVER_PEER_QUEUE_USERNAME, SERVER_PEER_QUEUE_PASSWORD, ARTEMIS_BROADCAST_UDP_GROUP_ADDRESS, ARTEMIS_CLUSTER_ADDRESS_CONFIG, ARTEMIS_CLUSTER_PASSWORD, ARTEMIS_KEY_STORE_PASSWORD, ARTEMIS_TRUST_STORE_PASSWORD, USE_RANDOM_TOKEN_START, COAP_TRUST_STORE_PASSWORD, COAP_KEY_STORE_PASSWORD, ASYNC_QUEUE_ADDRESS, ASYNC_QUEUE_USERNAME, ASYNC_QUEUE_PASSWORD, RATE_LIMIT_QUEUE_ADDRESS, RATE_LIMIT_QUEUE_USERNAME, RATE_LIMIT_QUEUE_PASSWORD, URI_SERVICE_COUNT_EXPIRE_TIME, HAS_BUSINESS_DATA_GATHERING, RATE_LIMIT_KAFKA_BROKER_ADDRESS, RATE_LIMIT_BUSINESS_TOPIC, RATE_LIMIT_KAFKA_PASSWORD, TURN_ADDRESS, INTERNAL_TURN_ADDRESS, TURN_ADDRESSES, TURN_USERNAME, TURN_PASSWORD, ZOOKEEPER_KEYSTORE_PASSWORD, REDIS_ADDRESS, REDIS_PASSWORD, IS_ORIGIN_RAISE_EXCEPTION_ENABLE. Exact emitted argument expressions above determine exposure; identity/IP/URI/business/key/body/token fields are sensitive when present, exception messages may include input. No universal request-ID propagation or redaction is evidenced by class declaration alone. Join explicit messageId/trackerId/uuid/ARN/ARNStep/peerId/businessId/serverId when actually logged; timestamps/host/thread are secondary context, not a unique join key.
 RCA: search exact template or structured logType and level within a bounded host/time window; identify the listed method/true-or-else/catch path, then follow dependencies and companion caller logs. A catch log proves that branch was entered, not that recovery succeeded. An INFO after API return proves only that return; a before-send record proves attempted stage, and an after-send record does not replace recipient ACK. Absence of a record may be log-level/routing/sampling/no-log path; require runtime config/log samples to conclude outage or silence.
-Reuse existing cross-class material: [registry](../../../../../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
-
+Reuse existing cross-class material: [registry](../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
 
 ---
+
+### dossier-src-com-nozha-async-server-server
 
 <!-- source dossier: src/com/nozha/async/server/Server.md -->
 
@@ -1036,10 +1044,11 @@ Every active logger call below is reconciled by source path/line with existing r
 Registry reconciliation: 66 active calls, 66 joined registry IDs. No unmatched existing per-class registry rows.
 Privacy/correlation: Exact emitted argument expressions above determine exposure; identity/IP/URI/business/key/body/token fields are sensitive when present, exception messages may include input. No universal request-ID propagation or redaction is evidenced by class declaration alone. Join explicit messageId/trackerId/uuid/ARN/ARNStep/peerId/businessId/serverId when actually logged; timestamps/host/thread are secondary context, not a unique join key.
 RCA: search exact template or structured logType and level within a bounded host/time window; identify the listed method/true-or-else/catch path, then follow dependencies and companion caller logs. A catch log proves that branch was entered, not that recovery succeeded. An INFO after API return proves only that return; a before-send record proves attempted stage, and an after-send record does not replace recipient ACK. Absence of a record may be log-level/routing/sampling/no-log path; require runtime config/log samples to conclude outage or silence.
-Reuse existing cross-class material: [registry](../../../../../../../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../../../../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../../../../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
-
+Reuse existing cross-class material: [registry](../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
 
 ---
+
+### dossier-src-com-nozha-async-server-activemq-embeddedartemisserver
 
 <!-- source dossier: src/com/nozha/async/server/activemq/EmbeddedArtemisServer.md -->
 
