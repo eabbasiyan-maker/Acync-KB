@@ -1,7 +1,9 @@
-# Async Java class dossiers — candidate batch 20
+# Async class dossiers — review batch 20
 
 
 ---
+
+### dossier-src-org-springframework-util-patternmatchutils
 
 <!-- source dossier: src/org/springframework/util/PatternMatchUtils.md -->
 
@@ -63,8 +65,9 @@ Failure effect: catch/translation/suppression behavior is explained in Technical
 
 RCA: first establish whether this exact bundled class is loaded in the deployed build and identify calling stack before relating it to an Async symptom. For emitted sites search the literal template fragment and class/logger around the failure time, then inspect adjacent caller exception and input/state; silent classes require caller stack/exception evidence or an isolated reproduction. No confirmed first-party caller log, configured appender, log retention or request correlation edge was evidenced for this utility; bundled callers listed above do not establish a product request path. No direct log proves successful user delivery, database commit or policy decision.
 
-
 ---
+
+### dossier-src-org-springframework-util-propertiespersister
 
 <!-- source dossier: src/org/springframework/util/PropertiesPersister.md -->
 
@@ -140,8 +143,9 @@ Failure effect: catch/translation/suppression behavior is explained in Technical
 
 RCA: first establish whether this exact bundled class is loaded in the deployed build and identify calling stack before relating it to an Async symptom. For emitted sites search the literal template fragment and class/logger around the failure time, then inspect adjacent caller exception and input/state; silent classes require caller stack/exception evidence or an isolated reproduction. No confirmed first-party caller log, configured appender, log retention or request correlation edge was evidenced for this utility; bundled callers listed above do not establish a product request path. No direct log proves successful user delivery, database commit or policy decision.
 
-
 ---
+
+### dossier-src-org-springframework-util-propertyplaceholderhelper
 
 <!-- source dossier: src/org/springframework/util/PropertyPlaceholderHelper.md -->
 
@@ -228,8 +232,9 @@ Registry reconciliation: `ALOG-0F243ED6D189` at L171 all match inspected call li
 
 RCA: first establish whether this exact bundled class is loaded in the deployed build and identify calling stack before relating it to an Async symptom. For emitted sites search the literal template fragment and class/logger around the failure time, then inspect adjacent caller exception and input/state; silent classes require caller stack/exception evidence or an isolated reproduction. No confirmed first-party caller log, configured appender, log retention or request correlation edge was evidenced for this utility; bundled callers listed above do not establish a product request path. No direct log proves successful user delivery, database commit or policy decision.
 
-
 ---
+
+### dossier-src-org-springframework-util-reflectionutils
 
 <!-- source dossier: src/org/springframework/util/ReflectionUtils.md -->
 
@@ -385,8 +390,9 @@ Failure effect: catch/translation/suppression behavior is explained in Technical
 
 RCA: first establish whether this exact bundled class is loaded in the deployed build and identify calling stack before relating it to an Async symptom. For emitted sites search the literal template fragment and class/logger around the failure time, then inspect adjacent caller exception and input/state; silent classes require caller stack/exception evidence or an isolated reproduction. No confirmed first-party caller log, configured appender, log retention or request correlation edge was evidenced for this utility; bundled callers listed above do not establish a product request path. No direct log proves successful user delivery, database commit or policy decision.
 
-
 ---
+
+### dossier-src-org-springframework-util-resizablebytearrayoutputstream
 
 <!-- source dossier: src/org/springframework/util/ResizableByteArrayOutputStream.md -->
 
@@ -454,8 +460,9 @@ Failure effect: catch/translation/suppression behavior is explained in Technical
 
 RCA: first establish whether this exact bundled class is loaded in the deployed build and identify calling stack before relating it to an Async symptom. For emitted sites search the literal template fragment and class/logger around the failure time, then inspect adjacent caller exception and input/state; silent classes require caller stack/exception evidence or an isolated reproduction. No confirmed first-party caller log, configured appender, log retention or request correlation edge was evidenced for this utility; bundled callers listed above do not establish a product request path. No direct log proves successful user delivery, database commit or policy decision.
 
-
 ---
+
+### dossier-src-org-springframework-util-resourceutils
 
 <!-- source dossier: src/org/springframework/util/ResourceUtils.md -->
 
@@ -566,8 +573,9 @@ Failure effect: catch/translation/suppression behavior is explained in Technical
 
 RCA: first establish whether this exact bundled class is loaded in the deployed build and identify calling stack before relating it to an Async symptom. For emitted sites search the literal template fragment and class/logger around the failure time, then inspect adjacent caller exception and input/state; silent classes require caller stack/exception evidence or an isolated reproduction. No confirmed first-party caller log, configured appender, log retention or request correlation edge was evidenced for this utility; bundled callers listed above do not establish a product request path. No direct log proves successful user delivery, database commit or policy decision.
 
-
 ---
+
+### dossier-src-org-springframework-util-routematcher
 
 <!-- source dossier: src/org/springframework/util/RouteMatcher.md -->
 
@@ -631,8 +639,9 @@ Failure effect: catch/translation/suppression behavior is explained in Technical
 
 RCA: first establish whether this exact bundled class is loaded in the deployed build and identify calling stack before relating it to an Async symptom. For emitted sites search the literal template fragment and class/logger around the failure time, then inspect adjacent caller exception and input/state; silent classes require caller stack/exception evidence or an isolated reproduction. No confirmed first-party caller log, configured appender, log retention or request correlation edge was evidenced for this utility; bundled callers listed above do not establish a product request path. No direct log proves successful user delivery, database commit or policy decision.
 
-
 ---
+
+### dossier-src-org-springframework-util-serializationutils
 
 <!-- source dossier: src/org/springframework/util/SerializationUtils.md -->
 
@@ -706,8 +715,9 @@ Failure effect: catch/translation/suppression behavior is explained in Technical
 
 RCA: first establish whether this exact bundled class is loaded in the deployed build and identify calling stack before relating it to an Async symptom. For emitted sites search the literal template fragment and class/logger around the failure time, then inspect adjacent caller exception and input/state; silent classes require caller stack/exception evidence or an isolated reproduction. No confirmed first-party caller log, configured appender, log retention or request correlation edge was evidenced for this utility; bundled callers listed above do not establish a product request path. No direct log proves successful user delivery, database commit or policy decision.
 
-
 ---
+
+### dossier-src-org-springframework-util-simpleidgenerator
 
 <!-- source dossier: src/org/springframework/util/SimpleIdGenerator.md -->
 
@@ -769,8 +779,9 @@ Failure effect: catch/translation/suppression behavior is explained in Technical
 
 RCA: first establish whether this exact bundled class is loaded in the deployed build and identify calling stack before relating it to an Async symptom. For emitted sites search the literal template fragment and class/logger around the failure time, then inspect adjacent caller exception and input/state; silent classes require caller stack/exception evidence or an isolated reproduction. No confirmed first-party caller log, configured appender, log retention or request correlation edge was evidenced for this utility; bundled callers listed above do not establish a product request path. No direct log proves successful user delivery, database commit or policy decision.
 
-
 ---
+
+### dossier-src-org-springframework-util-simpleroutematcher
 
 <!-- source dossier: src/org/springframework/util/SimpleRouteMatcher.md -->
 
@@ -844,8 +855,9 @@ Failure effect: catch/translation/suppression behavior is explained in Technical
 
 RCA: first establish whether this exact bundled class is loaded in the deployed build and identify calling stack before relating it to an Async symptom. For emitted sites search the literal template fragment and class/logger around the failure time, then inspect adjacent caller exception and input/state; silent classes require caller stack/exception evidence or an isolated reproduction. No confirmed first-party caller log, configured appender, log retention or request correlation edge was evidenced for this utility; bundled callers listed above do not establish a product request path. No direct log proves successful user delivery, database commit or policy decision.
 
-
 ---
+
+### dossier-src-org-springframework-util-socketutils
 
 <!-- source dossier: src/org/springframework/util/SocketUtils.md -->
 
@@ -939,8 +951,9 @@ Failure effect: catch/translation/suppression behavior is explained in Technical
 
 RCA: first establish whether this exact bundled class is loaded in the deployed build and identify calling stack before relating it to an Async symptom. For emitted sites search the literal template fragment and class/logger around the failure time, then inspect adjacent caller exception and input/state; silent classes require caller stack/exception evidence or an isolated reproduction. No confirmed first-party caller log, configured appender, log retention or request correlation edge was evidenced for this utility; bundled callers listed above do not establish a product request path. No direct log proves successful user delivery, database commit or policy decision.
 
-
 ---
+
+### dossier-src-org-springframework-util-stopwatch
 
 <!-- source dossier: src/org/springframework/util/StopWatch.md -->
 
@@ -1049,8 +1062,9 @@ Failure effect: catch/translation/suppression behavior is explained in Technical
 
 RCA: first establish whether this exact bundled class is loaded in the deployed build and identify calling stack before relating it to an Async symptom. For emitted sites search the literal template fragment and class/logger around the failure time, then inspect adjacent caller exception and input/state; silent classes require caller stack/exception evidence or an isolated reproduction. No confirmed first-party caller log, configured appender, log retention or request correlation edge was evidenced for this utility; bundled callers listed above do not establish a product request path. No direct log proves successful user delivery, database commit or policy decision.
 
-
 ---
+
+### dossier-src-org-springframework-util-streamutils
 
 <!-- source dossier: src/org/springframework/util/StreamUtils.md -->
 
@@ -1173,8 +1187,9 @@ Failure effect: catch/translation/suppression behavior is explained in Technical
 
 RCA: first establish whether this exact bundled class is loaded in the deployed build and identify calling stack before relating it to an Async symptom. For emitted sites search the literal template fragment and class/logger around the failure time, then inspect adjacent caller exception and input/state; silent classes require caller stack/exception evidence or an isolated reproduction. No confirmed first-party caller log, configured appender, log retention or request correlation edge was evidenced for this utility; bundled callers listed above do not establish a product request path. No direct log proves successful user delivery, database commit or policy decision.
 
-
 ---
+
+### dossier-src-org-springframework-util-stringutils
 
 <!-- source dossier: src/org/springframework/util/StringUtils.md -->
 
@@ -1337,8 +1352,9 @@ Failure effect: catch/translation/suppression behavior is explained in Technical
 
 RCA: first establish whether this exact bundled class is loaded in the deployed build and identify calling stack before relating it to an Async symptom. For emitted sites search the literal template fragment and class/logger around the failure time, then inspect adjacent caller exception and input/state; silent classes require caller stack/exception evidence or an isolated reproduction. No confirmed first-party caller log, configured appender, log retention or request correlation edge was evidenced for this utility; bundled callers listed above do not establish a product request path. No direct log proves successful user delivery, database commit or policy decision.
 
-
 ---
+
+### dossier-src-org-springframework-util-stringvalueresolver
 
 <!-- source dossier: src/org/springframework/util/StringValueResolver.md -->
 
@@ -1399,8 +1415,9 @@ Failure effect: catch/translation/suppression behavior is explained in Technical
 
 RCA: first establish whether this exact bundled class is loaded in the deployed build and identify calling stack before relating it to an Async symptom. For emitted sites search the literal template fragment and class/logger around the failure time, then inspect adjacent caller exception and input/state; silent classes require caller stack/exception evidence or an isolated reproduction. No confirmed first-party caller log, configured appender, log retention or request correlation edge was evidenced for this utility; bundled callers listed above do not establish a product request path. No direct log proves successful user delivery, database commit or policy decision.
 
-
 ---
+
+### dossier-src-org-springframework-util-systempropertyutils
 
 <!-- source dossier: src/org/springframework/util/SystemPropertyUtils.md -->
 
@@ -1466,8 +1483,9 @@ Failure effect: catch/translation/suppression behavior is explained in Technical
 
 RCA: first establish whether this exact bundled class is loaded in the deployed build and identify calling stack before relating it to an Async symptom. For emitted sites search the literal template fragment and class/logger around the failure time, then inspect adjacent caller exception and input/state; silent classes require caller stack/exception evidence or an isolated reproduction. No confirmed first-party caller log, configured appender, log retention or request correlation edge was evidenced for this utility; bundled callers listed above do not establish a product request path. No direct log proves successful user delivery, database commit or policy decision.
 
-
 ---
+
+### dossier-src-org-springframework-util-typeutils
 
 <!-- source dossier: src/org/springframework/util/TypeUtils.md -->
 
@@ -1538,8 +1556,9 @@ Failure effect: catch/translation/suppression behavior is explained in Technical
 
 RCA: first establish whether this exact bundled class is loaded in the deployed build and identify calling stack before relating it to an Async symptom. For emitted sites search the literal template fragment and class/logger around the failure time, then inspect adjacent caller exception and input/state; silent classes require caller stack/exception evidence or an isolated reproduction. No confirmed first-party caller log, configured appender, log retention or request correlation edge was evidenced for this utility; bundled callers listed above do not establish a product request path. No direct log proves successful user delivery, database commit or policy decision.
 
-
 ---
+
+### dossier-src-org-springframework-util-updatemessagedigestinputstream
 
 <!-- source dossier: src/org/springframework/util/UpdateMessageDigestInputStream.md -->
 
@@ -1610,8 +1629,9 @@ Failure effect: catch/translation/suppression behavior is explained in Technical
 
 RCA: first establish whether this exact bundled class is loaded in the deployed build and identify calling stack before relating it to an Async symptom. For emitted sites search the literal template fragment and class/logger around the failure time, then inspect adjacent caller exception and input/state; silent classes require caller stack/exception evidence or an isolated reproduction. No confirmed first-party caller log, configured appender, log retention or request correlation edge was evidenced for this utility; bundled callers listed above do not establish a product request path. No direct log proves successful user delivery, database commit or policy decision.
 
-
 ---
+
+### dossier-src-org-springframework-util-backoff-backoff
 
 <!-- source dossier: src/org/springframework/util/backoff/BackOff.md -->
 
@@ -1667,8 +1687,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-backoff-backoffexecution
 
 <!-- source dossier: src/org/springframework/util/backoff/BackOffExecution.md -->
 
@@ -1724,8 +1745,9 @@ No direct first-party consumer found, so caller observability/runtime log route 
 
 Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
 
-
 ---
+
+### dossier-src-org-springframework-util-backoff-exponentialbackoff
 
 <!-- source dossier: src/org/springframework/util/backoff/ExponentialBackOff.md -->
 
@@ -1797,74 +1819,6 @@ Reproduction/validation: exercise the named failing input or callback/state bran
 ## Logs and RCA
 
 **NO_LOG_IN_CLASS** — complete executable source `src/org/springframework/util/backoff/ExponentialBackOff.java:1–228` has no direct logging call. Registry rows for this source: 0; expected zero, no discrepancy.
-
-No direct first-party consumer found, so caller observability/runtime log route UNKNOWN. Other source references in Business provide specific callers/dependencies to inspect; exceptions/return sentinel/callback outcomes must be measured at those boundaries. Reproduce algorithm with branch-specific input, capture thrown cause or returned state, and search caller job/request time plus IDs only if caller supplies them; no local payload/ID privacy fields or appender evidence.
-
-Static registry reconciliation completed; source logs are candidate evidence only and no production log occurrence or logging configuration activation is claimed.
-
-
----
-
-<!-- source dossier: src/org/springframework/util/backoff/FixedBackOff.md -->
-
----
-doc_class: observation
-truth_type: operational
-sensitivity: internal
-evidence_refs: []
-trust_level: untrusted-content
-lifecycle: snapshot
-confidence: high
-verification: source-reviewed
-review_status: source-reviewed
-source_commit: 781e6c4c61706a798883818982f72fb8fa53a661
-last_validated_commit: 781e6c4c61706a798883818982f72fb8fa53a661
-source_path: src/org/springframework/util/backoff/FixedBackOff.java
-source_refs:
-  - "src/org/springframework/util/backoff/FixedBackOff.java:1-121"
-owner: REQUIRES_HUMAN_VALIDATION
----
-
-# FixedBackOff
-
-## Technical
-
-SOURCE_OBSERVED — package `org.springframework.util.backoff`; ownership: candidate bundled Spring Framework utility, evidenced by package/native or Spring API imports, not independently approved upstream provenance. Reviewed complete source `src/org/springframework/util/backoff/FixedBackOff.java:1–121`.
-
-Configuration interval default 5000ms, maxAttempts Long.MAX_VALUE; setters/constructors accept arbitrary longs (`src/org/springframework/util/backoff/FixedBackOff.java:26–87`). start creates own attempt counter; nextBackOff increments first and returns interval while attempts<=configured maximum else STOP (`src/org/springframework/util/backoff/FixedBackOff.java:90–107`). Execution reads live outer values; toString shows unlimited label. No sleep, scheduler, wall-clock timeout or synchronization.
-
-Method/declaration evidence (overloads and nested hooks included; behavior grouped above):
-- `src/org/springframework/util/backoff/FixedBackOff.java:47` `public FixedBackOff() {`
-- `src/org/springframework/util/backoff/FixedBackOff.java:55` `public FixedBackOff(long interval, long maxAttempts) {`
-- `src/org/springframework/util/backoff/FixedBackOff.java:64` `public void setInterval(long interval) {`
-- `src/org/springframework/util/backoff/FixedBackOff.java:71` `public long getInterval() {`
-- `src/org/springframework/util/backoff/FixedBackOff.java:78` `public void setMaxAttempts(long maxAttempts) {`
-- `src/org/springframework/util/backoff/FixedBackOff.java:85` `public long getMaxAttempts() {`
-- `src/org/springframework/util/backoff/FixedBackOff.java:90` `public BackOffExecution start() {`
-- `src/org/springframework/util/backoff/FixedBackOff.java:100` `public long nextBackOff() {`
-- `src/org/springframework/util/backoff/FixedBackOff.java:111` `public String toString() {`
-
-Nested nonstatic FixedBackOffExecution is the per-start counter, currentAttempts=0. nextBackOff increments and compares against live outer maxAttempts before returning live interval or STOP (`src/org/springframework/util/backoff/FixedBackOff.java:95–107`). toString includes live outer interval/maxAttempts and this counter, rendering Long.MAX_VALUE as unlimited (`src/org/springframework/util/backoff/FixedBackOff.java:110–117`). No scheduling or synchronization occurs in this inner class; fresh executions isolate counters while sharing configuration.
-
-## Business
-
-SOURCE_OBSERVED — searched all first-party `src/com/nozha/**/*.java` for exact class/type token, excluding comments and unrelated JetBrains Nullable. No direct first-party reference found. Runtime use UNKNOWN: reflection, native registration and external dependency callers are not excluded by this search.
-
-INFERENCE — generic dependency role is the algorithm/interface described in Technical; impact on Async users cannot be established without a runtime or first-party calling path. No proven product retries/SLA/configuration policy may be inferred from this helper.
-
-APPROVED_INTENT: absent; owner decision/human approval UNKNOWN. Business lens source-reviewed only; no runtime validation, production incident, contractual SLA or trusted promotion claimed.
-
-## Errors
-
-SOURCE_OBSERVED — No direct error path in class. Zero/negative attempts immediately STOP; negative intervals can collide with STOP; long attempt count can overflow if called indefinitely. Consumer errors propagate outside this class.
-
-**No explicit throw/catch/assert statements.**
-
-Reproduction/validation: exercise the named failing input or callback/state branch from Technical and the statements above; for native WebRTC require compatible GStreamer/JNA and signaling peer. Static review performed; no executable test/runtime reproduction in this dossier. Use caller handling to determine business-visible impact; unhandled utility errors do not automatically imply a particular HTTP response.
-
-## Logs and RCA
-
-**NO_LOG_IN_CLASS** — complete executable source `src/org/springframework/util/backoff/FixedBackOff.java:1–121` has no direct logging call. Registry rows for this source: 0; expected zero, no discrepancy.
 
 No direct first-party consumer found, so caller observability/runtime log route UNKNOWN. Other source references in Business provide specific callers/dependencies to inspect; exceptions/return sentinel/callback outcomes must be measured at those boundaries. Reproduce algorithm with branch-specific input, capture thrown cause or returned state, and search caller job/request time plus IDs only if caller supplies them; no local payload/ID privacy fields or appender evidence.
 
