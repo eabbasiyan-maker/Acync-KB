@@ -1,7 +1,9 @@
-# Async Java class dossiers — candidate batch 2
+# Async class dossiers — review batch 02
 
 
 ---
+
+### dossier-src-com-nozha-async-server-activemq-mqttincominginterceptor
 
 <!-- source dossier: src/com/nozha/async/server/activemq/MQTTIncomingInterceptor.md -->
 
@@ -79,8 +81,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-activemq-mqttoutoinginterceptor
 
 <!-- source dossier: src/com/nozha/async/server/activemq/MQTTOutoingInterceptor.md -->
 
@@ -157,8 +160,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-activemq-securitymanager
 
 <!-- source dossier: src/com/nozha/async/server/activemq/SecurityManager.md -->
 
@@ -238,8 +242,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-activemq-local-asyncconsumer
 
 <!-- source dossier: src/com/nozha/async/server/activemq/local/AsyncConsumer.md -->
 
@@ -325,8 +330,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-activemq-local-asyncinternalmessagesender
 
 <!-- source dossier: src/com/nozha/async/server/activemq/local/AsyncInternalMessageSender.md -->
 
@@ -404,8 +410,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-activemq-local-asyncmanager
 
 <!-- source dossier: src/com/nozha/async/server/activemq/local/AsyncManager.md -->
 
@@ -490,8 +497,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-activemq-local-asyncproducer
 
 <!-- source dossier: src/com/nozha/async/server/activemq/local/AsyncProducer.md -->
 
@@ -580,8 +588,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-activemq-local-asyncqueueadaptor
 
 <!-- source dossier: src/com/nozha/async/server/activemq/local/AsyncQueueAdaptor.md -->
 
@@ -668,8 +677,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-activemq-local-queuemessagelistener
 
 <!-- source dossier: src/com/nozha/async/server/activemq/local/QueueMessageListener.md -->
 
@@ -756,8 +766,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-activemq-ratelimit-ratelimitconsumer
 
 <!-- source dossier: src/com/nozha/async/server/activemq/ratelimit/RateLimitConsumer.md -->
 
@@ -841,8 +852,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-activemq-ratelimit-ratelimitmessagelistener
 
 <!-- source dossier: src/com/nozha/async/server/activemq/ratelimit/RateLimitMessageListener.md -->
 
@@ -924,8 +936,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-activemq-ratelimit-ratelimitproducer
 
 <!-- source dossier: src/com/nozha/async/server/activemq/ratelimit/RateLimitProducer.md -->
 
@@ -1012,8 +1025,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-activemq-vo-clientinfo
 
 <!-- source dossier: src/com/nozha/async/server/activemq/vo/ClientInfo.md -->
 
@@ -1102,8 +1116,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-biz-accessibilityservice
 
 <!-- source dossier: src/com/nozha/async/server/biz/AccessibilityService.md -->
 
@@ -1181,10 +1196,11 @@ Every active logger call below is reconciled by source path/line with existing r
 Registry reconciliation: 3 active calls, 3 joined registry IDs. No unmatched existing per-class registry rows.
 Privacy/correlation: model fields requiring consumer/emitter privacy review: businessAccessList. Exact emitted argument expressions above determine exposure; identity/IP/URI/business/key/body/token fields are sensitive when present, exception messages may include input. No universal request-ID propagation or redaction is evidenced by class declaration alone. Join explicit messageId/trackerId/uuid/ARN/ARNStep/peerId/businessId/serverId when actually logged; timestamps/host/thread are secondary context, not a unique join key.
 RCA: search exact template or structured logType and level within a bounded host/time window; identify the listed method/true-or-else/catch path, then follow dependencies and companion caller logs. A catch log proves that branch was entered, not that recovery succeeded. An INFO after API return proves only that return; a before-send record proves attempted stage, and an after-send record does not replace recipient ACK. Absence of a record may be log-level/routing/sampling/no-log path; require runtime config/log samples to conclude outage or silence.
-Reuse existing cross-class material: [registry](../../../../../../../../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../../../../../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../../../../../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
-
+Reuse existing cross-class material: [registry](../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
 
 ---
+
+### dossier-src-com-nozha-async-server-biz-loadmanager
 
 <!-- source dossier: src/com/nozha/async/server/biz/LoadManager.md -->
 
@@ -1259,10 +1275,11 @@ Every active logger call below is reconciled by source path/line with existing r
 Registry reconciliation: 4 active calls, 4 joined registry IDs. No unmatched existing per-class registry rows.
 Privacy/correlation: model fields requiring consumer/emitter privacy review: loggerAddress. Exact emitted argument expressions above determine exposure; identity/IP/URI/business/key/body/token fields are sensitive when present, exception messages may include input. No universal request-ID propagation or redaction is evidenced by class declaration alone. Join explicit messageId/trackerId/uuid/ARN/ARNStep/peerId/businessId/serverId when actually logged; timestamps/host/thread are secondary context, not a unique join key.
 RCA: search exact template or structured logType and level within a bounded host/time window; identify the listed method/true-or-else/catch path, then follow dependencies and companion caller logs. A catch log proves that branch was entered, not that recovery succeeded. An INFO after API return proves only that return; a before-send record proves attempted stage, and an after-send record does not replace recipient ACK. Absence of a record may be log-level/routing/sampling/no-log path; require runtime config/log samples to conclude outage or silence.
-Reuse existing cross-class material: [registry](../../../../../../../../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../../../../../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../../../../../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
-
+Reuse existing cross-class material: [registry](../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
 
 ---
+
+### dossier-src-com-nozha-async-server-biz-messagemanager
 
 <!-- source dossier: src/com/nozha/async/server/biz/MessageManager.md -->
 
@@ -1385,10 +1402,11 @@ Every active logger call below is reconciled by source path/line with existing r
 Registry reconciliation: 14 active calls, 14 joined registry IDs. No unmatched existing per-class registry rows.
 Privacy/correlation: Exact emitted argument expressions above determine exposure; identity/IP/URI/business/key/body/token fields are sensitive when present, exception messages may include input. No universal request-ID propagation or redaction is evidenced by class declaration alone. Join explicit messageId/trackerId/uuid/ARN/ARNStep/peerId/businessId/serverId when actually logged; timestamps/host/thread are secondary context, not a unique join key.
 RCA: search exact template or structured logType and level within a bounded host/time window; identify the listed method/true-or-else/catch path, then follow dependencies and companion caller logs. A catch log proves that branch was entered, not that recovery succeeded. An INFO after API return proves only that return; a before-send record proves attempted stage, and an after-send record does not replace recipient ACK. Absence of a record may be log-level/routing/sampling/no-log path; require runtime config/log samples to conclude outage or silence.
-Reuse existing cross-class material: [registry](../../../../../../../../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../../../../../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../../../../../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
-
+Reuse existing cross-class material: [registry](../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
 
 ---
+
+### dossier-src-com-nozha-async-server-biz-registrationmanager
 
 <!-- source dossier: src/com/nozha/async/server/biz/RegistrationManager.md -->
 
@@ -1490,10 +1508,11 @@ Every active logger call below is reconciled by source path/line with existing r
 Registry reconciliation: 7 active calls, 7 joined registry IDs. No unmatched existing per-class registry rows.
 Privacy/correlation: Exact emitted argument expressions above determine exposure; identity/IP/URI/business/key/body/token fields are sensitive when present, exception messages may include input. No universal request-ID propagation or redaction is evidenced by class declaration alone. Join explicit messageId/trackerId/uuid/ARN/ARNStep/peerId/businessId/serverId when actually logged; timestamps/host/thread are secondary context, not a unique join key.
 RCA: search exact template or structured logType and level within a bounded host/time window; identify the listed method/true-or-else/catch path, then follow dependencies and companion caller logs. A catch log proves that branch was entered, not that recovery succeeded. An INFO after API return proves only that return; a before-send record proves attempted stage, and an after-send record does not replace recipient ACK. Absence of a record may be log-level/routing/sampling/no-log path; require runtime config/log samples to conclude outage or silence.
-Reuse existing cross-class material: [registry](../../../../../../../../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../../../../../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../../../../../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
-
+Reuse existing cross-class material: [registry](../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
 
 ---
+
+### dossier-src-com-nozha-async-server-biz-servicecallservice
 
 <!-- source dossier: src/com/nozha/async/server/biz/ServiceCallService.md -->
 
@@ -1560,67 +1579,4 @@ Every active logger call below is reconciled by source path/line with existing r
 Registry reconciliation: 0 active calls, 0 joined registry IDs. No unmatched existing per-class registry rows.
 Privacy/correlation: Exact emitted argument expressions above determine exposure; identity/IP/URI/business/key/body/token fields are sensitive when present, exception messages may include input. No universal request-ID propagation or redaction is evidenced by class declaration alone. Join explicit messageId/trackerId/uuid/ARN/ARNStep/peerId/businessId/serverId when actually logged; timestamps/host/thread are secondary context, not a unique join key.
 RCA: search exact template or structured logType and level within a bounded host/time window; identify the listed method/true-or-else/catch path, then follow dependencies and companion caller logs. A catch log proves that branch was entered, not that recovery succeeded. An INFO after API return proves only that return; a before-send record proves attempted stage, and an after-send record does not replace recipient ACK. Absence of a record may be log-level/routing/sampling/no-log path; require runtime config/log samples to conclude outage or silence.
-Reuse existing cross-class material: [registry](../../../../../../../../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../../../../../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../../../../../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
-
-
----
-
-<!-- source dossier: src/com/nozha/async/server/biz/UserAuthentication.md -->
-
----
-doc_class: observation
-trust_level: untrusted-content
-lifecycle: proposed
-confidence: medium
-verification: source-reviewed-static-candidate
-review_status: source-reviewed
-truth_type: source-observed
-owner: REQUIRES_HUMAN_VALIDATION
-sensitivity: internal
-last_validated_commit: 781e6c4c61706a798883818982f72fb8fa53a661
-source_path: src/com/nozha/async/server/biz/UserAuthentication.java
-source_sha256: c21edca8573bbaea8747b92fbf4df6722a91c1fb2e94330564697445603149e2
-source_refs:
-  - https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/biz/UserAuthentication.java
-business_approved: false
-runtime_tested: false
-promoted: false
----
-
-# UserAuthentication — per-file candidate dossier
-
-## Technical
-Package: `com.nozha.async.server.biz`. Types: `UserAuthentication` (class_declaration) [src/com/nozha/async/server/biz/UserAuthentication.java:9–15](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/biz/UserAuthentication.java#L9-L15)
-authenticate(username,password) has only a TODO (12–14); logger is declared but unused.
-Ownership: first-party namespace for com.nozha types; default-package samples/helper ownership is unconfirmed. Header author comments are historical attribution, not current accountable owner.
-
-### Data/state and dependencies
-
-| Field(s) | Type | Evidence |
-|---|---|---|
-| `logger` | `Logger` | [src/com/nozha/async/server/biz/UserAuthentication.java:10](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/biz/UserAuthentication.java#L10) |
-Dependencies are imports (some may be unused): `org.slf4j.Logger` [src/com/nozha/async/server/biz/UserAuthentication.java:3](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/biz/UserAuthentication.java#L3); `org.slf4j.LoggerFactory` [src/com/nozha/async/server/biz/UserAuthentication.java:4](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/biz/UserAuthentication.java#L4)
-Representative source references (lexical uses, not a dynamic call graph): [src/com/nozha/async/server/biz/RegistrationManager.java:43](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/biz/RegistrationManager.java#L43) ` UserAuthentication.authenticate(peerInfo.getUsername(), peerInfo.getPassword());`
-### Method review
-
-| Method/signature | Source-observed behavior | Evidence |
-|---|---|---|
-| `public static void authenticate(String username, String password)` | Empty body; no validation or side effect. | [src/com/nozha/async/server/biz/UserAuthentication.java:12–14](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/biz/UserAuthentication.java#L12-L14) |
-
-## Business
-SOURCE_OBSERVED: SOURCE_OBSERVED: RegistrationManager calls this method, but it performs no credential validation. No approved authentication intent can be inferred from its name.
-Actor/preconditions/effects are restricted to the observed methods above. For data carriers, the class itself has no independent admission or pricing policy; referenced callers supply decisions. APPROVED_INTENT: not supplied. Runtime/SLA evidence: not established by static review.
-
-## Errors
-No direct error path in class; credentials accepted by this no-op are checked only if another caller path provides independent validation.
-### Exact declared throw/catch sites
-No active direct throw/catch statement. Exceptions from constructors/dependencies/input misuse, where present, are documented in method review.
-Static reproduction: exercise each branch listed in the method review with absent/null input, configured flags, dependency failures and concurrent callers as applicable; assert returns/state/exception mapping, then inspect listed diagnostics. No runtime test was executed by this dossier author; inferred source risks are not production incidents.
-
-## Logs and RCA
-Every active logger call below is reconciled by source path/line with existing registry. Registry metadata remains candidate evidence; no assertion of production appender/routing.
-**NO_LOG_IN_CLASS**. Logger declarations, DTO names and commented calls do not constitute active log emission. Class-name references to inspect for caller observability (not necessarily emission sites): [src/com/nozha/async/server/biz/RegistrationManager.java:43](https://github.com/eabbasiyan-maker/Async-Source/blob/781e6c4c61706a798883818982f72fb8fa53a661/src/com/nozha/async/server/biz/RegistrationManager.java#L43).
-Registry reconciliation: 0 active calls, 0 joined registry IDs. No unmatched existing per-class registry rows.
-Privacy/correlation: Exact emitted argument expressions above determine exposure; identity/IP/URI/business/key/body/token fields are sensitive when present, exception messages may include input. No universal request-ID propagation or redaction is evidenced by class declaration alone. Join explicit messageId/trackerId/uuid/ARN/ARNStep/peerId/businessId/serverId when actually logged; timestamps/host/thread are secondary context, not a unique join key.
-RCA: search exact template or structured logType and level within a bounded host/time window; identify the listed method/true-or-else/catch path, then follow dependencies and companion caller logs. A catch log proves that branch was entered, not that recovery succeeded. An INFO after API return proves only that return; a before-send record proves attempted stage, and an after-send record does not replace recipient ACK. Absence of a record may be log-level/routing/sampling/no-log path; require runtime config/log samples to conclude outage or silence.
-Reuse existing cross-class material: [registry](../../../../../../../../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../../../../../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../../../../../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
+Reuse existing cross-class material: [registry](../../../../generated-knowledge/observability/registry-v1/all-log-point-cards.csv), [source logging semantics](../../../../generated-knowledge/observability/source-logging-semantics.md), [message delivery flow](../../../../generated-knowledge/flows/message-delivery-flow.md); these candidate documents are not independently promoted by this dossier.
