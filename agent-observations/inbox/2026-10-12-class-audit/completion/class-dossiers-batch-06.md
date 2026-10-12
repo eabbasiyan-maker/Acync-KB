@@ -1,7 +1,9 @@
-# Async Java class dossiers — candidate batch 6
+# Async class dossiers — review batch 06
 
 
 ---
+
+### dossier-src-com-nozha-async-server-handler-websockethandler
 
 <!-- source dossier: src/com/nozha/async/server/handler/WebsocketHandler.md -->
 
@@ -132,8 +134,9 @@ Appender source evidence: `resources/log4j2.xml` defines AsyncRoot INFO→DG2 `$
 
 RCA: search exact template fragment/class plus host and narrow time window; correlate the explicit peer/client/connection/message/UUID/tracker/ARN fields where present, then inspect the cited throw/catch and preceding control branch. Verify configured level/appender before interpreting a missing DEBUG point. Compare sender return, receiver parse, broker ACK and downstream response independently; a success/enqueue/lifecycle banner proves only that its code site was reached, never end-to-end business completion. Unlogged/ignored catches and asynchronous callback/Future boundaries require dependency/client evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-accessservlet
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/AccessServlet.md -->
 
@@ -226,8 +229,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-asynccheckservlet
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/AsyncCheckServlet.md -->
 
@@ -312,8 +316,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-asyncerrorhandler
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/AsyncErrorHandler.md -->
 
@@ -390,8 +395,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-asyncfilter
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/AsyncFilter.md -->
 
@@ -481,8 +487,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-asyncservicecallservlet
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/AsyncServiceCallServlet.md -->
 
@@ -572,8 +579,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Compared `generated-knowledge/observability/source-reviewed-critical-signatures.md` and `source-logging-semantics.md` service-call notes: raw management bodies and proxy-vs-message boundary must stay distinct; proxy 408/227 findings belong ServiceCallProxy, not this class. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-asyncservlet
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/AsyncServlet.md -->
 
@@ -656,8 +664,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-asyncwebsocketadapter
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/AsyncWebSocketAdapter.md -->
 
@@ -747,8 +756,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-autoresponseservlet
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/AutoResponseServlet.md -->
 
@@ -837,8 +847,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-businesslimitservlet
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/BusinessLimitServlet.md -->
 
@@ -948,8 +959,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Compared `generated-knowledge/operations/rate-limit-manager.md`: separate com.async AsyncManager baseline/API, not the com.nozha.async node handler; do not merge route contracts. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-cacheservlet
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/CacheServlet.md -->
 
@@ -1031,8 +1043,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-clientservlet
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/ClientServlet.md -->
 
@@ -1121,8 +1134,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-embeddedhttpserver
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/EmbeddedHttpServer.md -->
 
@@ -1238,8 +1252,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-healthcheckservlet
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/HealthCheckServlet.md -->
 
@@ -1325,8 +1340,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-ipaddresslimitservlet
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/IPAddressLimitServlet.md -->
 
@@ -1430,8 +1446,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Compared `generated-knowledge/operations/rate-limit-manager.md`: separate com.async AsyncManager baseline/API, not the com.nozha.async node handler; do not merge route contracts. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-jettyqueuesizelogger
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/JettyQueueSizeLogger.md -->
 
@@ -1515,8 +1532,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Compared `generated-knowledge/observability/source-reviewed-critical-signatures.md`, `source-logging-semantics.md` and `correlation-and-data-contract.md`; preserves queue-depth label correction and request-timestamp/response-vs-business distinction. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-manageservlet
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/ManageServlet.md -->
 
@@ -1595,8 +1613,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-messagesaverservlet
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/MessageSaverServlet.md -->
 
@@ -1683,8 +1702,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-mqttservlet
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/MqttServlet.md -->
 
@@ -1771,8 +1791,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-paymentcoreservlet
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/PaymentCoreServlet.md -->
 
@@ -1860,8 +1881,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-providerratelimitservlet
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/ProviderRateLimitServlet.md -->
 
@@ -1971,8 +1993,9 @@ RCA procedure: search exact template/logger and level from site table in a bound
 
 Compared `generated-knowledge/security/security-implementation.md`: broad conditional-access statement agrees, but exact route/token/status behavior here is more specific; security policy and production enforcement remain unknown. Compared `generated-knowledge/operations/rate-limit-manager.md`: separate com.async AsyncManager baseline/API, not the com.nozha.async node handler; do not merge route contracts. Existing documents remain untouched candidate material, not approval evidence.
 
-
 ---
+
+### dossier-src-com-nozha-async-server-httpserver-providerservicesservlet
 
 <!-- source dossier: src/com/nozha/async/server/httpserver/ProviderServicesServlet.md -->
 
