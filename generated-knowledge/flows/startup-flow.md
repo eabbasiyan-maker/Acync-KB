@@ -62,3 +62,9 @@ Evidence:
 - **INFERRED_FROM_CODE** - A port may accept traffic before all final services finish initialization because `httpServer.run` precedes those initializers. This is a call-order inference and was not runtime-tested. Evidence: `Async/Async/src/com/nozha/async/server/Server.java`; component: `Server`; symbol: `initialize`.
 - **VERIFIED_FROM_SOURCE** - The normal shutdown hook closes handlers, client mappings, peer JMS, Jetty, Aerospike, and JDBC pooling. The initialization-failure `exitSystem` path destroys the handlers collected so far and closes peer JMS, then launches `RESTART_COMMAND` and exits; it does not visibly call the full normal shutdown sequence. Evidence: `Server.main`, `exitSystem`.
 - **UNKNOWN** - Whether external orchestration prevents early traffic, supervises restart, or performs additional cleanup.
+
+## Per-class startup and observability evidence
+
+The pinned class dossiers distinguish Settings static initialization, singleton construction, sender-thread startup, handler registration, Jetty startup and subsequent service initialization. External dependency availability and deployed flags remain unknown. Preserve the earlier startup-versus-readiness distinction; a successful health response does not validate every dependency or initialize all business paths.
+
+Candidate evidence/navigation: [class dossiers and flow index](../../agent-observations/inbox/2026-10-12-class-audit/completion/README.md), [source provenance](../../agent-observations/inbox/2026-10-12-class-audit/completion/source-provenance.json), [log reconciliation](../../agent-observations/inbox/2026-10-12-class-audit/completion/log-registry-reconciliation.json). No human promotion is recorded by this supplement.
