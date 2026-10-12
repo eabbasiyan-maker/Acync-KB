@@ -46,14 +46,12 @@ last_validated_commit: 781e6c4c61706a798883818982f72fb8fa53a661
 
 ## اصلاح مستندات موجود و Git
 
-برای ۱۲ سند موجود، manifest تغییرات پیشنهادی آماده است؛ اما patch قبلی در checkout حاضر clean apply نشد و در این بسته به‌عنوان «اعمال‌شده» گزارش نمی‌شود. شناسنامه‌ها، Flowها و گزارش به‌صورت candidate زیر inbox قرار دارند. PR #21 هنوز Draft است و فایل‌های مرحلهٔ تکمیلی در این نشست هنوز روی branch آن ثبت نشده‌اند. workspace حاضر `.git` ندارد؛ بنابراین از این محیط امکان commit/push محلی وجود نداشت. برای آن‌که خروجی قابل بازبینی و حفظ شود، نسخهٔ بسته‌بندی‌شده همراه این گزارش تحویل می‌شود.
+برای ۱۱ سند دانش موجود و `async-knowledge-catalog.yaml`، supplementهای source-backed و پیوند به پرونده‌های کلاس به branch Draft PR #21 اضافه شد. patch اولیه خراب بود و اعمال نشد؛ تغییرات به‌صورت فایل‌به‌فایل روی branch انجام شد. ۹ ارجاع معیوب به `GOVERNANCE-REPORT.md` در Catalog با توضیح نبود تصمیم promotion جایگزین شدند. سطح `untrusted-content` حفظ شد و `mvp/validated-claims.yaml` دست‌نخورده ماند. همهٔ شناسنامه‌ها، Flowها، ماتریس و گزارش در همان PR ثبت شده‌اند. PR همچنان Draft است و Merge/Promotion نشده است.
 
 ## باقی‌مانده برای بستن رسمی
 
-1. ثبت این بسته در branch PR #21 و بررسی SHA/فایل‌های remote.
-2. اصلاح manifest و patch اسناد اصلی با تطبیق نسخهٔ واقعی branch، سپس بازبینی تفاوت‌ها.
-3. PO/TL/Security/Operations تأیید Business Ruleها، قرارداد خطا/ACK/Retry و حساسیت لاگ‌ها را انجام دهند.
-4. روی محیط sandbox، تست‌های مرتبط DB/Jetty/transport اجرا شوند؛ وضعیت تنظیمات deployment و ingestion لاگ تأیید شود.
-5. پس از review انسانی، فقط ادعاهای تأییدشده به `generated-knowledge`/`validated-claims.yaml` ارتقا یابند.
+1. PR #21 را با PO/TL/Security/Operations مرور و قواعد بیزینسی، قرارداد خطا/ACK/Retry و حساسیت لاگ‌ها را تأیید کنند.
+2. روی محیط sandbox، تست‌های مرتبط DB/Jetty/transport اجرا شوند؛ تنظیمات deployment و ingestion لاگ تأیید شوند.
+3. پس از review انسانی، فقط ادعاهای تأییدشده به `validated-claims.yaml` ارتقا یابند.
 
 **جمع‌بندی صادقانه:** هدف «شناسنامهٔ منبع‌دار برای هر ۴۰۱ فایل و هر چهار بُعد» در سطح candidate/source-reviewed آماده است. هدف «دانش قابل اتکا و رسمی برای هر کلاس» هنوز کامل نیست؛ چون بیزینس approval، Runtime، deployment و promotion هنوز انجام نشده‌اند.
