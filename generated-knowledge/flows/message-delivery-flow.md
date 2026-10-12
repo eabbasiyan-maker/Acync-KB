@@ -78,3 +78,9 @@ Do not infer these properties from implementation details alone.
 ## Validation boundary
 
 This Candidate document records source-derived observations only. It does not determine whether a statement is Trusted, validated, official, or a registered Known Gap. Validation status and formally registered knowledge gaps are maintained separately in `mvp/validated-claims.yaml` and must be resolved from that dataset rather than inferred from this document.
+
+## Source-observed ACK and persistence detail
+
+Implementation detail can now be stated without promoting a contract: MessageManager.doMessageSent keeps ACK-required types PENDING, whereas other types are marked SENT and archived; archiveAckMsg checks the supplied receiver against the retained message, and MESSAGE_SENDER_ACK_NEEDED can create an ACK back to its original sender. loadPendingMessage uses retry_date and a clamped expiry-derived interval. These implementation observations do not settle the official ACK/retry guarantee in validated-claims.yaml. In the active-save facade, IS_INSERT_TO_DB_ENABLE gates DB work and cumulative getTaskCount can suppress submission. The Oracle cleanup predicate and collapsed-message binding candidates are documented in the persistence dossiers; do not treat a local send return as durability or recipient consumption.
+
+Candidate evidence/navigation: [class dossiers and flow index](../../agent-observations/inbox/2026-10-12-class-audit/completion/README.md), [source provenance](../../agent-observations/inbox/2026-10-12-class-audit/completion/source-provenance.json), [log reconciliation](../../agent-observations/inbox/2026-10-12-class-audit/completion/log-registry-reconciliation.json). No human promotion is recorded by this supplement.
